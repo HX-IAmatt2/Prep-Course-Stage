@@ -2,7 +2,6 @@
 title: Editor de Texto
 eleventyNavigation:
   key: Editor de Texto
-  # parent: Primeros Pasos
   order: 2
 ---
 
@@ -15,7 +14,7 @@ A continuación veremos una lista de los más populares:
 
 ## Sublime Text
 
-![Sublime Text](/Prep-Course-Stage/_src/assets/00-PrimerosPasos/sublimeText_screen.png)
+![Sublime Text](/_src/assets/00-PrimerosPasos/sublimeText_screen.png)
 
 Es un editor de texto liviano, que cuenta con una serie de plugins para adaptarlo a las necesidades de cada desarrollador.
 
