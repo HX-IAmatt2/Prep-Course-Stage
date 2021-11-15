@@ -2,3 +2,5 @@ node_modules
 
 # Eleventy build
 _dist
+gh-pages
+gh-pages.pub
