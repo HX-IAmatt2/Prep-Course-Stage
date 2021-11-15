@@ -4,6 +4,7 @@
 }
 
 html {
+  /* font-family: "Avenir"; */
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +16,7 @@ html {
   height: 75px;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Avenir Black";
   font-style: normal;
   font-display: swap;
@@ -77,20 +78,22 @@ html {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF;
-}
-@font-face {
+}*/
+
+/* @font-face {
   font-family: "Avenir Medium";
   font-style: normal;
   font-display: swap;
   font-weight: 400;
   src: local("Avenir Medium")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Medium-09-7d635ea94b4460e86cd678e9e754a643.ttf)
+    url(/_src/fonts/Avenir-Medium-09-7d635ea94b4460e86cd678e9e754a643.ttf)
     format("truetype");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF;
-}
-@font-face {
+} */
+
+/* @font-face {
   font-family: "Avenir Roman";
   font-style: normal;
   font-display: swap;
@@ -101,13 +104,13 @@ html {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF;
-}
+}  */
 
 body {
+  /* font-family: "Avenir Medium"; */
   /* border: 2px dashed; */
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.875rem;
-  /* font-family: "Avenir Roman"; */
   font-weight: 400;
   line-height: 1.43;
   background-color: #fafafa;
@@ -206,7 +209,6 @@ navbar {
 #lesson h2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
-
 }
 
 #lesson h3 {
@@ -266,7 +268,7 @@ footer {
 
 code {
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 /* Bloques de codigo */
