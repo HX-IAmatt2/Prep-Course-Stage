@@ -84,7 +84,7 @@ nombresEstudiantes[0] = 'Jorge';
 console.log(nombresEstudiantes);  // ['Jorge', 'Antonio', 'Sara', 'Samuel']
 ```
 
-### .push y .pop
+### ***.push*** y ***.pop***
 
 Otros dos métodos de matriz incorporados muy útiles son `.push` y `.pop`. Estos métodos se refieren a la adición y eliminación de elementos de la matriz después de su declaración inicial.
 
@@ -108,7 +108,7 @@ nombresEstudiantes.pop();
 console.log(nombresEstudiantes);  // ['Martin', 'Antonio', 'Sara']
 ```
 
-### .unshift y .shift
+### ***.unshift*** y ***.shift***
 
 `.unshift` y `.shift` son exactamente como `.push` y `.pop`, excepto que operan en el primer elemento de la matriz. `.unshift(item)` colocará un nuevo elemento en la primera posición de la matriz, y `.shift()` eliminará el primer elemento de la matriz.
 
@@ -128,7 +128,7 @@ console.log(nombresEstudiantes);  // ['Martin', 'Antonio', 'Sara', 'Samuel']
 
 Debido a que Javascript no es un lenguaje fuertemente tipado, las matrices tampoco necesitan ser tipadas. Las matrices en Javascript pueden contener múltiples tipos de datos diferentes en la misma matriz
 
-## Utilizando bucles `for` en arrays
+## Utilizando bucles ***for*** en arrays
 
 La mayoría de las veces, los bucles for se utilizan para iterar sobre todos los elementos de una matriz. Usando la técnica de acceso al índice ("index access technique") podemos acceder a cada elemento de la matriz. Para hacer esto, usamos el método `.length` como punto de parada para el ciclo.
 
