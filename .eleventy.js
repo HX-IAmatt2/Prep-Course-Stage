@@ -37,7 +37,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readerBar);
 
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(pluginTOC);
+
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2', 'h3'],
+    ul: true
+  })
 
   eleventyConfig.addPassthroughCopy("_src/styles");
   eleventyConfig.addPassthroughCopy("_src/assets");
