@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "env NODE_ENV=production npx eleventy --pathprefix 'Prep-Course-Stage'"
+    "build": "env NODE_ENV=production npx eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
