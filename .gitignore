@@ -1,1 +1,4 @@
 node_modules
+
+# Eleventy build
+_dist
