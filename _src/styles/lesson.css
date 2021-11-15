@@ -272,7 +272,6 @@ code {
 }
 
 /* Bloques de codigo */
-
 pre[class*="language-"],
 code[class*="language-"] {
   border-radius: 0.2rem;
