@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/_src/styles/lesson.css">
+    <link rel="stylesheet" href="https://assets.soyhenry.com/fonts/Avenir/Avenir.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>CSS | Herny Prep Course </title>
+  </head>
+
+  <body>
+    <div class="reader-bar-start">
+      <navbar class="navbar fixed-top navbar-light bg-black">
+        <div class="container-fluid">
+          <img src='/_src/assets/logo-white.png' alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          <span>CSS | Prep Course</span>
+        </div>
+      </navbar>
+
+      <div id='main' class="container-fluid">
+        <div id='headerTags' class="row">
+          
+          <ul class="nav nav-tabs justify-content-center">
+      
+      <li class="nav-item">
+        <a href="/" class="nav-link" role="menuitem">Intro</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/editorTexto/" class="nav-link" role="menuitem">Editor de Texto</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
+      </li>
+<li class="nav-item">
+        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
+      </li>
+<li class="nav-item">
+        <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
+      </li>
+<li class="nav-item">
+        <a href="/03-JS-II/README/" class="nav-link" role="menuitem">JS II</a>
+      </li>
+<li class="nav-item">
+        <a href="/04-JS-III/README/" class="nav-link" role="menuitem">JS III</a>
+      </li>
+<li class="nav-item">
+        <a href="/05-JS-IV/README/" class="nav-link" role="menuitem">JS IV</a>
+      </li>
+<li class="nav-item">
+        <a href="/06-JS-V/README/" class="nav-link" role="menuitem">JS V</a>
+      </li>
+<li class="nav-item">
+        <a href="/07-JS-VI/README/" class="nav-link" role="menuitem">JS VI</a>
+      </li>
+<li class="nav-item">
+        <a href="/08-HTML/README/" class="nav-link" role="menuitem">HTML</a>
+      </li>
+<li class="nav-item">
+        <span class="nav-link active" tabindex="-1" aria-current="true">CSS</span>
+      </li>
+    </ul>
+        </div>
+
+        <div class="row">
+
+          <div id='sidebar'>
+            <div id="tocTitle" class="row">
+            Contenido de la clase
+            </div>
+            <div id="tocBox" class="row">
+              
+              <nav class="toc" >
+        <ol><li><a href="#elementos-block">Elementos block </a></li><li><a href="#introducci%C3%B3n-al-posicionamiento">Introducción al posicionamiento </a></li><li><a href="#elementos-inline">Elementos inline </a></li><li><a href="#la-propiedad-display">La propiedad display </a></li><li><a href="#none">none </a></li><li><a href="#la-propiedad-position">La propiedad position </a></li><li><a href="#flex">flex </a></li><li><a href="#usar-propiedades-de-posici%C3%B3n-para-posicionar-elementos">Usar propiedades de posición para posicionar elementos </a></li><li><a href="#grid">grid </a></li><li><a href="#introducci%C3%B3n-a-flexbox">Introducción a Flexbox </a><ol><li><a href="#display%3A-flex-e-inline-flex">display: flex e inline-flex </a></li><li><a href="#justify-content-y-align-items">justify-content y align-items </a></li><li><a href="#flex-direction">flex-direction </a></li><li><a href="#align-self">align-self </a></li></ol></li><li><a href="#static">static </a></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li><li><a href="#relative">relative </a></li><li><a href="#homework">Homework </a></li><li><a href="#fixed">fixed </a></li><li><a href="#absolute">absolute </a></li><li><a href="#top%2C-left%2C-right-y-bottom">top, left, right y bottom </a></li></ol>
+      </nav>
+            </div>
+          </div>
+
+          <div id='lesson'>
+            <div style="display:flex; justify-content: right">
+              <div id="readingTime">
+                    Tiempo de lectura 13 min
+              </div>
+            </div>
+            <div>
+              
+              <!-- <table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=09-CSS-Positioning">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table> -->
+<h1 id="css-intermedio" tabindex="-1">CSS Intermedio <a class="anchor-link" href="#css-intermedio"></a></h1>
+<p>En esta lección cubriremos:</p>
+<ul>
+<li>Introducción al posicionamiento.</li>
+<li>Propiedad “display”.</li>
+<li>Propiedad “position”.</li>
+<li>Usar “position” para posicionar elementos.</li>
+<li>Introducción a Flexbox.</li>
+<li>Recursos adicionales.</li>
+</ul>
+<iframe src="https://player.vimeo.com/video/425169846" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<h2 id="introducci%C3%B3n-al-posicionamiento" tabindex="-1">Introducción al posicionamiento <a class="anchor-link" href="#introducci%C3%B3n-al-posicionamiento"></a></h2>
+<p>Armar un layout y hacer que todo se vea limpio es lo que la mayoría de gente espera hacer cuando empiezan a aprender CSS. Posicionar elementos HTML en la página con CSS es posiblemente la habilidad más poderosa que tiene CSS, aunque también puede ser la más <strong>frustrante</strong>. En esta lección aprenderemos distintas formas de posicionar elementos en la página.</p>
+<h2 id="la-propiedad-display" tabindex="-1">La propiedad <em><strong>display</strong></em> <a class="anchor-link" href="#la-propiedad-display"></a></h2>
+<p>Esta propiedad es una de las más importante de posicionamiento en CSS. Podemos usarla para controlar cómo se muestra el contenido en relación a los elementos alrededor de este, y cómo se comportan en la pantalla.</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> &lt;valor de la propiedad><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<p>Hay dos tipos de elementos “display” ya incluidos en HTML; “block” e “inline”,</p>
+<h4 id="elementos-block" tabindex="-1">Elementos <em><strong>block</strong></em> <a class="anchor-link" href="#elementos-block"></a></h4>
+<p>Un elemento “block” siempre arrancará en una nueva línea, y siempre tomará el ancho máximo del contenedor en el cual se encuentre. ¿Recuerdas que en la lección anterior aprendimos que el elemento <code>&lt;p&gt;</code> siempre empieza en una nueva línea? Es porque es un elemento “block”, como también lo son los <code>div</code> y los <code>&lt;h1-6&gt;</code>.</p>
+<h4 id="elementos-inline" tabindex="-1">Elementos <em><strong>inline</strong></em> <a class="anchor-link" href="#elementos-inline"></a></h4>
+<p>Los elementos “inline” son opuestos a los “block”, dado que no comenzarán en una nueva linea y sólo tomarán el espacio suficiente que necesiten para mostrar la información dentro del mismo. Los elementos <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code> e <code>&lt;img&gt;</code> son inline.</p>
+<p>Podemos controlar cómo un elemento se comporta usando la propiedad “display”. Si queremos que un elemento “inline” actúe como uno “block”, le definimos:</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<p>Y vice-versa.</p>
+<h4 id="none" tabindex="-1"><em><strong>none</strong></em> <a class="anchor-link" href="#none"></a></h4>
+<p>Definir como valor “none” hará que el elemento desaparezca completamente. No debe ser confundido con la regla <code>visibility: hidden;</code> dado que esta hace que el elemento sea invisible pero no lo elimina de la página (el espacio continuará ocupado por <em>algo</em>). Si un elemento está definido como <code>display: none;</code> no habrá signos de él en la página.</p>
+<h4 id="flex" tabindex="-1"><em><strong>flex</strong></em> <a class="anchor-link" href="#flex"></a></h4>
+<p>Flex es una nueva herramienta que nos ofrece CSS3, la cual nos da la habilidad de controlar en qué parte de la página queremos que estén nuestros items. Hablaremos sobre ella más adelante en esta lección.</p>
+<h4 id="grid" tabindex="-1"><em><strong>grid</strong></em> <a class="anchor-link" href="#grid"></a></h4>
+<p>Esta es una característica de CSS3 que nos permitirá crear sistemas de grillas dentro de un elemento.</p>
+<h2 id="la-propiedad-position" tabindex="-1">La propiedad <em><strong>position</strong></em> <a class="anchor-link" href="#la-propiedad-position"></a></h2>
+<p>Esta propiedad especificará qué tipo de método de posicionamiento usará un elemento HTML. Hay 5 métodos diferentes disponibles (aquí veremos 4 de ellos).</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">position</span><span class="token punctuation">:</span> &lt;valor de la propiedad><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<h4 id="static" tabindex="-1"><em><strong>static</strong></em> <a class="anchor-link" href="#static"></a></h4>
+<p>Este es el posicionamiento por defecto de un elemento, definir un elemento como “estático” no afectará al comportamiento del mismo de ninguna manera.</p>
+<h4 id="relative" tabindex="-1"><em><strong>relative</strong></em> <a class="anchor-link" href="#relative"></a></h4>
+<p>Usar este valor mantendrá el elemento posicionado como si fuese estático, pero nos permitirá usar otros métodos de posicionamiento de elementos que veremos enseguida.</p>
+<h4 id="fixed" tabindex="-1"><em><strong>fixed</strong></em> <a class="anchor-link" href="#fixed"></a></h4>
+<p>Definir un elemento como “fijo” hará que éste quede fijo en un lugar de la pantalla, sin importar cuánto navegemos, “scroleemos” o movamos la pantalla, el elemento se quedará en ese lugar. Los casos de uso pueden ser un header o la barra de navegació de un sitio web.</p>
+<h4 id="absolute" tabindex="-1"><em><strong>absolute</strong></em> <a class="anchor-link" href="#absolute"></a></h4>
+<p>“absolute” es muy parecido a “fixed”, excepto que el elemento quedará anclado de forma relativa al elemento <em>parent</em> (siempre que el elemento padre tenga alguna posición definida, excepto “static”).</p>
+<h2 id="usar-propiedades-de-posici%C3%B3n-para-posicionar-elementos" tabindex="-1">Usar propiedades de posición para posicionar elementos <a class="anchor-link" href="#usar-propiedades-de-posici%C3%B3n-para-posicionar-elementos"></a></h2>
+<p>Ahora que hemos definido nuestros métodos de posicionamiento al estilo que queremos usar, podemos arrancar a posicionar nuestro elemento. (Nota: esto funciona para cada método de posición que no sea “static”, dado que no afecta al elemento de ninguna forma).</p>
+<h4 id="top%2C-left%2C-right-y-bottom" tabindex="-1"><em><strong>top</strong></em>, <em><strong>left</strong></em>, <em><strong>right</strong></em> y <em><strong>bottom</strong></em> <a class="anchor-link" href="#top%2C-left%2C-right-y-bottom"></a></h4>
+<p>Después de haber definido nuestro método de posicionamiento, podemos usar las propiedades “top”, “left”, “right” y “bottom” para acomodar nuestro elemento. El valor que le des a cada uno determinará qué tan lejos del borde quedará nuestro elemento. Por ejemplo, si queremos que nuestro elemento esté en la esquina superior izquierda (con una posición fija), podemos usar lo siguiente:</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><br>    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<p>Si lo quisiésemos 10 píxeles debajo del límite superior y 10 píxeles del borde derecho:</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><br>    <span class="token property">top</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><br>    <span class="token property">right</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<h2 id="introducci%C3%B3n-a-flexbox" tabindex="-1">Introducción a Flexbox <a class="anchor-link" href="#introducci%C3%B3n-a-flexbox"></a></h2>
+<p>Introducido en CSS3, Flexbos es una nueva e interesante característica. La misma nos permite posicionar nuestros elementos en relación a su <em>parent</em> y entre ellos. Ya no necesitamos aplicar “hacks” para cosas como centrar elementos. Esto nos permite que el diseño “mobile-friendly” sea excelente y nos hace dedicar menos tiempo tratando de posicionar elementos como corresponde. Flexbox se puede complicar muy rápido, pero veremos los aspectos básicos a continuación.</p>
+<h3 id="display%3A-flex-e-inline-flex" tabindex="-1"><em><strong>display: flex</strong></em> e <em><strong>inline-flex</strong></em> <a class="anchor-link" href="#display%3A-flex-e-inline-flex"></a></h3>
+<p>Como mencionamos anteriormente en la sección de la propiedad “display”, uno de los valores puede ser “flex”, esto hace que cualquier contenedor sea un “flex block”. También podemos usar “inline-flex” para hacer que el elemento sea “flex” e “inline”, aunque para la mayor parte del tiempo, usaremos simplemente “flex”.</p>
+<h3 id="justify-content-y-align-items" tabindex="-1"><em><strong>justify-content</strong></em> y <em><strong>align-items</strong></em> <a class="anchor-link" href="#justify-content-y-align-items"></a></h3>
+<p>Ahora que nuestro contenedor (elemento) es “flex”, podemos imaginarlo como una grilla con columnas que van de izquierdo a derecha y filas que van de arriba a abajo. Podemos usar las propiedades “justify-content” y “align-items” para decirle al contenedor dónde queremos que estén los elementos en la grilla. En principio, “justify-content” aplicará al movimiento de izquierda a derecha (fila), y “align-items” lo hará de arriba a abajo (columna). Tenemos unas reglas que debemos aplicar a cada una de estas reglas:</p>
+<ul>
+<li><code>center</code>: centrará el elemento (o grupo de elementos) a lo largo de un eje en el que aplica esta regla.</li>
+<li><code>flex-start</code>: Este es el valor por defecto de cada “flex box”, mostrará todos los elementos en un grupo al comienzo de una fila o columna.</li>
+<li><code>flex-end</code>: es lo opuesto a <code>flex-start</code>, mostrará los elementos al final de un grupo al comienzo de una fila o columna.</li>
+<li><code>space-between</code>: Esta regla espaciará uniformemente el elemento o los elementos a lo largo de la fila o columna. El primer elemento estará como <code>flex-start</code> y el último como <code>flex-end</code>.</li>
+<li><code>space-around</code>: Similar a <code>space-between</code>, pero  aplicará márgenes igualitarios entre cada elemento, por lo que ningún elemento estara directamente sobre el borde del contenedor.</li>
+</ul>
+<p>Ejemplo: si quisiésemos nuestros elementos centrados en el medio exacto de un “flex box”, usaríamos lo siguiente:</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span><br>    <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<h3 id="flex-direction" tabindex="-1"><em><strong>flex-direction</strong></em> <a class="anchor-link" href="#flex-direction"></a></h3>
+<p>Esta propiedad puede cambiar cómo el navegador interpreta <code>justify-content</code> (JC) y <code>align-items</code> (AI). El valor por defecto es “row” (fila), y esto funciona en la mayoría de los casos, pero algunas veces queremos cambiar cómo funciona la dirección del contenido.</p>
+<ul>
+<li>
+<p><code>row</code>: es la dirección por defecto. JC aplica de izquierda a derecha, AI aplica de arriba a abajo.</p>
+</li>
+<li>
+<p><code>column</code>: Esto invertirá qué propiedad controla qué dirección. JC aplicará de arriba a abajo y AI de izquierda a derecha.</p>
+</li>
+<li>
+<p><code>row-reverse</code>: Sólo invierte la dirección de JC de derecha a izquierda, no afecta a AI.</p>
+</li>
+<li>
+<p><code>column-reverse</code>: Sólo invierte la dirección de AI de abajo a arriba, no afecta a JC.</p>
+</li>
+</ul>
+<h3 id="align-self" tabindex="-1"><em><strong>align-self</strong></em> <a class="anchor-link" href="#align-self"></a></h3>
+<p>Por último, cubriremos una propiedad más avanzada llamada “align-self”. La misma será aplicada a un elemento dentro del “flex box” del cual queremos separar el control de <code>align-items</code>. Si le damos la propiedad <code>align-self</code>, podemos colocarla en cualquier lugar a lo largo del eje de elementos de alineación que queramos. (Nota: NO existe <code>justify-self</code>, esta es la razón principal por la que los desarrolladores cambiarán la dirección de “flex”).</p>
+<h2 id="recursos-adicionales" tabindex="-1">Recursos adicionales <a class="anchor-link" href="#recursos-adicionales"></a></h2>
+<ul>
+<li><a href="http://flexboxfroggy.com/">Flexbox Froggy</a> (un excelente tutorial sobre flexbox)</li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceptos_Basicos_de_Flexbox">Conceptos básicos de FlexBox</a></li>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS tricks: A Complete Guide to Flexbox</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">MDN: Using CSS Flexible Boxes</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">MDN: CSS display propery</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">MDN: CSS position property</a></li>
+</ul>
+<h2 id="homework" tabindex="-1">Homework <a class="anchor-link" href="#homework"></a></h2>
+<p>Abre una nueva ventana en el navegador y completa “homework.html”</p>
+
+            </div>
+          </div>
+        </div>
+
+          <div class="row" id="feedbackBox">
+                Qué te pareció la clase?
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=CSS' target="_blank">
+              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+            </a>
+              Dejanos tu feedback!
+          </div>
+
+      </div>
+
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-1" style="background-color: black">
+          <h6>Hecho con 💛 por alumnos de Henry</h6>
+        </div>
+      </footer>
+
+      
+  <!-- up button -->
+  <div>
+    <button
+      id="upBtn"
+      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:32px; bottom:40px; color:white; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
+    ><i class="arrow up"></i></button>
+  </div>
+  
+  <style>
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  </style>
+
+  <script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) {
+      upBtn.style.opacity = 1;
+      upBtn.style.pointerEvents = 'auto';     
+    }
+    else {
+      upBtn.style.opacity = 0;
+      upBtn.style.pointerEvents = 'none';
+    }
+  })
+
+  upBtn.addEventListener('click', () => {
+    let start = document.querySelector('.reader-bar-start')
+    start.scrollIntoView({behavior: "smooth"})
+  })
+  </script>
+
+  <!-- reader bar -->
+  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;">
+    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;"></div>
+  </div>
+
+  <script>
+    let winH = window.innerHeight;
+    const content = document.querySelector('.reader-bar-start');
+
+    let contentH = content.offsetHeight;
+    let contentS = contentH - winH;
+    let readerBar = document.getElementById('readerBar');
+    window.addEventListener('load', () => {
+      document.addEventListener ('scroll', updateBar);
+    })
+    window.addEventListener('resize', redefine)
+
+    function redefine() {
+      winH = window.innerHeight;
+      contentH = content.offsetHeight;
+      contentS = contentH - winH;
+      updateBar();
+    }
+
+    function updateBar() {
+      const pagePos = window.scrollY; 
+      const updatedBar = pagePos * 100 / contentS;
+      readerBar.style.width = updatedBar + "%";
+    }
+  </script>
+  
+    </body>
+  </html>

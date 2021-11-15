@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/_src/styles/lesson.css">
+    <link rel="stylesheet" href="https://assets.soyhenry.com/fonts/Avenir/Avenir.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>HTML | Herny Prep Course </title>
+  </head>
+
+  <body>
+    <div class="reader-bar-start">
+      <navbar class="navbar fixed-top navbar-light bg-black">
+        <div class="container-fluid">
+          <img src='/_src/assets/logo-white.png' alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          <span>HTML | Prep Course</span>
+        </div>
+      </navbar>
+
+      <div id='main' class="container-fluid">
+        <div id='headerTags' class="row">
+          
+          <ul class="nav nav-tabs justify-content-center">
+      
+      <li class="nav-item">
+        <a href="/" class="nav-link" role="menuitem">Intro</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/editorTexto/" class="nav-link" role="menuitem">Editor de Texto</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
+      </li>
+<li class="nav-item">
+        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
+      </li>
+<li class="nav-item">
+        <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
+      </li>
+<li class="nav-item">
+        <a href="/03-JS-II/README/" class="nav-link" role="menuitem">JS II</a>
+      </li>
+<li class="nav-item">
+        <a href="/04-JS-III/README/" class="nav-link" role="menuitem">JS III</a>
+      </li>
+<li class="nav-item">
+        <a href="/05-JS-IV/README/" class="nav-link" role="menuitem">JS IV</a>
+      </li>
+<li class="nav-item">
+        <a href="/06-JS-V/README/" class="nav-link" role="menuitem">JS V</a>
+      </li>
+<li class="nav-item">
+        <a href="/07-JS-VI/README/" class="nav-link" role="menuitem">JS VI</a>
+      </li>
+<li class="nav-item">
+        <span class="nav-link active" tabindex="-1" aria-current="true">HTML</span>
+      </li>
+<li class="nav-item">
+        <a href="/09-CSS-Positioning/README/" class="nav-link" role="menuitem">CSS</a>
+      </li>
+    </ul>
+        </div>
+
+        <div class="row">
+
+          <div id='sidebar'>
+            <div id="tocTitle" class="row">
+            Contenido de la clase
+            </div>
+            <div id="tocBox" class="row">
+              
+              <nav class="toc" >
+        <ol><li><a href="#introducci%C3%B3n-html">Introducción HTML </a></li><li><a href="#elementos-b%C3%A1sicos-html">Elementos básicos HTML </a><ol><li><a href="#atributos">Atributos </a></li><li><a href="#tags">Tags </a><ol><li><a href="#%3Chtml%3E">&lt;html&gt; </a></li><li><a href="#%3Chead%3E">&lt;head&gt; </a></li><li><a href="#%3Ctitle%3E">&lt;title&gt; </a></li><li><a href="#%3Cbody%3E">&lt;body&gt; </a></li><li><a href="#%3Cp%3E">&lt;p&gt; </a></li><li><a href="#%3Cspan%3E">&lt;span&gt; </a></li><li><a href="#%3Cdiv%3E">&lt;div&gt; </a></li><li><a href="#%3Ca%3E">&lt;a&gt; </a></li><li><a href="#%3Ch1%3E-%E2%80%A6-%3Ch6%3E">&lt;h1&gt; … &lt;h6&gt; </a></li><li><a href="#%3Cimg%3E">&lt;img&gt; </a></li><li><a href="#%3Cul%3E">&lt;ul&gt; </a></li><li><a href="#%3Cli%3E">&lt;li&gt; </a></li></ol></li></ol></li><li><a href="#css">CSS </a></li><li><a href="#reglas-css">Reglas CSS </a></li><li><a href="#formas-de-dar-estilo">Formas de dar estilo </a><ol><li><a href="#atributo-style">Atributo style </a></li><li><a href="#%3Cstyle%2F%3E">&lt;style/&gt; </a></li><li><a href="#%3Clink%2F%3E">&lt;link/&gt; </a></li><li><a href="#selectores">Selectores </a><ol><li><a href="#selectores-b%C3%A1sicos">Selectores básicos </a></li></ol></li><li><a href="#anatom%C3%ADa-de-las-reglas-de-estilo">Anatomía de las reglas de estilo </a></li></ol></li><li><a href="#aplicando-reglas">Aplicando reglas </a></li><li><a href="#introducci%C3%B3n-al-modelo-de-caja-(box-model)">Introducción al modelo de caja (Box Model) </a><ol><li><a href="#height-(alto)-y-width-(ancho)">height (alto) y width (ancho) </a></li><li><a href="#margin">margin </a></li><li><a href="#border">border </a></li><li><a href="#padding">padding </a></li><li><a href="#c%C3%A1lculo-del-modelo-de-caja">Cálculo del modelo de caja </a></li></ol></li><li><a href="#otras-propiedades-css">Otras propiedades CSS </a><ol><li><a href="#background">background </a></li><li><a href="#color">color </a></li><li><a href="#font-size">font-size </a></li></ol></li><li><a href="#hojas-de-estilo-externas-y-el-elemento-%5C">Hojas de estilo externas y el elemento \  </a></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li></ol>
+      </nav>
+            </div>
+          </div>
+
+          <div id='lesson'>
+            <div style="display:flex; justify-content: right">
+              <div id="readingTime">
+                    Tiempo de lectura 29 min
+              </div>
+            </div>
+            <div>
+              
+              <!-- <table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=08-HTML">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table> -->
+<h1 id="fundamentos-html%2Fcss" tabindex="-1">Fundamentos HTML/CSS <a class="anchor-link" href="#fundamentos-html%2Fcss"></a></h1>
+<p>En esta clase veremos:</p>
+<ul>
+<li>Introducción a HTML.</li>
+<li>Elementos/tags HTML básicos.</li>
+<li>Introducción a CSS.</li>
+<li>Selectores CSS y el tag &lt;style&gt; .</li>
+<li>Estilos Básicos.</li>
+<li>Modelo de Caja.</li>
+<li>Hojas de estilos externas y el tag &lt;link&gt;.</li>
+</ul>
+<h2 id="introducci%C3%B3n-html" tabindex="-1">Introducción HTML <a class="anchor-link" href="#introducci%C3%B3n-html"></a></h2>
+<p>HTML es el bloque básico con el que está construido internet. Todas las páginas web utilizan HTML. <em>No es un lenguaje de programación</em> propiamente dicho, sino, es un lenguaje de <a href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado"><strong>Markup</strong></a>: son lenguajes que incorporan al texto marcas o etiquetas que luego son interpretadas para darle información extra sobre la estructura del texto. En el caso de HTML, este será interpretado por los browsers, que tambien presentaran el código en forma gráfica.</p>
+<p>HTML es la abreviatura de <strong>Hyper Text Markup Language</strong>:</p>
+<ul>
+<li>Hyper Text: “Hyper Texto” quiere decir <a href="https://es.wikipedia.org/wiki/Hipertexto">texto con links</a></li>
+<li>Markup Language: Los “Lenguajes de Marcado” son lenguajes de programación basados en etiquetas que uno agrega a un texto para darle estructura e información adicional. A diferencia de los “Lenguajes de Scripting” que se usan para crear programas informáticos, los lenguajes de marcado son sólo reglas para ordenar un documento.</li>
+</ul>
+<h2 id="elementos-b%C3%A1sicos-html" tabindex="-1">Elementos básicos HTML <a class="anchor-link" href="#elementos-b%C3%A1sicos-html"></a></h2>
+<p>HTML define una serie de elementos (o etiquetas, o tags) que serviran para delimitar texto. Cada tag está encerrado en <code>&lt; &gt;</code> y tiene un nombre. Los tags se abren y se cierran, los tags de cerrado incluyen con un “/” en el principio del tag que cierra. Por ejemplo:</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>element</span><span class="token punctuation">></span></span><br>    ...<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>element</span><span class="token punctuation">></span></span></code></pre>
+<p><img src="/_src/assets/08-HTML/html.jpg" alt="alt text"></p>
+<p>Algunos tags html, por su naturaleza, no necesitan tener nada <em>adentro</em>. Por lo tanto podemos abreviar su escritura y en vez de abrir y cerrar el tag, simplemente agregamos un “/” antes del bracket final.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://imagen.com/img.jpg<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<h3 id="atributos" tabindex="-1">Atributos <a class="anchor-link" href="#atributos"></a></h3>
+<p>En su mayoría de los atributos de un elemento son pares <em>nombre-valor</em>, separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar rodeado por comillas dobles o simples. Los atributos de los tags nos sirven para cambiar su comportamiento o <em>configurarlos</em>.</p>
+<p>Por ejemplo, el tag <code>&lt;img&gt;</code> sirve para mostrar una imagen. Este tag recibe el atributo <code>src</code> que indica la <a href="https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme">URL</a> de donde está la imagen que queremos mostrar.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://imagen.com/img.jpg<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<h3 id="tags" tabindex="-1">Tags <a class="anchor-link" href="#tags"></a></h3>
+<h4 id="%3Chtml%3E" tabindex="-1"><em><strong>&lt;html&gt;</strong></em> <a class="anchor-link" href="#%3Chtml%3E"></a></h4>
+<p>El tag <code>&lt;html&gt;</code> va a contener a todos los demás tags dentro suyo. Este tag básicamente sirve para avisarle al browser que el contenido debe ser interpretado como <code>html</code>.</p>
+<h4 id="%3Chead%3E" tabindex="-1"><em><strong>&lt;head&gt;</strong></em> <a class="anchor-link" href="#%3Chead%3E"></a></h4>
+<p>Este tag sirve para contener tags que contengan información sobre el documento, pero es información que no queremos que se renderee. Comunmente contiene el <em>titulo</em> de la página y <em>links</em> a recursos externos que pueda usar la página (javascript o css).</p>
+<h4 id="%3Ctitle%3E" tabindex="-1"><em><strong>&lt;title&gt;</strong></em> <a class="anchor-link" href="#%3Ctitle%3E"></a></h4>
+<p>Es el título de la página, se mostrará en el tab del browser o en la parte superior (pero no en la página).</p>
+<h4 id="%3Cbody%3E" tabindex="-1"><em><strong>&lt;body&gt;</strong></em> <a class="anchor-link" href="#%3Cbody%3E"></a></h4>
+<p>En este tag estára encerrado todo lo que querramos que se vea en la pantalla.</p>
+<p>Entonces, hasta ahora, un documento HTML se ve así:</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Es el título de nuestra página<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<p>Como ven, para mayor fácilidad en la lectura y la estructuración del documento, el documento HTML se escribe <a href="https://es.wikipedia.org/wiki/Indentaci%C3%B3n">indentando (o usando sangría)</a>.</p>
+<p>(Todos los tags que presentaremos más abajo van siempre adentro de un tag <code>&lt;body&gt;</code>)</p>
+<h4 id="%3Cp%3E" tabindex="-1"><em><strong>&lt;p&gt;</strong></em> <a class="anchor-link" href="#%3Cp%3E"></a></h4>
+<p>Es el tag para los párrafos. Mostrará el texto contenido dentro en una nueva línea.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Soy un párrafo<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+<h4 id="%3Cspan%3E" tabindex="-1"><em><strong>&lt;span&gt;</strong></em> <a class="anchor-link" href="#%3Cspan%3E"></a></h4>
+<p>El elemento span es un contenedor de texto genérico. No inserta una nueva linea, como lo hace el elemento p. Sirve básicamente para darle estilo al texto.</p>
+<h4 id="%3Cdiv%3E" tabindex="-1"><em><strong>&lt;div&gt;</strong></em> <a class="anchor-link" href="#%3Cdiv%3E"></a></h4>
+<p>El elemento div es un <em>contenedor</em> genérico. Es usado principalmente para dar estilo, imaginen que es una caja (cuyo tamaño y color podes modificar <em>a piacere</em>), y que dentro podés poner otras cajas iguales.</p>
+<h4 id="%3Ca%3E" tabindex="-1"><em><strong>&lt;a&gt;</strong></em> <a class="anchor-link" href="#%3Ca%3E"></a></h4>
+<p>El tag a (del inglés <em>anchor</em>), nos permite crear <strong>links</strong> a otros documentos y páginas. Este tag recibe el <em>atributo</em> <code>href</code> que indica a dónde apunta el link.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.soyhenry.com<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Esto es un link!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<h4 id="%3Ch1%3E-%E2%80%A6-%3Ch6%3E" tabindex="-1"><em><strong>&lt;h1&gt; … &lt;h6&gt;</strong></em> <a class="anchor-link" href="#%3Ch1%3E-%E2%80%A6-%3Ch6%3E"></a></h4>
+<p>Son los tags de encabezado o títulos, están pensandos del 1 al 6, para indicar la importancia del contenido y su jerarquía.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>El título más importante!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>título medianamente importante.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">></span></span>El título menos importante.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">></span></span></code></pre>
+<h4 id="%3Cimg%3E" tabindex="-1"><em><strong>&lt;img&gt;</strong></em> <a class="anchor-link" href="#%3Cimg%3E"></a></h4>
+<p>Este tag nos permite mostrar imágenes en la pantalla. Necesita el atributo <code>src</code> que indica la <em>URL</em> de donde sacar la imagen a mostrar.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.soyhenry.com/imageurl.jpg<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<h4 id="%3Cul%3E" tabindex="-1"><em><strong>&lt;ul&gt;</strong></em> <a class="anchor-link" href="#%3Cul%3E"></a></h4>
+<p>Este tag representa una lista desordenada (del inglés “unordered list”). Este tag está diseñado para contener otros tags de tipo item. También existe el tag <code>&lt;ol&gt;</code> que viene de “ordered list”.</p>
+<h4 id="%3Cli%3E" tabindex="-1"><em><strong>&lt;li&gt;</strong></em> <a class="anchor-link" href="#%3Cli%3E"></a></h4>
+<p>Son los tags que contienen los items de la lista (‘list item’).</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>Elemento uno<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Podemos anidar cualquier tipo de tag adentro<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>tercer elemento<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre>
+<h2 id="css" tabindex="-1">CSS <a class="anchor-link" href="#css"></a></h2>
+<p>Como vimos, HTML nos sirve para dar estructura al contenido. En las primeras épocas de internet las páginas eran así. De hecho, todavía esta online la <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">primera página web</a>. Como ven es bastante aburrida.<br>
+Luego se introdujo el concepto de CSS (Cascading Style Sheets); una forma de poder agregar color y estilos en nuestras páginas!</p>
+<h2 id="reglas-css" tabindex="-1">Reglas CSS <a class="anchor-link" href="#reglas-css"></a></h2>
+<p>Básicamente una regla CSS está compuesta por un atributo o propiedad y un valor. Seǵun el atributo que usemos y el valor que le pongamos a ese atributo vamos a obtener resultados visuales distintos en nuestro html.</p>
+<p>Por ejemplo:</p>
+<pre class="language-css"><code class="hljs language-css"><span class="token selector">html</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token comment">/* "Color" es la propiedad y "red" el valor */</span><br>  <span class="token property">font-size</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span> <span class="token comment">/* "font-size" es la propiedad y "12px" el valor */</span><br><span class="token punctuation">}</span></code></pre>
+<p>En este ejemplo, vemos dos atributos: <code>color</code> y <code>font-size</code>, el primero permite modificar el color del texto, en este caso está seteado a <code>red</code>; el segundo indica el tamaño del texto, en este caso <code>12px</code>.<br>
+Es importante notar que distintos atributos pueden recibir distintos valores, generalmente los que indican un color reciben un color (<code>red, blue</code>, etc…), los que son medidas reciben una medida (<code>12px, 15px</code>, etc…), y hay otras propiedades que reciben valor especificos, por ejemplo: la propiedad <code>border</code> (que dibuja un borde alrededor de un elemento) recibe tres valores: el color del borde, el ancho de la linea y el tipo de linea (punteada, continua, etc…).</p>
+<blockquote>
+<p>Hay muchos atributos CSS disponibles, más de los que podemos recordar. Así que no se asusten, con el tiempo van a empezar a memorizar estas propiedades. Pueden ver una lista completa <a href="https://cssreference.io/">acá</a>.</p>
+</blockquote>
+<h2 id="formas-de-dar-estilo" tabindex="-1">Formas de dar estilo <a class="anchor-link" href="#formas-de-dar-estilo"></a></h2>
+<p>Antes de empezar a dar estilos, necesitamos una forma de decirle al browser qué vamos a darles reglas de estilo.<br>
+Hay varias formas de lograr esto (más adelante veremos en detalle como funcionan cada una):</p>
+<ul>
+<li>usando el atributo style: esta es la forma primitiva más simple, básicamente le damos reglas a cada tag html.</li>
+<li>usando el tag <code>&lt;style/&gt;</code>: Se utiliza este tag en el <code>&lt;head&gt;</code> del documento HTML, con esto logramos agrupar todas las reglas que luego queremos que se apliquen a los elementos HTML.</li>
+<li>Usar el tag <code>&lt;link/&gt;</code>: Este método nos permite definir las reglas CSS en un documento separado e <em>importarlo</em> a nuestra página (la ventaja que tiene es que podemos importar el mismo CSS a varias páginas).</li>
+</ul>
+<h3 id="atributo-style" tabindex="-1">Atributo style <a class="anchor-link" href="#atributo-style"></a></h3>
+<p>Todos los <em>tags</em> HTML pueden recibir el atributo <code>style</code>. Este atributo indica las reglas CSS (que veremos más abajo), que se aplicaran <strong>sólo</strong> al elemento que las tiene.</p>
+<pre class="language-html"><code class="hljs language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">color</span><span class="token punctuation">:</span>blue<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span>Esto es un título Azul<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span></code></pre>
+<p>Pros:</p>
+<ul>
+<li>Fácil de escribir y leer.</li>
+<li>Cómo se aplican a un sólo elemento no hay forma de confundirse y que se aplique la regla a un elemento no deseado.</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>La regla aplica a un sólo elemento, si quisieramos que varios elementos tengan la misma regla, deberíamos copypastear!</li>
+</ul>
+<h3 id="%3Cstyle%2F%3E" tabindex="-1"><em><strong>&lt;style/&gt;</strong></em> <a class="anchor-link" href="#%3Cstyle%2F%3E"></a></h3>
+<p>El tag <code>style</code>, que se escribe en el <head> del documento, nos permite escribir reglas que se aplicaran a uno o varios elementos html. Es importante notar que con esta forma, podremos darle estilo a muchos elementos de una sóla vez, pero sólo a elementos que estén en el mismo documento.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"><br>        <span class="token comment">/*&lt;!-- acá van las reglas -->*/</span><br>      </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<p>Pros:</p>
+<ul>
+<li>Lugar central donde podemos escribir las reglas CSS del documento</li>
+<li>Podemos compartir reglas entre varios elementos iguales</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>No podemos compartir las reglas con <em>otro</em> documento HTML.</li>
+<li>Hay que prestar atención a las reglas, y a qué elementos se aplican.</li>
+</ul>
+<h3 id="%3Clink%2F%3E" tabindex="-1"><em><strong>&lt;link/&gt;</strong></em> <a class="anchor-link" href="#%3Clink%2F%3E"></a></h3>
+<p>Con el tag <code>&lt;link&gt;</code> dentro del <code>&lt;head&gt;</code> del documento, vamos a poder <em>importar</em> un archivo css que contenga varias reglas CSS. Funciona similar al tag <code>&lt;style/&gt;</code> anterior. Pero ahora tenemos la ventaja que podemos <em>compartir</em> el mismo archivo css con varios documentos HTML.</p>
+<pre class="language-html"><code class="hljs language-html"> <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>styles.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<p>Pros:</p>
+<ul>
+<li>Lugar central donde podemos escribir las reglas CSS del documento</li>
+<li>Podemos compartir reglas entre varios elementos iguales</li>
+<li>Podemos compartir reglas entre varios documentos HTML</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Hay que prestar atención a las reglas, y a qué elementos se aplican.</li>
+</ul>
+<h3 id="selectores" tabindex="-1">Selectores <a class="anchor-link" href="#selectores"></a></h3>
+<p>Para poder aplicar reglas de estilo a los elementos html, necesitamos una forma de saber cómo seleccionar los elementos a los que deseamos aplicar las reglas, para esto sirven los <em>selectores CSS</em>.</p>
+<p><img src="/_src/assets/08-HTML/css-declaration-small.png" alt="alt text"></p>
+<p>Hay varios tipos de selectores, los más básicos son los de tipo, donde indicamos a qué clase de elemntos se van a aplicar las reglas, el ejemplo de arriba usa un selector de tipo. Está diciendo: <em>aplicarle a todos los elementos de tipo &lt;p/&gt; la regla de texto color rojo</em>.</p>
+<p>El selector de tipo se puede usar con cualquier tipo de tag: p, div, body, etc. Otra forma de usar selectors poniendole un <em>nombre</em> o <em>identificador</em> a cada elemento HTML. Para esto existe un <code>atributo</code> que pueden recibir todos los tags llamados: <code>id</code> y <code>class</code>.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>divId<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>divClass<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p><strong>Ids</strong>: son nombre que sólo pueden aparecer una sólo vez en el documento. Es super especifico y sirve para seleccionar UN solo elemento en particular.</p>
+<p><strong>Clases</strong>: podemos asignarle el nombre de una clase a un grupo de elementos html.</p>
+<h4 id="selectores-b%C3%A1sicos" tabindex="-1">Selectores básicos <a class="anchor-link" href="#selectores-b%C3%A1sicos"></a></h4>
+<ul>
+<li><strong>Selector de tipo</strong>: Selecciona todos los elementos que coinciden con el nombre del elemento especificado.<br>
+Sintaxis: eltname<br>
+Ejemplo: input se aplicará a cualquier elemento <code>&lt;input&gt;</code>.</li>
+<li><strong>Selector de clase</strong>:<br>
+Selecciona todos los elementos que tienen el atributo de class especificado.<br>
+Sintaxis: .classname<br>
+Ejemplo: .index seleccionará cualquier elemento que tenga la clase “index”.</li>
+<li><strong>Selector de ID</strong><br>
+Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento.<br>
+Sintaxis: #idname<br>
+Ejemplo: #toc se aplicará a cualquier elemento que tenga el ID “toc”.</li>
+<li><strong>Selector universal</strong><br>
+Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.<br>
+Sintaxis: <em>ns|</em> <em>|</em><br>
+Ejemplo: * se aplicará a todos los elementos del documento.</li>
+<li><strong>Selector de atributo</strong><br>
+Selecciona elementos basándose en el valor de un determinado atributo.<br>
+Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]<br>
+Ejemplo: [autoplay] seleccionará todos los elementos que tengan el atributo “autoplay” establecido (a cualquier valor).</li>
+</ul>
+<h3 id="anatom%C3%ADa-de-las-reglas-de-estilo" tabindex="-1">Anatomía de las reglas de estilo <a class="anchor-link" href="#anatom%C3%ADa-de-las-reglas-de-estilo"></a></h3>
+<p>Ahora que sabemos como <em>seleccionar</em> los elementos a los que queremos aplicar las reglas podemos escribir qué reglas queremos que se apliquen. Para el ejemplo vamos a usar la etiqueta <code>&lt;style\/&gt;</code>.</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css"><br>    <span class="token selector">body</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br><br>    <span class="token selector">.divClass</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br><br>    <span class="token selector">#divId</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><br>  </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
+<p>En el ejemplo de arriba vemos tres selectores. El primero es para el elemento <code>body</code>, el segundo para todos los elementos de la clase <code>divClass</code> y el tercero para el elemento que tenga el id: <code>divId</code>. Dentro de los <code>{}</code> vamos a escribir todas las reglas que queremos que se apliquen a esos elementos.</p>
+<h2 id="aplicando-reglas" tabindex="-1">Aplicando reglas <a class="anchor-link" href="#aplicando-reglas"></a></h2>
+<p>Ahora que tenemos los elementos seleccionados podemos empezar a agregar las reglas que habíamos visto antes.</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">propiedad</span><span class="token punctuation">:</span> valor<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<h2 id="introducci%C3%B3n-al-modelo-de-caja-(box-model)" tabindex="-1">Introducción al modelo de caja (Box Model) <a class="anchor-link" href="#introducci%C3%B3n-al-modelo-de-caja-(box-model)"></a></h2>
+<p>Para poder entender y luego manipular la forma en que los elementos HTML aparecen distribuidos en la página, tenemos que aprender cómo son representados estos en el browser.</p>
+<p><img src="/_src/assets/08-HTML/boxModel.png" alt="Image"></p>
+<p>En un documento html cada elemento es representado como una <em>caja rectangular</em> y en CSS cada una de estas cajas tiene 4 capas que podemos manipular. Yendo desde afuera hacia adentro, las capas son:</p>
+<ul>
+<li>
+<p><code>margin</code>: el espacio que separa al elemento de los otros elementos. Si los pensamos como cajas, es el espacio entre las cajas.</p>
+</li>
+<li>
+<p><code>border</code>: el “borde de la caja”. Podemos hacerlo visible con diferentes grosores, estilos y colores, como ya hicimos varias veces en ejercicios anteriores.</p>
+</li>
+<li>
+<p><code>padding</code>: el espacio entre el borde de la caja y su contenido. En la metáfora de la caja, podríamos por ejemplo tener una caja grande con algo chiquito adentro, osea que “habría mucho padding”.</p>
+</li>
+<li>
+<p><code>content</code>: el contenido de la caja. Por ejemplo el texto en un h1, otros tags anidados, etc, todo lo que esté contenido en el elemento.</p>
+</li>
+</ul>
+<h3 id="height-(alto)-y-width-(ancho)" tabindex="-1"><em><strong>height</strong></em> (alto) y <em><strong>width</strong></em> (ancho) <a class="anchor-link" href="#height-(alto)-y-width-(ancho)"></a></h3>
+<p>Podemos decirle al navegador exactamente qué tan <em>alto</em> y <em>ancho</em> queremos que sea nuestro elemento (contenido), esto se usa en <code>div</code>, <code>img</code> y otros elementos basados en la altura (para determinar el tamaño del texto, necesitaremos usar un propiedad de estilo diferente). Los valores de tamaño pueden estar en muchas medidas diferentes, pero el más común es el píxel “px”.</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span><br>    <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<h3 id="margin" tabindex="-1"><em><strong>margin</strong></em> <a class="anchor-link" href="#margin"></a></h3>
+<p>El margen es el área transparente alrededor del elemento que deseas que no choque con nada. Es la capa más externa en el Modelo de caja.</p>
+<h3 id="border" tabindex="-1"><em><strong>border</strong></em> <a class="anchor-link" href="#border"></a></h3>
+<p>Borde establecerá un <em>borde</em> alrededor de su elemento, puedes determinar el tamaño, color y estilo del borde. Puede encontrar una lista de estilos de borde aquí: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">https://developer.mozilla.org/en-US/docs/Web/CSS/border</a>. El borde está fuera del padding, pero dentro del margen.</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">div</span> <span class="token punctuation">{</span><br>    <span class="token property">border</span><span class="token punctuation">:</span> 1px solid black<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<h3 id="padding" tabindex="-1"><em><strong>padding</strong></em> <a class="anchor-link" href="#padding"></a></h3>
+<p>El padding es el area transparente entre el borde y el contenido, es similar al margen, pero para adentro</p>
+<h3 id="c%C3%A1lculo-del-modelo-de-caja" tabindex="-1">Cálculo del modelo de caja <a class="anchor-link" href="#c%C3%A1lculo-del-modelo-de-caja"></a></h3>
+<p>Cuando establecemos el <em>alto</em> y el <em>ancho</em> de un elemento a traves de la regla css <em>height</em> y <em>width</em>, sólo estamos configurando el contenido. Para calcular la altura y el ancho reales, tenemos que tener en cuenta el padding, el borde y el margen.</p>
+<ul>
+<li>El padding es un área transparente alrededor del contenido.</li>
+<li>El borde se envolverá alrededor del relleno</li>
+<li>El margen es el área transparente más externa que envuelve toda la caja.</li>
+</ul>
+<p>Por ejemplo. Si establecemos la altura del contenido en 20 px y el ancho en 20 px, el relleno en 5 px, el borde en 1 px y el margen en 10 px.</p>
+<p>Altura real = 25px (contenido) + 2 * 5px (relleno, cada lado) + 2 * 1 (borde de cada lado) + 2 * 10 (margen, cada lado) = 57px</p>
+<p>Ancho real = 25px (contenido) + 2 * 5px (relleno, cada lado) + 2 * 1 (borde de cada lado) + 2 * 10 (margen, cada lado) = 57px</p>
+<p>Saber esto nos ayudará a dimensionar y posicionar nuestros elementos correctamente.</p>
+<h2 id="otras-propiedades-css" tabindex="-1">Otras propiedades CSS <a class="anchor-link" href="#otras-propiedades-css"></a></h2>
+<h3 id="background" tabindex="-1"><em><strong>background</strong></em> <a class="anchor-link" href="#background"></a></h3>
+<p>El background se puede establecer en una variedad de reglas, la más común sería establecer el fondo en un color o una imagen. Ambos se muestran a continuación.</p>
+<pre class="language-css"><code class="hljs language-css">  <span class="token selector">.divClass</span> <span class="token punctuation">{</span><br>    <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br>  <span class="token selector">#divId</span> <span class="token punctuation">{</span><br>    <span class="token property">background</span><span class="token punctuation">:</span> url <span class="token punctuation">(</span><span class="token string">'http://imageurl.com/image.jpg'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span></code></pre>
+<h3 id="color" tabindex="-1"><em><strong>color</strong></em> <a class="anchor-link" href="#color"></a></h3>
+<p>El color se usa sólo para texto. Establecerá el color de tu texto</p>
+<h3 id="font-size" tabindex="-1"><em><strong>font-size</strong></em> <a class="anchor-link" href="#font-size"></a></h3>
+<p>No podemos usar ancho o alto para el texto, pero podemos determinar el tamaño de la fuente utilizada. Puede usar cualquier unidad de tamaño aquí que usaría con una fuente en un procesador de textos (px, em, in, etc.). El más popular es px.</p>
+<h2 id="hojas-de-estilo-externas-y-el-elemento-%5C" tabindex="-1">Hojas de estilo externas y el elemento \ <link> <a class="anchor-link" href="#hojas-de-estilo-externas-y-el-elemento-%5C"></a></h2>
+<p>Hemos explicado cómo usar el elemento html \ <code>&lt;style&gt;</code>. Esto está bien si tiene una página web muy pequeña y un estilo mínimo, pero la mayoría de las páginas comenzarían a sentirse abarrotadas muy rápidamente si incluimos todo nuestro CSS en el HTML. Afortunadamente, tenemos una solución para eso, hojas de estilo externas y el elemento \ <code>&lt;link&gt;</code>.</p>
+<p>Una hoja de estilo externa es simplemente otro archivo con el tipo de archivo .css. Convencionalmente, este archivo se llama algo así como “style.css”. Podemos tomar todas las reglas de estilo que escribimos entre las etiquetas \ <code>&lt;style&gt;</code> y transferirlas directamente al archivo css. No necesitamos incluir nada más, solo las reglas de estilo.</p>
+<p>Una vez que tengamos una hoja de estilo externa creada, necesitaremos asegurarnos de que el navegador lea ese archivo y aplique las reglas a nuestra página. Le decimos al navegador que busque ese archivo utilizando el elemento \ <code>&lt;link&gt;</code>. Podemos eliminar las etiquetas \ <code>&lt;style&gt;</code> y en su lugar agregar el elemento \ <code>&lt;link&gt;</code>. Dentro del elemento de enlace, necesitaremos proporcionar la ubicación y el tipo de archivo que estamos vinculando. Utilizaremos dos banderas, la bandera “rel” y la bandera “href”.</p>
+<p>La bandera rel solo le dirá al navegador qué tipo de archivo es y cómo procesarlo. En nuestro caso lo configuraremos como “hoja de estilo”</p>
+<p>La bandera href le dirá al navegador dónde encontrar el archivo. Si el archivo está en la misma carpeta que nuestro archivo html, podemos configurarlo en: “./styles.css” (esta ruta será relativa)</p>
+<pre class="language-html"><code class="hljs language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>./ styles.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span></code></pre>
+<p>Ahora que tenemos nuestra hoja de estilo externa vinculada a nuestro archivo HTML, deberíamos ver las reglas de estilo que establecemos reflejadas en nuestra página.</p>
+<h2 id="recursos-adicionales" tabindex="-1">Recursos adicionales <a class="anchor-link" href="#recursos-adicionales"></a></h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works">MDN official CSS documentation</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN official HTML documentation</a></li>
+<li><a href="https://www.codecademy.com/learn/learn-html">Codecademy: Learn HTML</a></li>
+<li><a href="https://www.codecademy.com/learn/learn-css">Codecademy: Learn CSS</a></li>
+<li><a href="https://www.w3schools.com/css/css_boxmodel.asp">w3schools: The Box Model</a></li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+
+          <div class="row" id="feedbackBox">
+                Qué te pareció la clase?
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=HTML' target="_blank">
+              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+            </a>
+              Dejanos tu feedback!
+          </div>
+
+      </div>
+
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-1" style="background-color: black">
+          <h6>Hecho con 💛 por alumnos de Henry</h6>
+        </div>
+      </footer>
+
+      
+  <!-- up button -->
+  <div>
+    <button
+      id="upBtn"
+      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:32px; bottom:40px; color:white; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
+    ><i class="arrow up"></i></button>
+  </div>
+  
+  <style>
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  </style>
+
+  <script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) {
+      upBtn.style.opacity = 1;
+      upBtn.style.pointerEvents = 'auto';     
+    }
+    else {
+      upBtn.style.opacity = 0;
+      upBtn.style.pointerEvents = 'none';
+    }
+  })
+
+  upBtn.addEventListener('click', () => {
+    let start = document.querySelector('.reader-bar-start')
+    start.scrollIntoView({behavior: "smooth"})
+  })
+  </script>
+
+  <!-- reader bar -->
+  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;">
+    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;"></div>
+  </div>
+
+  <script>
+    let winH = window.innerHeight;
+    const content = document.querySelector('.reader-bar-start');
+
+    let contentH = content.offsetHeight;
+    let contentS = contentH - winH;
+    let readerBar = document.getElementById('readerBar');
+    window.addEventListener('load', () => {
+      document.addEventListener ('scroll', updateBar);
+    })
+    window.addEventListener('resize', redefine)
+
+    function redefine() {
+      winH = window.innerHeight;
+      contentH = content.offsetHeight;
+      contentS = contentH - winH;
+      updateBar();
+    }
+
+    function updateBar() {
+      const pagePos = window.scrollY; 
+      const updatedBar = pagePos * 100 / contentS;
+      readerBar.style.width = updatedBar + "%";
+    }
+  </script>
+  
+    </body>
+  </html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/_src/styles/lesson.css">
+    <link rel="stylesheet" href="https://assets.soyhenry.com/fonts/Avenir/Avenir.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Editor de Texto | Herny Prep Course </title>
+  </head>
+
+  <body>
+    <div class="reader-bar-start">
+      <navbar class="navbar fixed-top navbar-light bg-black">
+        <div class="container-fluid">
+          <img src='/_src/assets/logo-white.png' alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          <span>Editor de Texto | Prep Course</span>
+        </div>
+      </navbar>
+
+      <div id='main' class="container-fluid">
+        <div id='headerTags' class="row">
+          
+          <ul class="nav nav-tabs justify-content-center">
+      
+      <li class="nav-item">
+        <a href="/" class="nav-link" role="menuitem">Intro</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
+      </li>
+<li class="nav-item">
+        <span class="nav-link active" tabindex="-1" aria-current="true">Editor de Texto</span>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
+      </li>
+<li class="nav-item">
+        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
+      </li>
+<li class="nav-item">
+        <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
+      </li>
+<li class="nav-item">
+        <a href="/03-JS-II/README/" class="nav-link" role="menuitem">JS II</a>
+      </li>
+<li class="nav-item">
+        <a href="/04-JS-III/README/" class="nav-link" role="menuitem">JS III</a>
+      </li>
+<li class="nav-item">
+        <a href="/05-JS-IV/README/" class="nav-link" role="menuitem">JS IV</a>
+      </li>
+<li class="nav-item">
+        <a href="/06-JS-V/README/" class="nav-link" role="menuitem">JS V</a>
+      </li>
+<li class="nav-item">
+        <a href="/07-JS-VI/README/" class="nav-link" role="menuitem">JS VI</a>
+      </li>
+<li class="nav-item">
+        <a href="/08-HTML/README/" class="nav-link" role="menuitem">HTML</a>
+      </li>
+<li class="nav-item">
+        <a href="/09-CSS-Positioning/README/" class="nav-link" role="menuitem">CSS</a>
+      </li>
+    </ul>
+        </div>
+
+        <div class="row">
+
+          <div id='sidebar'>
+            <div id="tocTitle" class="row">
+            Contenido de la clase
+            </div>
+            <div id="tocBox" class="row">
+              
+              <nav class="toc" >
+        <ol><li><a href="#sublime-text">Sublime Text </a><ol><li><a href="#en-windows-o-en-os-x">En Windows o en OS X </a></li><li><a href="#en-linux%2C-en-la-distribuci%C3%B3n-ubuntu-y-derivados">En Linux, en la distribución Ubuntu y derivados </a></li></ol></li><li><a href="#atom">Atom </a><ol><li><a href="#en-windows">En Windows </a></li><li><a href="#en-ubuntu-y-derivados">En Ubuntu y derivados </a></li></ol></li><li><a href="#visual-studio-code">Visual Studio Code </a></li></ol>
+      </nav>
+            </div>
+          </div>
+
+          <div id='lesson'>
+            <div style="display:flex; justify-content: right">
+              <div id="readingTime">
+                    Tiempo de lectura 5 min
+              </div>
+            </div>
+            <div>
+              
+              <h1 id="editor-de-texto" tabindex="-1">Editor de Texto <a class="anchor-link" href="#editor-de-texto"></a></h1>
+<p>Para poder escribir código que pueda ser interpretado por un lenguaje de programación, necesitamos utilizar un editor de texto.<br>
+Hay varios, puedes probarlos y optar por el que te sientas más a gusto.</p>
+<p>A continuación veremos una lista de los más populares:</p>
+<h2 id="sublime-text" tabindex="-1">Sublime Text <a class="anchor-link" href="#sublime-text"></a></h2>
+<p><img src="/_src/assets/00-PrimerosPasos/sublimeText_screen.png" alt="Sublime Text"></p>
+<p>Es un editor de texto liviano, que cuenta con una serie de plugins para adaptarlo a las necesidades de cada desarrollador.</p>
+<p>Es multiplataforma, por lo que se puede instalar tanto en Windows, como Linux y OS X.</p>
+<p>Para instalarlo, realizaremos los siguientes pasos:</p>
+<h3 id="en-windows-o-en-os-x" tabindex="-1">En Windows o en OS X <a class="anchor-link" href="#en-windows-o-en-os-x"></a></h3>
+<ol>
+<li>
+<p>Nos dirigimos a la página oficial de <a href="https://www.sublimetext.com">Sublime Text</a>.</p>
+</li>
+<li>
+<p>Al ingresar, detectará automáticamente el sistema operativo que tenemos, y nos sugerirá descargar el instalador apropiado.</p>
+</li>
+<li>
+<p>Presionamos el botón <strong><em>Download</em></strong>.</p>
+</li>
+<li>
+<p>Elegimos la opción adecuada según nuestro sistema operativo e iniciamos la descarga.</p>
+</li>
+</ol>
+<div class=''>
+<p><img src="/_src/assets/00-PrimerosPasos/sublimeText_download.png" alt="Sublime Text Download"></p>
+</div>
+<ol start="5">
+<li>Finalizada la descarga, ejecutamos el instalador, seleccionamos las opciones <strong><em>siguiente, siguiente, etc</em></strong>, hasta completar el proceso.</li>
+</ol>
+<h3 id="en-linux%2C-en-la-distribuci%C3%B3n-ubuntu-y-derivados" tabindex="-1">En Linux, en la distribución Ubuntu y derivados <a class="anchor-link" href="#en-linux%2C-en-la-distribuci%C3%B3n-ubuntu-y-derivados"></a></h3>
+<ol>
+<li>Nos dirigimos al sitio oficial de Sublime Text. Aquí encontrarás las instrucciones para instalarlo:</li>
+</ol>
+<p><a href="https://www.sublimetext.com/docs/3/linux_repositories.html">https://www.sublimetext.com/docs/3/linux_repositories.html</a></p>
+<ol start="2">
+<li>En la terminal, ejecutamos el siguiente comando, para instalar la clave GPG:</li>
+</ol>
+<pre class="language-shell"><code class="hljs language-shell"><span class="token function">wget</span> -q0 - https://download.sublimetext.com/sublimehq-pub.gpg <span class="token operator">|</span> <span class="token function">sudo</span> apt-key <span class="token function">add</span> -</code></pre>
+<ol start="3">
+<li>Para asegurarnos de que <code>apt</code> esté configurado para trabajar con orígenes https, ejecutamos:</li>
+</ol>
+<pre class="language-shell"><code class="hljs language-shell"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> apt-transport-https</code></pre>
+<ol start="4">
+<li>Luego para agregar el repositorio estable, ejecutamos:</li>
+</ol>
+<pre class="language-shell"><code class="hljs language-shell"><span class="token builtin class-name">echo</span> <span class="token string">"deb https://download.sublimetext.com/ apt/stable/"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/apt/sources.list.d/sublime-text.list</code></pre>
+<ol start="5">
+<li>Finalmente, procedemos a instalar el programa:</li>
+</ol>
+<pre class="language-shell"><code class="hljs language-shell"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> sublime-text</code></pre>
+<p>Ahora, si en el <strong>Menú de inicio</strong> buscamos <strong>Sublime text</strong>, veremos la siguiente imagen:</p>
+<div class=''>
+<p><img src="/_src/assets/00-PrimerosPasos/sublimeText_linux.png" alt="Sublime Text Linux"></p>
+</div>
+<hr>
+<h2 id="atom" tabindex="-1">Atom <a class="anchor-link" href="#atom"></a></h2>
+<!-- ![Atom Logo](/_src/assets/00-PrimerosPasos/atom_logo.png) -->
+<div class=''>
+<p><img src="/_src/assets/00-PrimerosPasos/atom_site.png" alt="Atom Site"></p>
+</div>
+<p>Es un editor de código abierto, disponible tanto para Windows, como Linux y para OS X.</p>
+<p>Tiene integrada una consola de Git y Github, para llevar un control de versiones de tus proyectos.<br>
+Para comenzar el proceso de instalación, realizamos los siguientes pasos:</p>
+<p>En Windows, Linux o en OS X, nos dirigimos al sitio oficial, mediante el siguiente enlace:</p>
+<p><a href="https://atom.io/">https://atom.io/</a></p>
+<p>Al ingresar, el navegador detecta automáticamente el instalador que necesitamos bajar, según nuestro sistema operativo.</p>
+<p>Allí, presionamos el botón Download para almacenarlo en nuestra computadora.</p>
+<h3 id="en-windows" tabindex="-1">En Windows <a class="anchor-link" href="#en-windows"></a></h3>
+<p>Una vez finalizada la descarga, hacemos doble click en el instalador y esperamos a que finalice el proceso de instalación.</p>
+<h3 id="en-ubuntu-y-derivados" tabindex="-1">En Ubuntu y derivados <a class="anchor-link" href="#en-ubuntu-y-derivados"></a></h3>
+<p>Descomprimimos el instalador, hacemos doble click, y nos dirigimos a: <code>/usr/bin/atom</code></p>
+<p>Al hacer doble click, se abrirá el editor.</p>
+<hr>
+<h2 id="visual-studio-code" tabindex="-1">Visual Studio Code <a class="anchor-link" href="#visual-studio-code"></a></h2>
+<!-- ![VSC Logo](/_src/assets/00-PrimerosPasos/vsc_logo.png) -->
+<p><img src="/_src/assets/00-PrimerosPasos/vsc_console.png" alt="VSC Console"></p>
+<p>Es un editor desarrollado por Microsoft.</p>
+<p>Tiene integrado el control de versiones mediante Git y Github para tener un seguimiento de tus proyectos. Brinda una cantidad de extensiones que facilitan el trabajo de un desarrollador.</p>
+<p>Para descargarlo, nos dirigimos al sitio oficial, en la sección Dowload y descargamos el instalador según nuestro Sistema Operativo:</p>
+<p><a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a></p>
+<p><img src="/_src/assets/00-PrimerosPasos/vsc_download.png" alt="VSC Download"></p>
+<p>Una vez finalizada la descarga, procedemos a ejecutar el instalador.</p>
+
+            </div>
+          </div>
+        </div>
+
+          <div class="row" id="feedbackBox">
+                Qué te pareció la clase?
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=Editor de Texto' target="_blank">
+              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+            </a>
+              Dejanos tu feedback!
+          </div>
+
+      </div>
+
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-1" style="background-color: black">
+          <h6>Hecho con 💛 por alumnos de Henry</h6>
+        </div>
+      </footer>
+
+      
+  <!-- up button -->
+  <div>
+    <button
+      id="upBtn"
+      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:32px; bottom:40px; color:white; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
+    ><i class="arrow up"></i></button>
+  </div>
+  
+  <style>
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  </style>
+
+  <script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) {
+      upBtn.style.opacity = 1;
+      upBtn.style.pointerEvents = 'auto';     
+    }
+    else {
+      upBtn.style.opacity = 0;
+      upBtn.style.pointerEvents = 'none';
+    }
+  })
+
+  upBtn.addEventListener('click', () => {
+    let start = document.querySelector('.reader-bar-start')
+    start.scrollIntoView({behavior: "smooth"})
+  })
+  </script>
+
+  <!-- reader bar -->
+  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;">
+    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;"></div>
+  </div>
+
+  <script>
+    let winH = window.innerHeight;
+    const content = document.querySelector('.reader-bar-start');
+
+    let contentH = content.offsetHeight;
+    let contentS = contentH - winH;
+    let readerBar = document.getElementById('readerBar');
+    window.addEventListener('load', () => {
+      document.addEventListener ('scroll', updateBar);
+    })
+    window.addEventListener('resize', redefine)
+
+    function redefine() {
+      winH = window.innerHeight;
+      contentH = content.offsetHeight;
+      contentS = contentH - winH;
+      updateBar();
+    }
+
+    function updateBar() {
+      const pagePos = window.scrollY; 
+      const updatedBar = pagePos * 100 / contentS;
+      readerBar.style.width = updatedBar + "%";
+    }
+  </script>
+  
+    </body>
+  </html>

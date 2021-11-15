@@ -1,0 +1,551 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 75px;
+}
+
+@font-face {
+  font-family: "Avenir Black";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Black")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Black-03-968e784956ff9b6a05c29cc3be18cad0.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+
+@font-face {
+  font-family: "Avenir Normal";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Normal")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Heavy-05-f080b6894f8375c59a197caa24aac91c.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+
+@font-face {
+  font-family: "Avenir Heavy";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Heavy")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Heavy-05-f080b6894f8375c59a197caa24aac91c.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+
+@font-face {
+  font-family: "Avenir Book";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Book")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Book-01-995b34ab56b423abffe48e64bf8b8df1.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+@font-face {
+  font-family: "Avenir Light";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Light")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Light-07-33f6570a328d84cb7d06e829a0c7ca1b.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+@font-face {
+  font-family: "Avenir Medium";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Medium")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Medium-09-7d635ea94b4460e86cd678e9e754a643.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+@font-face {
+  font-family: "Avenir Roman";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Avenir Roman")
+    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Roman-12-c6d37b26297461a78d10f169dd5cf46d.ttf)
+    format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF;
+}
+
+body {
+  /* border: 2px dashed; */
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-family: "Avenir Medium";
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #fafafa;
+}
+
+navbar {
+  /* border: 2px dashed; */
+  padding: 0 0.8rem 0 0.8rem;
+  color: rgb(240, 240, 240);
+  height: 50px;
+}
+
+#main {
+  /* border: 2px dashed red; */
+  max-width: 1400px;
+  margin-top: 53px;
+}
+
+#headerTags {
+  /* border: 2px dashed blue; */
+  padding-top: 0.3rem;
+}
+
+#headerTags a {
+  color: black;
+}
+
+#sidebar {
+  display: flex;
+  position: fixed;
+  z-index: 200;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1.5rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: solid 1px;
+  border-color: rgb(180, 180, 180);
+  background-color: rgb(235, 235, 235);
+  width: 220px;
+  /* border: 2px dashed yellow; */
+}
+
+#tocTitle {
+  font-weight: bold;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}
+
+#tocBox {
+  margin-top: 1rem;
+}
+
+#sidebar a {
+  color: black;
+  text-decoration: none;
+}
+
+#sidebar a:hover {
+  color: rgb(88, 80, 80);
+}
+
+#sidebar a:active {
+  color: rgb(255, 238, 0);
+}
+
+#readingTime {
+  text-align: center;
+  font-weight: bold;
+  width: 250px;
+  /* border: solid 1px; */
+  font-size: 1rem;
+  margin-bottom: -4rem;
+  margin-top: 3rem;
+}
+
+#lesson {
+  /* border: 2px dashed green; */
+  text-align: justify;
+  padding: 2rem 3rem 4rem 18rem;
+  font-size: 1.1em;
+}
+
+#lesson h1 {
+  border: 1px solid;
+  border-radius: 4px;
+  margin: 1rem 0 3rem 0;
+  padding: 0.2rem 0.5rem;
+  background-color: rgb(255, 238, 0);
+  border-color: rgb(220, 220, 9);
+  color: rgb(60, 60, 60);
+}
+
+#lesson h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+}
+
+#lesson h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#lesson h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#lesson img {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#lesson iframe {
+  display: block;
+  margin: auto;
+  align-self: center;
+  display: flex;
+  justify-self: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#lesson ul {
+  list-style: square;
+}
+
+#feedbackBox {
+  /* border: 2px dashed; */
+  display: flex;
+  margin-bottom: 3rem;
+  height: 200px;
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+
+#feedbackBox a {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  color: rgb(240, 240, 240);
+}
+
+code {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+/* Bloques de codigo */
+
+pre[class*="language-"],
+code[class*="language-"] {
+  border-radius: 0.2rem;
+  color: #d4d4d4;
+  font-weight: normal;
+  font-size: 14px;
+  text-shadow: none;
+  font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono",
+    "Courier New", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"] *::selection,
+code[class*="language-"] *::selection {
+  text-shadow: none;
+  background: #264f78;
+}
+
+@media print {
+  pre[class*="language-"],
+  code[class*="language-"] {
+    text-shadow: none;
+  }
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #1e1e1e;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  color: #db4c69;
+  background: #1e1e1e;
+}
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: 0.7;
+}
+
+.token.doctype .token.doctype-tag {
+  color: #569cd6;
+}
+
+.token.doctype .token.name {
+  color: #9cdcfe;
+}
+
+.token.comment,
+.token.prolog {
+  color: #6a9955;
+}
+
+.token.punctuation,
+.language-html .language-css .token.punctuation,
+.language-html .language-javascript .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.inserted,
+.token.unit {
+  color: #b5cea8;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.deleted {
+  color: #ce9178;
+}
+
+.language-css .token.string.url {
+  text-decoration: underline;
+}
+
+.token.operator,
+.token.entity {
+  color: #d4d4d4;
+}
+
+.token.operator.arrow {
+  color: #569cd6;
+}
+
+.token.atrule {
+  color: #ce9178;
+}
+
+.token.atrule .token.rule {
+  color: #c586c0;
+}
+
+.token.atrule .token.url {
+  color: #9cdcfe;
+}
+
+.token.atrule .token.url .token.function {
+  color: #dcdcaa;
+}
+
+.token.atrule .token.url .token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.keyword {
+  color: #569cd6;
+}
+
+.token.keyword.module,
+.token.keyword.control-flow {
+  color: #c586c0;
+}
+
+.token.function,
+.token.function .token.maybe-class-name {
+  color: #dcdcaa;
+}
+
+.token.regex {
+  color: #d16969;
+}
+
+.token.important {
+  color: #569cd6;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.constant {
+  color: #9cdcfe;
+}
+
+.token.class-name,
+.token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+.token.console {
+  color: #9cdcfe;
+}
+
+.token.parameter {
+  color: #9cdcfe;
+}
+
+.token.interpolation {
+  color: #9cdcfe;
+}
+
+.token.punctuation.interpolation-punctuation {
+  color: #569cd6;
+}
+
+.token.boolean {
+  color: #569cd6;
+}
+
+.token.property,
+.token.variable,
+.token.imports .token.maybe-class-name,
+.token.exports .token.maybe-class-name {
+  color: #9cdcfe;
+}
+
+.token.selector {
+  color: #d7ba7d;
+}
+
+.token.escape {
+  color: #d7ba7d;
+}
+
+.token.tag {
+  color: #569cd6;
+}
+
+.token.tag .token.punctuation {
+  color: #808080;
+}
+
+.token.cdata {
+  color: #808080;
+}
+
+.token.attr-name {
+  color: #9cdcfe;
+}
+
+.token.attr-value,
+.token.attr-value .token.punctuation {
+  color: #ce9178;
+}
+
+.token.attr-value .token.punctuation.attr-equals {
+  color: #d4d4d4;
+}
+
+.token.entity {
+  color: #569cd6;
+}
+
+.token.namespace {
+  color: #4ec9b0;
+}
+/*********************************************************
+* Language Specific
+*/
+
+pre[class*="language-javascript"],
+code[class*="language-javascript"],
+pre[class*="language-jsx"],
+code[class*="language-jsx"],
+pre[class*="language-typescript"],
+code[class*="language-typescript"],
+pre[class*="language-tsx"],
+code[class*="language-tsx"] {
+  color: #9cdcfe;
+}
+
+pre[class*="language-css"],
+code[class*="language-css"] {
+  color: #ce9178;
+}
+
+pre[class*="language-html"],
+code[class*="language-html"] {
+  color: #d4d4d4;
+}
+
+.language-regex .token.anchor {
+  color: #dcdcaa;
+}
+
+.language-html .token.punctuation {
+  color: #808080;
+}
+/*********************************************************
+* Line highlighting
+*/
+pre[class*="language-"] > code[class*="language-"] {
+  position: relative;
+  z-index: 1;
+}
+
+.line-highlight.line-highlight {
+  background: #f7ebc6;
+  box-shadow: inset 5px 0 0 #f7d87c;
+  z-index: 0;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/_src/styles/lesson.css">
+    <link rel="stylesheet" href="https://assets.soyhenry.com/fonts/Avenir/Avenir.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>JavaScript VI: Callbacks | Herny Prep Course </title>
+  </head>
+
+  <body>
+    <div class="reader-bar-start">
+      <navbar class="navbar fixed-top navbar-light bg-black">
+        <div class="container-fluid">
+          <img src='/_src/assets/logo-white.png' alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          <span>JavaScript VI: Callbacks | Prep Course</span>
+        </div>
+      </navbar>
+
+      <div id='main' class="container-fluid">
+        <div id='headerTags' class="row">
+          
+          <ul class="nav nav-tabs justify-content-center">
+      
+      <li class="nav-item">
+        <a href="/" class="nav-link" role="menuitem">Intro</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/editorTexto/" class="nav-link" role="menuitem">Editor de Texto</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
+      </li>
+<li class="nav-item">
+        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
+      </li>
+<li class="nav-item">
+        <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
+      </li>
+<li class="nav-item">
+        <a href="/03-JS-II/README/" class="nav-link" role="menuitem">JS II</a>
+      </li>
+<li class="nav-item">
+        <a href="/04-JS-III/README/" class="nav-link" role="menuitem">JS III</a>
+      </li>
+<li class="nav-item">
+        <a href="/05-JS-IV/README/" class="nav-link" role="menuitem">JS IV</a>
+      </li>
+<li class="nav-item">
+        <a href="/06-JS-V/README/" class="nav-link" role="menuitem">JS V</a>
+      </li>
+<li class="nav-item">
+        <span class="nav-link active" tabindex="-1" aria-current="true">JS VI</span>
+      </li>
+<li class="nav-item">
+        <a href="/08-HTML/README/" class="nav-link" role="menuitem">HTML</a>
+      </li>
+<li class="nav-item">
+        <a href="/09-CSS-Positioning/README/" class="nav-link" role="menuitem">CSS</a>
+      </li>
+    </ul>
+        </div>
+
+        <div class="row">
+
+          <div id='sidebar'>
+            <div id="tocTitle" class="row">
+            Contenido de la clase
+            </div>
+            <div id="tocBox" class="row">
+              
+              <nav class="toc" >
+        <ol><li><a href="#callbacks">Callbacks </a></li><li><a href="#m%C3%A1s-m%C3%A9todos-de-arrays">Más métodos de Arrays </a><ol><li><a href="#.foreach">.forEach </a></li><li><a href="#.reduce">.reduce </a></li><li><a href="#.map">.map </a></li></ol></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li><li><a href="#homework">Homework </a></li></ol>
+      </nav>
+            </div>
+          </div>
+
+          <div id='lesson'>
+            <div style="display:flex; justify-content: right">
+              <div id="readingTime">
+                    Tiempo de lectura 7 min
+              </div>
+            </div>
+            <div>
+              
+              <!-- <table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=07-JS-VI">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table> -->
+<h1 id="javascript-vi-(callbacks)" tabindex="-1">Javascript VI (Callbacks) <a class="anchor-link" href="#javascript-vi-(callbacks)"></a></h1>
+<p>En esta lección cubriremos:</p>
+<ul>
+<li>Callbacks</li>
+<li>Más métodos de Arrays</li>
+<li>Introducción a la programación funcional</li>
+</ul>
+<iframe src="https://player.vimeo.com/video/425254623" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<h2 id="callbacks" tabindex="-1">Callbacks <a class="anchor-link" href="#callbacks"></a></h2>
+<p>Un concepto muy importante en Javascript es la capacidad de pasar una función como argumento a otra función. Estas funciones se denominan <code>callbacks</code>. Estas funciones pueden llamarse en cualquier momento y pasar argumentos dentro de la función. Pronto descubriremos por qué las devoluciones de llamada son tan importantes para Javascript. La convención es usar <code>cb</code> como argumento para la variable que se usará de callback.</p>
+<pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">function</span> <span class="token function">decirHolaAlUsuario</span><span class="token punctuation">(</span><span class="token parameter">usuario</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token string">'Hola '</span> <span class="token operator">+</span> usuario <span class="token operator">+</span> <span class="token string">'!'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">function</span> <span class="token function">decirAdiosAlUsuario</span><span class="token punctuation">(</span><span class="token parameter">usuario</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token string">'Adiós '</span> <span class="token operator">+</span> usuario <span class="token operator">+</span> <span class="token string">'!'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">function</span> <span class="token function">crearSaludo</span><span class="token punctuation">(</span><span class="token parameter">usuario<span class="token punctuation">,</span> cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token function">cb</span><span class="token punctuation">(</span>usuario<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token function">crearSaludo</span><span class="token punctuation">(</span><span class="token string">'Dan'</span><span class="token punctuation">,</span> decirHolaAlUsuario<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'Hello Dan!'</span><br><span class="token function">crearSaludo</span><span class="token punctuation">(</span><span class="token string">'Dan'</span><span class="token punctuation">,</span> decirAdiosAlUsuario<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'Goodbye Dan!'</span></code></pre>
+<h2 id="m%C3%A1s-m%C3%A9todos-de-arrays" tabindex="-1">Más métodos de Arrays <a class="anchor-link" href="#m%C3%A1s-m%C3%A9todos-de-arrays"></a></h2>
+<p>Ya conocemos y utilizamos métodos de matriz, <code>.push</code>, <code>.pop</code>, <code>.shift</code>, <code>.unshift</code> y <code>.length</code>. Pero hay muchos más métodos disponibles de forma nativa en un array. Los métodos de los que vamos a hablar aquí se denominan “métodos de orden superior”, porque toman los callbacks como argumentos.</p>
+<h3 id=".foreach" tabindex="-1"><strong>.forEach</strong> <a class="anchor-link" href="#.foreach"></a></h3>
+<p><code>.forEach</code> es un bucle for integrado en cada array. <code>.forEach</code> toma un callback como su único argumento, e itera sobre cada elemento de la matriz y llama al callback en él. El callback puede tomar dos argumentos, el primero es el elemento en sí, el segundo es el índice del elemento (este argumento es opcional).</p>
+<pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">const</span> autos <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Ford'</span><span class="token punctuation">,</span> <span class="token string">'Chevrolet'</span><span class="token punctuation">,</span> <span class="token string">'Toyota'</span><span class="token punctuation">,</span> <span class="token string">'Tesla'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br><br><span class="token comment">// Podemos escribir el callback en los paréntesis como una función anónima</span><br>autos<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">elemento<span class="token punctuation">,</span> indice</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>elemento<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">// O podemos crear una instancia de una función para usarla como callback.</span><br><span class="token comment">// Además, no necesitamos usar el argumento de índice, si no lo necesitas, no dudes en omitirlo.</span><br><span class="token keyword">function</span> <span class="token function">mostrarNombres</span><span class="token punctuation">(</span><span class="token parameter">elemento</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>elemento<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">// And call that function in the forEach parentheses</span><br>autos<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>mostrarNombres<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id=".reduce" tabindex="-1"><strong>.reduce</strong> <a class="anchor-link" href="#.reduce"></a></h3>
+<p><code>.reduce</code> ejecutará un bucle en nuestra matriz con la intención de reducir cada elemento en un elemento que se devuelve. Como es el primer argumento, acepta un callback que toma dos argumentos, primero un ‘acumulador’ (el resultado del método de reducción hasta ahora), y el segundo es el elemento en el que se encuentra actualmente. El callback debe contener siempre una declaración de devolución (“return”). <code>.reduce</code> también toma un segundo argumento opcional, que sería el acumulador de arranque (“starting accumulator”). Si no se suministra el acumulador de arranque, la reducción comenzará en el primer elemento de la matriz. <code>.reduce</code> siempre devolverá el acumulador cuando termine de recorrer los elementos.</p>
+<pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">const</span> numeros <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br><span class="token keyword">const</span> palabras <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token string">'Hola,'</span><span class="token punctuation">,</span> <span class="token string">'mi'</span><span class="token punctuation">,</span> <span class="token string">'nombre'</span><span class="token punctuation">,</span> <span class="token string">'es'</span><span class="token punctuation">,</span> <span class="token string">'Martin'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br><br><span class="token comment">// Podemos escribir la función anónima directamente en los paréntesis de .reduce</span><br><span class="token comment">// Si omitimos el elemento inicial, siempre comenzará en el primer elemento.</span><br><span class="token keyword">const</span> suma <span class="token operator">=</span> numeros<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> elemento</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>    <span class="token keyword">return</span> acc <span class="token operator">+</span> elemento<span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">// Podemos escribir una función fuera de los parents de .reduce (para usar varias veces más tarde)</span><br><span class="token keyword">function</span> <span class="token function">multiplicarDosNumeros</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> a <span class="token operator">*</span> b<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">const</span> productos <span class="token operator">=</span> numeros<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span>multiplicarDosNumeros<span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">// .reduce funciona en cualquier tipo de datos.</span><br><span class="token comment">// En este ejemplo configuramos un acumulador de arranque</span><br><span class="token keyword">const</span> frases <span class="token operator">=</span> palabras<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">acc<span class="token punctuation">,</span> elemento</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> acc <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> elemento<span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token string">'Frase completa:'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>suma<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 45</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>productos<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 362880</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>frases<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Frase completa: Hola, mi nombre es Martin"</span></code></pre>
+<h3 id=".map" tabindex="-1"><strong>.map</strong> <a class="anchor-link" href="#.map"></a></h3>
+<p><code>.map</code> se usa cuando queremos cambiar cada elemento de una matriz de la misma manera. <code>.map</code> toma una devolución de llamada como único argumento. Al igual que el método <code>.forEach</code>, el callback tiene el elemento y el índice de argumentos opcionales. A diferencia de <code>.reduce</code>, <code>.map</code> devolverá toda la matriz.</p>
+<pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">const</span> numeros <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br><br><span class="token keyword">function</span> <span class="token function">multiplicarPorTres</span><span class="token punctuation">(</span><span class="token parameter">elemento</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> elemento <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">const</span> doble <span class="token operator">=</span> numeros<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">elemento</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> elemento <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token keyword">const</span> triple <span class="token operator">=</span> numeros<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>multiplicarPorTres<span class="token punctuation">)</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>doble<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [ 4, 6, 8, 10 ]</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>triple<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [ 6, 9, 12, 15 ]</span></code></pre>
+<h2 id="recursos-adicionales" tabindex="-1">Recursos adicionales <a class="anchor-link" href="#recursos-adicionales"></a></h2>
+<ul>
+<li><a href="http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/">Understanding Callback Functions and How to Use Them</a></li>
+<li><a href="https://eloquentjavascript.net/05_higher_order.html">Eloquent Javascript: Higher Order Functions</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">MDN: Callback function</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">MDN: Array methods</a></li>
+</ul>
+<h2 id="homework" tabindex="-1">Homework <a class="anchor-link" href="#homework"></a></h2>
+<p>Completa la tarea descrita en el archivo <a href="https://github.com/atralice/Curso.Prep.Henry/tree/master/07-JS-VI/homework">README</a></p>
+
+            </div>
+          </div>
+        </div>
+
+          <div class="row" id="feedbackBox">
+                Qué te pareció la clase?
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=JavaScript VI: Callbacks' target="_blank">
+              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+            </a>
+              Dejanos tu feedback!
+          </div>
+
+      </div>
+
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-1" style="background-color: black">
+          <h6>Hecho con 💛 por alumnos de Henry</h6>
+        </div>
+      </footer>
+
+      
+  <!-- up button -->
+  <div>
+    <button
+      id="upBtn"
+      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:32px; bottom:40px; color:white; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
+    ><i class="arrow up"></i></button>
+  </div>
+  
+  <style>
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  </style>
+
+  <script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) {
+      upBtn.style.opacity = 1;
+      upBtn.style.pointerEvents = 'auto';     
+    }
+    else {
+      upBtn.style.opacity = 0;
+      upBtn.style.pointerEvents = 'none';
+    }
+  })
+
+  upBtn.addEventListener('click', () => {
+    let start = document.querySelector('.reader-bar-start')
+    start.scrollIntoView({behavior: "smooth"})
+  })
+  </script>
+
+  <!-- reader bar -->
+  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;">
+    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;"></div>
+  </div>
+
+  <script>
+    let winH = window.innerHeight;
+    const content = document.querySelector('.reader-bar-start');
+
+    let contentH = content.offsetHeight;
+    let contentS = contentH - winH;
+    let readerBar = document.getElementById('readerBar');
+    window.addEventListener('load', () => {
+      document.addEventListener ('scroll', updateBar);
+    })
+    window.addEventListener('resize', redefine)
+
+    function redefine() {
+      winH = window.innerHeight;
+      contentH = content.offsetHeight;
+      contentS = contentH - winH;
+      updateBar();
+    }
+
+    function updateBar() {
+      const pagePos = window.scrollY; 
+      const updatedBar = pagePos * 100 / contentS;
+      readerBar.style.width = updatedBar + "%";
+    }
+  </script>
+  
+    </body>
+  </html>

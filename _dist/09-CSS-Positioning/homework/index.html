@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/_src/styles/lesson.css">
+    <link rel="stylesheet" href="https://assets.soyhenry.com/fonts/Avenir/Avenir.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title> | Herny Prep Course </title>
+  </head>
+
+  <body>
+    <div class="reader-bar-start">
+      <navbar class="navbar fixed-top navbar-light bg-black">
+        <div class="container-fluid">
+          <img src='/_src/assets/logo-white.png' alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          <span> | Prep Course</span>
+        </div>
+      </navbar>
+
+      <div id='main' class="container-fluid">
+        <div id='headerTags' class="row">
+          
+          <ul class="nav nav-tabs justify-content-center">
+      
+      <li class="nav-item">
+        <a href="/" class="nav-link" role="menuitem">Intro</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/editorTexto/" class="nav-link" role="menuitem">Editor de Texto</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
+      </li>
+<li class="nav-item">
+        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
+      </li>
+<li class="nav-item">
+        <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
+      </li>
+<li class="nav-item">
+        <a href="/03-JS-II/README/" class="nav-link" role="menuitem">JS II</a>
+      </li>
+<li class="nav-item">
+        <a href="/04-JS-III/README/" class="nav-link" role="menuitem">JS III</a>
+      </li>
+<li class="nav-item">
+        <a href="/05-JS-IV/README/" class="nav-link" role="menuitem">JS IV</a>
+      </li>
+<li class="nav-item">
+        <a href="/06-JS-V/README/" class="nav-link" role="menuitem">JS V</a>
+      </li>
+<li class="nav-item">
+        <a href="/07-JS-VI/README/" class="nav-link" role="menuitem">JS VI</a>
+      </li>
+<li class="nav-item">
+        <a href="/08-HTML/README/" class="nav-link" role="menuitem">HTML</a>
+      </li>
+<li class="nav-item">
+        <a href="/09-CSS-Positioning/README/" class="nav-link" role="menuitem">CSS</a>
+      </li>
+    </ul>
+        </div>
+
+        <div class="row">
+
+          <div id='sidebar'>
+            <div id="tocTitle" class="row">
+            Contenido de la clase
+            </div>
+            <div id="tocBox" class="row">
+              
+              
+            </div>
+          </div>
+
+          <div id='lesson'>
+            <div style="display:flex; justify-content: right">
+              <div id="readingTime">
+                    Tiempo de lectura 7 min
+              </div>
+            </div>
+            <div>
+              
+              <!-- You will not need to change anything in this file make sure all of your work is in homework.css -->
+<html>
+  <head>
+    <title>Posicionamiento CSS – Henry Homework</title>
+    <link rel="stylesheet" href="./assets/css/no-tocar.css" >
+    <link rel="stylesheet" href="./homework.css" />
+  </head>
+  <body>
+    <h1 id="ejercicioDos">Acá va el título de la lección</h1>
+    <h1 id="header">Trabajo de Posicionamiento CSS</h1>
+    <div class="container">
+      <h3>Instrucciones:</h3>
+      <span id="instructions">
+          En esta tarea vamos a usar las propiedades "display", "position" y "flex box"
+          para posicionar nuestros elementos correctamente en la página. El único archivo que necesitas
+          tocar para esta tarea es el archivo "homework.css" que se encuentra en esta misma carpeta.
+          Debes usar las clases, ids y selectores de elemnto que usaste en la tarea número 2.
+      </span>
+    </div>
+    <div class="container">
+      <h3>Ejercicio 1:</h3>
+      <span id="ejercicioUno">
+          En este primer ejercicio deberás asegurarte que el texto dentro de este &lt;span&gt;
+          está centrado en la página. El id de este span es "ejercicioUno". El texto solo tiene un
+          forma de alinear conocido como "text-align", para el cual podemos definir
+          los valores "left", "right", "center" o "justify", pero esto solo funcion dentro de los elementos "block"
+          y el &lt;span&gt; inicialmente es un elemento "inline". Define la propiedad "display" para
+          que sea "block" y centra el texto usando "text-align".
+      </span>
+    </div>
+    <div class="container">
+      <h3>Ejercicio 2:</h3>
+      <span>
+         Hay una caja con un texto en la parte superior de la pantalla. Eso se supone que es un "placeholder" hasta que tengamos el título de la sección definido. Desafortunadamente no tenemos acceso
+         al HTML, por lo que no podemos ocultarlo modificando el HTML. Usando sólo CSS, asegúrate que la caja no
+         sea mostrada. El id de lo que tenes que ocultar es "ejercicioDos".
+      </span>
+    </div>
+    <div class="container">
+      <h3>Ejercicio 3:</h3>
+      <span>
+          Debajo verás una caja, la cual contiene adentro una imagen, nos queremos asegurar que esa imagen se
+          posicione dentro de la cajita roja. Debes cambiar el atributo "position", y después ajustar la imagen acorde a la caja.
+          La caja roja está a 100 píxeles del margen superior y 200 píxeles desde la izquierda. El id de la imagen en "ejercicioTres".
+      </span>
+      <div id="containerImagen">
+        <div id="containerObjetivo"></div>
+        <img id="ejercicioTres" src="./assets/img/artic-fox.png" />
+        <div id="spanDescriptivo">
+            <span>Esta es la imagen de un animal. Esperamos que disfrutes la imagen de este animal :-)</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h3>Ejercicio 4:</h3>
+      <span>
+          La caja azul de abajo se supone que debe ser nuestro header, por lo que debe estar fijo
+          en la parte superior izquierda de la página, y la posición no debería variar cuando la página sea scrolleada.
+          El id de la caja es "ejercicioCuatro". Cambia la posición de esa caja a la esquina superior izquierda.
+      </span>
+    </div>
+    <div id="ejercicioCuatro">
+      <div id="ejercicioCinco">
+        <span>#SoyHenry</span>
+        <img src="./assets/img/logo-henry.png" />
+        <span>Lecciones de posicionamiento</span>
+      </div>
+    </div>
+    <div class="container">
+      <h3>Ejercicio 5:</h3>
+      <span>
+          En el header hay tres elementos; "Lecciones de posicionamiento", el logo de Henry y "#SoyHenry".
+          Usando el id "ejercicioCinco", configuraremos este container como "flex box",
+          y nos aseguraremos que cada elemento está distanciado de manera proporcional entre unos y otros.
+          También queremos que cada elemento aparezca centrado verticalmente en la línea.
+      </span>
+    </div>
+    <div class="container">
+      <h3>Ejercicio 6:</h3>
+      <span>
+          Ahora que los elementos del header están espaciados adecuadamente, vemos que quedaron desordenados.
+          "Lecciones de posicionamiento" deberían estar a la izquierda, y "#SoyHenry" a la derecha.
+          Usando el mismo id que en el ejercicio anterior, cambia la dirección en el cual aparecen los elementos.
+      </span>
+    </div>
+    <div class="container">
+      <h3>Ejercicio 7:</h3>
+      <span>
+          Este es un "playground" de la propiedad flexbox, el id es "ejercicioSiete". No hay un objetivo final en este ejercicio,
+          puedes jugar con estos elementos y las diferentes opciones de flexbox. El id de los elementos están escritos en los mismos.
+          Prueba usando los conceptos que aprendimos sobre flexbox, incluyendo: "justify-content", "align-items", "align-self",
+          y "flex-direction".
+      </span>
+    </div>
+    <div id="ejercicioSiete">
+      <div id="elementoUno" class="elementos"><span class="textoElemento">Id "elementoUno"</span></div>
+      <div id="elementoDos" class="elementos"><span class="textoElemento">Id "elementoDos"</span></div>
+      <div id="elementoTres" class="elementos"><span class="textoElemento">Id "elementoTres"</span></div>
+      <div id="elementoCuatro" class="elementos"><span class="textoElemento">Id "elementoCuatro"</span></div>
+    </div>
+    <div class="container">
+      <h3>Punto extra 1:</h3>
+      <span>
+          Hay bastantes opciones de flexbox y pueden complicarse, pero a través de la prática puedes aprender
+          a ajustar rápidamente el posicionamiento de tus elementos con facilidad. Te recomendamos el tutorial
+        "Flexbox Froggy", el cual te enseñará en profundidad cómo funciona el elemento de posicionamiento "flexbox":
+        <a href="http://www.flexboxfroggy.com" target="_blank_">Flexbox Froggy</a>
+      </span>
+    </div>
+    <div class="container">
+      <h3>Punto extra 2:</h3>
+      <span>
+          Una nueva y nativa forma de usar las grillas de CSS se está abriendo paso. Se llama "css-grid" y puede ser usado
+          para realizar posicionamientos de manera aún más rápida y precisa. Es buenos conocer "css-grid", por lo que quizá
+          te venga bien familiarizarte ahora: <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank_">A Complete Guide to CSS Grid</a>
+
+          Además, de los creadores de "Flexbox Froggy" llega <a href="http://cssgridgarden.com/">CSS GridGarden</a>.
+      </span>
+    </div>
+  </body>
+</html>
+
+            </div>
+          </div>
+        </div>
+
+          <div class="row" id="feedbackBox">
+                Qué te pareció la clase?
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=' target="_blank">
+              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+            </a>
+              Dejanos tu feedback!
+          </div>
+
+      </div>
+
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-1" style="background-color: black">
+          <h6>Hecho con 💛 por alumnos de Henry</h6>
+        </div>
+      </footer>
+
+      
+  <!-- up button -->
+  <div>
+    <button
+      id="upBtn"
+      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:32px; bottom:40px; color:white; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
+    ><i class="arrow up"></i></button>
+  </div>
+  
+  <style>
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  </style>
+
+  <script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) {
+      upBtn.style.opacity = 1;
+      upBtn.style.pointerEvents = 'auto';     
+    }
+    else {
+      upBtn.style.opacity = 0;
+      upBtn.style.pointerEvents = 'none';
+    }
+  })
+
+  upBtn.addEventListener('click', () => {
+    let start = document.querySelector('.reader-bar-start')
+    start.scrollIntoView({behavior: "smooth"})
+  })
+  </script>
+
+  <!-- reader bar -->
+  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;">
+    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;"></div>
+  </div>
+
+  <script>
+    let winH = window.innerHeight;
+    const content = document.querySelector('.reader-bar-start');
+
+    let contentH = content.offsetHeight;
+    let contentS = contentH - winH;
+    let readerBar = document.getElementById('readerBar');
+    window.addEventListener('load', () => {
+      document.addEventListener ('scroll', updateBar);
+    })
+    window.addEventListener('resize', redefine)
+
+    function redefine() {
+      winH = window.innerHeight;
+      contentH = content.offsetHeight;
+      contentS = contentH - winH;
+      updateBar();
+    }
+
+    function updateBar() {
+      const pagePos = window.scrollY; 
+      const updatedBar = pagePos * 100 / contentS;
+      readerBar.style.width = updatedBar + "%";
+    }
+  </script>
+  
+    </body>
+  </html>

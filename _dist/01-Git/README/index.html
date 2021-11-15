@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/_src/styles/lesson.css">
+    <link rel="stylesheet" href="https://assets.soyhenry.com/fonts/Avenir/Avenir.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Git | Herny Prep Course </title>
+  </head>
+
+  <body>
+    <div class="reader-bar-start">
+      <navbar class="navbar fixed-top navbar-light bg-black">
+        <div class="container-fluid">
+          <img src='/_src/assets/logo-white.png' alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          <span>Git | Prep Course</span>
+        </div>
+      </navbar>
+
+      <div id='main' class="container-fluid">
+        <div id='headerTags' class="row">
+          
+          <ul class="nav nav-tabs justify-content-center">
+      
+      <li class="nav-item">
+        <a href="/" class="nav-link" role="menuitem">Intro</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/editorTexto/" class="nav-link" role="menuitem">Editor de Texto</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
+      </li>
+<li class="nav-item">
+        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
+      </li>
+<li class="nav-item">
+        <span class="nav-link active" tabindex="-1" aria-current="true">Git</span>
+      </li>
+<li class="nav-item">
+        <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
+      </li>
+<li class="nav-item">
+        <a href="/03-JS-II/README/" class="nav-link" role="menuitem">JS II</a>
+      </li>
+<li class="nav-item">
+        <a href="/04-JS-III/README/" class="nav-link" role="menuitem">JS III</a>
+      </li>
+<li class="nav-item">
+        <a href="/05-JS-IV/README/" class="nav-link" role="menuitem">JS IV</a>
+      </li>
+<li class="nav-item">
+        <a href="/06-JS-V/README/" class="nav-link" role="menuitem">JS V</a>
+      </li>
+<li class="nav-item">
+        <a href="/07-JS-VI/README/" class="nav-link" role="menuitem">JS VI</a>
+      </li>
+<li class="nav-item">
+        <a href="/08-HTML/README/" class="nav-link" role="menuitem">HTML</a>
+      </li>
+<li class="nav-item">
+        <a href="/09-CSS-Positioning/README/" class="nav-link" role="menuitem">CSS</a>
+      </li>
+    </ul>
+        </div>
+
+        <div class="row">
+
+          <div id='sidebar'>
+            <div id="tocTitle" class="row">
+            Contenido de la clase
+            </div>
+            <div id="tocBox" class="row">
+              
+              <nav class="toc" >
+        <ol><li><a href="#version-control-system">Version Control System </a><ol><li><a href="#locales">Locales </a></li><li><a href="#centralizados">Centralizados </a></li><li><a href="#distribuido">Distribuido </a></li></ol></li><li><a href="#historia-de-git">Historia de Git </a></li><li><a href="#conceptos-de-git">Conceptos de Git </a></li><li><a href="#integridad">Integridad </a><ol><li><a href="#estados">Estados </a></li><li><a href="#github.com">Github.com </a></li></ol></li><li><a href="#lectura-recomendada">Lectura recomendada </a></li></ol>
+      </nav>
+            </div>
+          </div>
+
+          <div id='lesson'>
+            <div style="display:flex; justify-content: right">
+              <div id="readingTime">
+                    Tiempo de lectura 14 min
+              </div>
+            </div>
+            <div>
+              
+              <!-- 
+<table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=01-Git">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table> -->
+<h1 id="uso-de-git" tabindex="-1">Uso de Git <a class="anchor-link" href="#uso-de-git"></a></h1>
+<iframe src="https://player.vimeo.com/video/423898676" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<h2 id="version-control-system" tabindex="-1">Version Control System <a class="anchor-link" href="#version-control-system"></a></h2>
+<p>¿Qué es un control de versiones, y por qué debería importarte? Un control de versiones es un sistema que registra los cambios realizados en un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante.</p>
+<p>Si eres diseñador gráfico o web, y quieres mantener cada versión de una imagen o diseño (algo que sin duda quieres), un sistema de control de versiones (Version Control System o VCS en inglés) es una elección muy sabia. Te permite revertir archivos a un estado anterior, revertir el proyecto entero a un estado anterior, comparar cambios a lo largo del tiempo, ver quién modificó por última vez algo que puede estar causando un problema, quién introdujo un error y cuándo, y mucho más. Usar un VCS también significa generalmente que si rompes o pierdes archivos, puedes recuperarlos fácilmente.</p>
+<p>Hay varios tipos de sistemas de versionado, estos pueden ser:</p>
+<h3 id="locales" tabindex="-1">Locales <a class="anchor-link" href="#locales"></a></h3>
+<p><img src="/_src/assets/01-Git/local.png" alt="Local"></p>
+<p>Un método de control de versiones, usado por muchas personas, es copiar los archivos a otro directorio (quizás indicando la fecha y hora en que lo hicieron, si son ingeniosos). Este método es muy común porque es muy sencillo, pero también es tremendamente propenso a errores. Es fácil olvidar en qué directorio te encuentras y guardar accidentalmente en el archivo equivocado o sobrescribir archivos que no querías.<br>
+Como se pueden imaginar, este sistema funciona <em>bien</em> para trabajar solos, pero si queremos incorporar otra gente al equipo van a empezar a surgir problemas.</p>
+<h3 id="centralizados" tabindex="-1">Centralizados <a class="anchor-link" href="#centralizados"></a></h3>
+<p><img src="/_src/assets/01-Git/centralizado.png" alt="Centralizado"></p>
+<p>Para solventar este problema, se desarrollaron los sistemas de control de versiones centralizados (<em>Centralized Version Control Systems</em> o <strong>CVCSs</strong> en inglés). Estos sistemas, como <strong>CVS</strong>, <strong>Subversion</strong>, y <strong>Perforce</strong>, tienen un único servidor que contiene todos los archivos versionados, y varios clientes descargan los archivos desde ese lugar central. Durante muchos años éste ha sido el estándar para el control de versiones.</p>
+<p>Este sistema ofrece varias ventajas, como por ejemplo: Todo el mundo puede saber en qué están trabajando los demás colaboradores y los administradores tienen control sobre qué archivos pueden ver/modificar cada colaborador. Pero tambien presenta un <em>problema importante</em>:  que hay un <strong>punto único de fallo</strong>. ¿Si éste server se cae? Nadie puede seguir trabajando ni trackeando sus cambios. ¿O si se rompe y no hay backups? Se pierde absolutamente <em>todo</em> el trabajo realizado.</p>
+<h3 id="distribuido" tabindex="-1">Distribuido <a class="anchor-link" href="#distribuido"></a></h3>
+<div class='imgDivBorderless'>
+<p><img src="/_src/assets/01-Git/distribuido.png" alt="Distribuido"></p>
+</div>
+<p>Es aquí donde entran los sistemas de control de versiones distribuidos (<em>Distributed Version Control Systems</em> o <strong>DVCSs</strong> en inglés). En un DVCS (como <strong>Git</strong>, <strong>Mercurial</strong>, <strong>Bazaar</strong> o <strong>Darcs</strong>), los clientes no sólo descargan la última instantánea de los archivos: replican completamente el repositorio. Así, si un servidor muere, y estos sistemas estaban colaborando a través de él, cualquiera de los repositorios de los clientes puede copiarse en el servidor para restaurarlo.</p>
+<h2 id="historia-de-git" tabindex="-1">Historia de Git <a class="anchor-link" href="#historia-de-git"></a></h2>
+<p>Como muchas de las grandes cosas en esta vida, <strong>Git</strong> comenzó con un poco de destrucción creativa y encendida polémica. El núcleo de Linux es un proyecto de software de código abierto con un alcance bastante grande. Durante la mayor parte del mantenimiento del núcleo de Linux (1991-2002), los cambios en el software se pasaron en forma de parches y archivos. En 2002, el proyecto del núcleo de Linux empezó a usar un DVCS propietario llamado <strong>BitKeeper</strong>.</p>
+<p>En 2005, la relación entre la comunidad que desarrollaba el núcleo de Linux y la compañía que desarrollaba BitKeeper se vino abajo, y la herramienta dejó de ser ofrecida gratuitamente. Esto impulsó a la comunidad de desarrollo de Linux (y en particular a Linus Torvalds, el creador de Linux) a desarrollar su propia herramienta basada en algunas de las lecciones que aprendieron durante el uso de BitKeeper. Algunos de los objetivos del nuevo sistema:</p>
+<ul>
+<li>Velocidad</li>
+<li>Diseño sencillo</li>
+<li>Fuerte apoyo al desarrollo no lineal (miles de ramas paralelas)</li>
+<li>Completamente distribuido</li>
+<li>Capaz de manejar grandes proyectos (como el núcleo de Linux) de manera eficiente (velocidad y tamaño de los datos)</li>
+</ul>
+<p>Desde su nacimiento en 2005, Git ha evolucionado y madurado para ser fácil de usar y aún conservar estas cualidades iniciales. Es tremendamente rápido, muy eficiente a gran escala, y tiene un increíble sistema de ramificación (branching) para desarrollo no lineal.</p>
+<h2 id="conceptos-de-git" tabindex="-1">Conceptos de Git <a class="anchor-link" href="#conceptos-de-git"></a></h2>
+<p>Git modela sus datos como un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, o guardas el estado de tu proyecto en Git, él básicamente hace una foto del aspecto de todos tus archivos en ese momento, y guarda una referencia a esa instantánea. Para ser eficiente, si los archivos no se han modificado, Git no almacena el archivo de nuevo, sólo un enlace al archivo anterior idéntico que ya tiene almacenado.</p>
+<div class='imgDivBorderless'>
+<p><img src="/_src/assets/01-Git/snapshots.png" alt="snapshots"></p>
+</div>
+<p>La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales para operar. Por lo general no se necesita información de ningún otro ordenador de tu red. Como tienes toda la historia del proyecto ahí mismo, en tu disco local, la mayoría de las operaciones parecen prácticamente inmediatas (con otros sistemas el proceso involucra llamados por red que generan retardos importantes).</p>
+<h2 id="integridad" tabindex="-1">Integridad <a class="anchor-link" href="#integridad"></a></h2>
+<p>Todo en Git es verificado mediante una suma de comprobación (<strong>checksum</strong> en inglés) antes de ser almacenado, y es identificado a partir de ese momento mediante dicha suma. <strong>Esto significa que es imposible cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa.</strong></p>
+<p>El mecanismo que usa Git para generar esta suma de comprobación se conoce como hash SHA-1. Se trata de una cadena de 40 caracteres hexadecimales (0-9 y a-f), y se calcula en base a los contenidos del archivo o estructura de directorios. Un hash SHA-1 tiene esta pinta:</p>
+<pre class="language-shell"><code class="hljs language-shell">24b9da6552252987aa493b52f8696cd6d3b00373</code></pre>
+<p>Verás estos valores hash por todos lados en Git, ya que los usa con mucha frecuencia. De hecho, Git guarda todo no por nombre de archivo, sino por el valor hash de sus contenidos.</p>
+<p>Vamos a distinguir dos directorios, primero el <em>directorio de git</em>: que es donde almacena los metadatos y la base de datos de tu proyecto, y segundo el <em>directorio de trabajo</em> que es una copia de una versión del proyecto en particular. Estos archivos se sacan de la base de datos comprimida en el directorio de Git, y se colocan en disco para que los puedas usar o modificar. Los archivos dentro del <em>directorio de trabajo</em> pueden estar en unos de los siguientes <em>estados</em>:</p>
+<h3 id="estados" tabindex="-1">Estados <a class="anchor-link" href="#estados"></a></h3>
+<p>Git tiene tres estados principales en los que se pueden encontrar tus archivos:</p>
+<ul>
+<li><strong>committed</strong>: significa que los datos están almacenados de manera segura en tu base de datos local.</li>
+<li><strong>modified</strong>: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos.</li>
+<li><strong>staged</strong>: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.</li>
+</ul>
+<div class='imgDivBorderless'>
+<p><img src="/_src/assets/01-Git/estados.png" alt="Estados"></p>
+</div>
+<p>Hay un archivo simple, generalmente contenido en tu directorio de Git, llamado que almacena información acerca de lo que va a ir en tu próxima confirmación, al contenido de este archivo. O al archivo mismo se lo conoce como <strong>staging area</strong>.</p>
+<p>Sabiendo esto, el flujo de trabajo básico en Git sería algo así:</p>
+<ul>
+<li>Modificas una serie de archivos en tu <em>directorio de trabajo</em>.</li>
+<li><em>Stageas</em> los archivos, añadiendolos a tu <strong>staging area</strong> o área de preparación.</li>
+<li>Commiteas o Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en tu directorio de Git.</li>
+</ul>
+<blockquote>
+<p>Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (<strong>committed</strong>). Si ha sufrido cambios desde que se obtuvo del repositorio, y ha sido añadida al área de preparación, está preparada (<strong>staged</strong>). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado (no se incluyó en el área de preparación), está modificada (<strong>modified</strong>).</p>
+</blockquote>
+<h3 id="github.com" tabindex="-1"><a href="http://Github.com">Github.com</a> <a class="anchor-link" href="#github.com"></a></h3>
+<p><a href="https://github.com">Github.com</a> es una red para almacenar tus repositorios, esencialmente es un repositorio de repositorios. Es uno de los tantos disponibles en internet, y el más popular. Git != Github, aunque funcionen muy bien juntos. Github es un lugar donde puedes compartir tu código o encontrar otros proyectos. También actúa como portfolio para cualquier código en el que hayas trabajado. Si planeas ser un desarrollador deberías tener cuenta en Github. Usaremos Github extensivamente durante tu tiempo en Henry.</p>
+<h2 id="lectura-recomendada" tabindex="-1">Lectura recomendada <a class="anchor-link" href="#lectura-recomendada"></a></h2>
+<ul>
+<li><a href="https://git-scm.com/">Git: sitio oficial</a></li>
+<li><a href="https://try.github.io/levels/1/challenges/1">Github: tutorial oficial</a></li>
+<li><a href="https://git-scm.com/docs/gittutorial">Git: tutorial oficial</a></li>
+<li><a href="https://www.davidbaumgold.com/tutorials/command-line/">Terminal turorial</a></li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+
+          <div class="row" id="feedbackBox">
+                Qué te pareció la clase?
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=Git' target="_blank">
+              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+            </a>
+              Dejanos tu feedback!
+          </div>
+
+      </div>
+
+      <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-1" style="background-color: black">
+          <h6>Hecho con 💛 por alumnos de Henry</h6>
+        </div>
+      </footer>
+
+      
+  <!-- up button -->
+  <div>
+    <button
+      id="upBtn"
+      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:32px; bottom:40px; color:white; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
+    ><i class="arrow up"></i></button>
+  </div>
+  
+  <style>
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  </style>
+
+  <script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) {
+      upBtn.style.opacity = 1;
+      upBtn.style.pointerEvents = 'auto';     
+    }
+    else {
+      upBtn.style.opacity = 0;
+      upBtn.style.pointerEvents = 'none';
+    }
+  })
+
+  upBtn.addEventListener('click', () => {
+    let start = document.querySelector('.reader-bar-start')
+    start.scrollIntoView({behavior: "smooth"})
+  })
+  </script>
+
+  <!-- reader bar -->
+  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;">
+    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;"></div>
+  </div>
+
+  <script>
+    let winH = window.innerHeight;
+    const content = document.querySelector('.reader-bar-start');
+
+    let contentH = content.offsetHeight;
+    let contentS = contentH - winH;
+    let readerBar = document.getElementById('readerBar');
+    window.addEventListener('load', () => {
+      document.addEventListener ('scroll', updateBar);
+    })
+    window.addEventListener('resize', redefine)
+
+    function redefine() {
+      winH = window.innerHeight;
+      contentH = content.offsetHeight;
+      contentS = contentH - winH;
+      updateBar();
+    }
+
+    function updateBar() {
+      const pagePos = window.scrollY; 
+      const updatedBar = pagePos * 100 / contentS;
+      readerBar.style.width = updatedBar + "%";
+    }
+  </script>
+  
+    </body>
+  </html>
