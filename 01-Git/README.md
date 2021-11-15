@@ -2,8 +2,8 @@
 title: Git
 eleventyNavigation:
   key: Git
-  # parent: Introducción
   order: 6
+  permalink: https://nachovip.github.io/Prep-Course-Stage
 ---
 <!-- 
 <table width="100%" style='table-layout:fixed;'>
