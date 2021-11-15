@@ -3,7 +3,7 @@ title: Git
 eleventyNavigation:
   key: Git
   order: 6
-  permalink: "/Prep-Course-Stage/"
+  # permalink: "/Prep-Course-Stage/"
 ---
 <!-- 
 <table width="100%" style='table-layout:fixed;'>
