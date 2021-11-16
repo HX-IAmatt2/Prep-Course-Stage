@@ -18,7 +18,9 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Javascript V (Clases y ***prototype***)
+# Javascript V
+
+(Clases y ***prototype***)
 
 En esta lección cubriremos:
 

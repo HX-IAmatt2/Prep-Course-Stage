@@ -107,10 +107,6 @@ navbar {
   flex-direction: column;
   padding: 0 1rem;
   margin-top: 2rem;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border: solid 1px rgb(180, 180, 180);
-  background-color: rgb(235, 235, 235);
   width: 220px;
   min-height: 70vh;
   /* border: 2px dashed yellow; */
@@ -168,7 +164,14 @@ navbar {
 }
 
 #lesson h1 {
-  font-family: "Avenir-Heavy";
+  font-family: "Avenir-Normal";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+
   border: 1px solid;
   border-radius: 4px;
   margin: 1rem 0 3rem 0;
