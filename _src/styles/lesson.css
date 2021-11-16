@@ -251,6 +251,11 @@ navbar #lessonTitle {
   list-style: square;
 }
 
+#lesson a {
+  font-family: "Avenir-Black";
+  font-size: 16px;
+}
+
 #feedbackBox {
   /* border: 2px dashed; */
   display: flex;
@@ -266,9 +271,7 @@ navbar #lessonTitle {
 }
 
 footer {
-  font-family: "Avenir-Book";
-  font-style: normal;
-  font-weight: 900;
+  font-family: "Avenir-Black";
   font-size: 24px;
   line-height: 33px;
   color: rgb(240, 240, 240);
@@ -277,7 +280,6 @@ footer {
 
 code {
   font-weight: bold;
-  font-size: 1.1em;
 }
 
 /* Bloques de codigo */

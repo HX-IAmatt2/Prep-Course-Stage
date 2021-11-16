@@ -354,7 +354,7 @@ El margen es el área transparente alrededor del elemento que deseas que no choq
 
 ### ***border***
 
-Borde establecerá un *borde* alrededor de su elemento, puedes determinar el tamaño, color y estilo del borde. Puede encontrar una lista de estilos de borde aquí: [https://developer.mozilla.org/en-US/docs/Web/CSS/border]. El borde está fuera del padding, pero dentro del margen.
+Borde establecerá un *borde* alrededor de su elemento, puedes determinar el tamaño, color y estilo del borde. Puede encontrar una lista de estilos de borde aquí: <https://developer.mozilla.org/en-US/docs/Web/CSS/border>. El borde está fuera del padding, pero dentro del margen.
 
 ```css
 div {
