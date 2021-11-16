@@ -16,6 +16,11 @@ html {
 }
 
 @font-face {
+  font-family: "OCR-A";
+  src: url('/_src/fonts/ocr-aregular.ttf');
+}
+
+@font-face {
   font-family: "Avenir-Book";
   src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Book-01-995b34ab56b423abffe48e64bf8b8df1.ttf);
 }
@@ -57,7 +62,7 @@ navbar {
   font-size: 16px;
   line-height: 22px;
   padding: 0 0.8rem 0 0.8rem;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 50px;
 }
 
@@ -65,7 +70,7 @@ navbar #lessonTitle {
   font-family: "Avenir-Heavy";
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #main {
@@ -78,7 +83,7 @@ navbar #lessonTitle {
   /* border: 2px dashed blue; */
   position: absolute;
   padding-top: 0.3rem;
-  right: 0.5rem;
+  right: 1rem;
 }
 
 #headerTags a {
@@ -279,7 +284,11 @@ footer {
 }
 
 code {
+  font-family: Monospace;
   font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: #FF0099;
 }
 
 /* Bloques de codigo */
