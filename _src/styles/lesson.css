@@ -4,7 +4,6 @@
 }
 
 html {
-  /* font-family: "Avenir"; */
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,98 +15,24 @@ html {
   height: 75px;
 }
 
-/* @font-face {
-  font-family: "Avenir Black";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Black")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Black-03-968e784956ff9b6a05c29cc3be18cad0.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
+@font-face {
+  font-family: "Avenir-Light";
+  src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Light-07-33f6570a328d84cb7d06e829a0c7ca1b.ttf);
 }
 
 @font-face {
-  font-family: "Avenir Normal";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Normal")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Heavy-05-f080b6894f8375c59a197caa24aac91c.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
+  font-family: "Avenir-Heavy";
+  src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Heavy-05-f080b6894f8375c59a197caa24aac91c.ttf);
 }
 
 @font-face {
-  font-family: "Avenir Heavy";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Heavy")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Heavy-05-f080b6894f8375c59a197caa24aac91c.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
+  font-family: "Avenir-Black";
+  src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Black-03-968e784956ff9b6a05c29cc3be18cad0.ttf);
 }
 
-@font-face {
-  font-family: "Avenir Book";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Book")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Book-01-995b34ab56b423abffe48e64bf8b8df1.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
-}
-@font-face {
-  font-family: "Avenir Light";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Light")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Light-07-33f6570a328d84cb7d06e829a0c7ca1b.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
-}*/
-
-/* @font-face {
-  font-family: "Avenir Medium";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Medium")
-    url(/_src/fonts/Avenir-Medium-09-7d635ea94b4460e86cd678e9e754a643.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
-} */
-
-/* @font-face {
-  font-family: "Avenir Roman";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Roman")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Roman-12-c6d37b26297461a78d10f169dd5cf46d.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
-}  */
 
 body {
-  /* font-family: "Avenir Medium"; */
+  font-family: "Avenir-Light";
   /* border: 2px dashed; */
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.875rem;
@@ -205,6 +130,7 @@ navbar {
 }
 
 #lesson h1 {
+  font-family: "Avenir-Heavy";
   border: 1px solid;
   border-radius: 4px;
   margin: 1rem 0 3rem 0;
@@ -215,6 +141,7 @@ navbar {
 }
 
 #lesson h2 {
+  font-family: "Avenir-Black";
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
