@@ -1,11 +1,10 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginTOC = require("eleventy-plugin-toc");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItHighlightJS = require("markdown-it-highlightjs");
-const readerBar = require("eleventy-plugin-reader-bar");
+const readerBar = require("henry-reader-bar");
 
 const toBootstrapNav = require('eleventy-navigation-bootstrap')
 
@@ -32,10 +31,8 @@ module.exports = function (eleventyConfig) {
       .use(markdownItHighlightJS)
   );
 
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(readerBar);
-
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(pluginTOC, {
@@ -55,7 +52,6 @@ module.exports = function (eleventyConfig) {
       includes: "/_src/layouts",
       data: "/_src/data",
       output: "_dist",
-      // pathPrefix: "/Prep-Course-Stage/"
     },
   };
 };
