@@ -18,7 +18,9 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Javascript IV (Objetos)
+# Javascript IV 
+
+## Objetos
 
 En esta lección cubriremos:
 
