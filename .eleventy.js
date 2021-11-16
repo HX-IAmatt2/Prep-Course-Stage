@@ -1,5 +1,4 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const readingTime = require("eleventy-plugin-reading-time");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const toBootstrapNav = require('eleventy-navigation-bootstrap')
 const pluginTOC = require("eleventy-plugin-toc");
@@ -7,6 +6,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItHighlightJS = require("markdown-it-highlightjs");
 const readerBar = require("henry-reader-bar");
+const readingTime = require("henry-reading-time");
 
 const mdOptions = {
   html: true,
