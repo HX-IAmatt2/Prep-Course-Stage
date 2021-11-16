@@ -46,20 +46,26 @@ html {
 }
 
 body {
-  font-family: "Avenir-Light";
   /* border: 2px dashed; */
   color: rgba(0, 0, 0, 0.87);
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.43;
   background-color: #fafafa;
 }
 
 navbar {
   /* border: 2px dashed; */
+  font-family: "Avenir-Roman";
+  font-size: 16px;
+  line-height: 22px;
   padding: 0 0.8rem 0 0.8rem;
-  color: rgb(240, 240, 240);
+  color: #FFFFFF;
   height: 50px;
+}
+
+navbar #lessonTitle {
+  font-family: "Avenir-Heavy";
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
 }
 
 #main {
@@ -76,7 +82,7 @@ navbar {
 }
 
 #headerTags a {
-  font-family: Avenir-Book;
+  font-family: "Avenir-Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -113,8 +119,7 @@ navbar {
 }
 
 #tocBox {
-  font-family: "Avenir-Book";
-  font-weight: normal;
+  font-family: "Avenir-Heavy";
   font-size: 16px;
   line-height: 22px;
   color: #000000;
@@ -145,16 +150,14 @@ navbar {
 
 #readingTime {
   font-family: "Avenir-Book";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 119.6%;
   display: flex;
   align-items: center;
   text-align: center;
   border: 1px solid #000000;
   box-sizing: border-box;
-  width: 150px;
+  width: 160px;
   height: 41px;
   padding: 1.1rem;
   margin-bottom: -4rem;

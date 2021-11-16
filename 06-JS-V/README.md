@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript V'
+title: 'JavaScript V: Clases y prototype'
 eleventyNavigation:
   key: 'JS V'
   order: 11
