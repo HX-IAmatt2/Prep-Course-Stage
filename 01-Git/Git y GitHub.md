@@ -140,7 +140,7 @@ Funcionan muy parecido a los archivos en estado Unstaged, algo así como un esta
 
 ---
 
-# ✨Uso de GitHub ✨
+## ✨Uso de GitHub ✨
 
 Github es una plataforma que nos permite guardar repositorios de git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de consola de mandos).
 
@@ -171,22 +171,33 @@ git remote -v
 git pull origin master--allow-unrelated-histories
 ```
 
-#### Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub:
+- Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub
 
 ```bash
 git push origin master
 ```
 
-# Manejo de ramas en GitHub 🌳🌱
+### Manejo de ramas en GitHub 🌳🌱
 
 Puedes trabajar con ramas que nunca enviamos a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo importante es que aprendas a manejarlas para trabajar profesionalmente.
 
-- **Crear una rama en el repositorio local**: git branch nombre de la rama o git checkout -b nombre de la rama.
-- **Publicar una rama local de, al repositorio remoto**: git push origin nombre de la rama.
+- **Crear una rama en el repositorio local**:
 
-Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git usando el comando gitk.
+```bash
+git branch "nombre de la rama" 
+o 
+git checkout -b "nombre de la rama"
+```
 
-Configurar múltiples colaboradores en un repositorio de GitHub
+- **Publicar una rama local, al repositorio remoto**:
+
+```bash
+git push origin "nombre de la rama"
+```
+
+Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git usando el comando `gitk`.
+
+#### Configurar múltiples colaboradores en un repositorio de GitHub
 
 Por defecto, cualquiera puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits, ni ramas ni nada.
 
@@ -194,21 +205,21 @@ Existen varias formas de solucionar esto para poder aceptar contribuciones. Una 
 
 Solo debemos entrar a la configuración de colaboradores de nuestro proyecto (Repositorio > Settings > Collaborators) y añadir el email o username de los nuevos colaboradores.
 
-## Flujo de trabajo profesional con pull requests 📈👩🏻‍🎓🙆🏻‍♂️🙆🏻‍♀️
+#### Flujo de trabajo profesional con ***pull requests*** 📈👩🏻‍🎓🙆🏻‍♂️🙆🏻‍♀️
 
 En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un code review y luego de su aprobación se unen códigos con los llamados merge request.
 
 Para realizar pruebas enviamos el código a servidores que normalmente los llamamos Staging develop (servidores de pruebas) luego de que se realizan las pruebas pertinentes tanto de código como de la aplicación estos pasan a el servidor de producción con el ya antes mencionado merge request.
 
-Ignorar archivos en el Repositorio con .gitignore
+#### Ignorar archivos en el Repositorio con ***.gitignore***
 
-No todos los archivos que agregas a un proyecto deberían ir a un repositorio, por ejemplo cuando tienes un archivo donde están tus contraseñas que comúnmente tienen la extensión .env o cuando te estas conectando a una base de datos, son archivos que nadie debe ver.
+No todos los archivos que agregas a un proyecto deberían ir a un repositorio, por ejemplo cuando tienes un archivo donde están tus contraseñas que comúnmente tienen la extensión ***.env*** o cuando te estas conectando a una base de datos, son archivos que nadie debe ver.
 
-## Reconstruir commits en Git con amend 🙇🏻‍♀️🙇🏻‍♂️🛠
+#### Reconstruir commits en Git con ***amend*** 🙇🏻‍♀️🙇🏻‍♂️🛠
 
 A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos `git commit --amend`, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agrega al commit anterior.
 
-## Git Reset y Reflog: úsese en caso de emergencia ❌🛑🚫
+#### Git ***reset*** y ***reflog***: úsese en caso de emergencia ❌🛑🚫
 
 ¿Qué pasa cuando todo se rompe y no sabemos qué está pasando?
 
@@ -219,7 +230,7 @@ Con git reset hashDelHEAD nos devolvemos al estado en que el proyecto funcionaba
 
 Git reset es una mala práctica, no deberías usarlo en ningún momento; debe ser nuestro último recurso.
 
-## Buscar en archivos y commits de Git con Grep y log 🕵🏻‍♂️
+#### Buscar en archivos y commits de Git con ***grep*** y ***log*** 🕵🏻‍♂️
 
 A medida que nuestro proyecto se hace grande vamos a querer buscar ciertas cosas.
 
