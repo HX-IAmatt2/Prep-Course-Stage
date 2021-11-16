@@ -18,7 +18,9 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Introducción a Javascript
+# JavaScript I
+
+#### Introducción a JavaScript
 
 En esta lección cubriremos:
 

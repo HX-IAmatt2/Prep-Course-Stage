@@ -18,9 +18,9 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Javascript II 
+# JavaScript II 
 
-## Flujos de control, operadores de comparación, bucles ***for***
+#### Flujos de control, operadores de comparación, bucles ***for***
 
 <!-- En esta lección cubriremos:
 

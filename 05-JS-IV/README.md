@@ -20,7 +20,7 @@ eleventyNavigation:
 
 # Javascript IV 
 
-## Objetos
+#### Objetos
 
 En esta lección cubriremos:
 

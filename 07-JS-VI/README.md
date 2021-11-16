@@ -16,9 +16,9 @@ eleventyNavigation:
     </td>
   </tr>
 </table> -->
-# Javascript VI
+# JavaScript VI
 
-Callbacks
+#### Callbacks
 
 En esta lección cubriremos:
 

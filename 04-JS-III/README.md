@@ -18,9 +18,9 @@ eleventyNavigation:
   </tr>
 </table> -->
 
-# Javascript III
+# JavaScript III
 
-## Continuación de bucles ***for*** y Arrays
+#### Continuación de bucles ***for*** y ***arrays***
 
 En esta lección cubriremos:
 

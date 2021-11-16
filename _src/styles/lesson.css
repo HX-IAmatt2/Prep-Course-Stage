@@ -204,7 +204,7 @@ navbar #lessonTitle {
   margin: 1rem 0 3rem 0;
 }
 
-#lesson h1 + p {
+#lesson h1 + h4 {
   margin: -2.1rem 0 4rem 0;
   font-family: "Avenir-Black";
   font-size: 32px
