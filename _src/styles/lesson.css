@@ -275,12 +275,21 @@ navbar #lessonTitle {
   justify-content: center;
 }
 
-footer {
+#footer {
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 79px;
   font-family: "Avenir-Black";
   font-size: 24px;
   line-height: 33px;
   color: rgb(240, 240, 240);
-  /* height: 79px; */
+}
+
+#footer p {
+  margin-bottom: 0
 }
 
 code {
