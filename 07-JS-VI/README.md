@@ -2,7 +2,6 @@
 title: "JavaScript VI: Callbacks"
 eleventyNavigation:
   key: "JS VI"
-  # parent: Introducción
   order: 12
 ---
 
@@ -17,7 +16,9 @@ eleventyNavigation:
     </td>
   </tr>
 </table> -->
-# Javascript VI (Callbacks)
+# Javascript VI
+
+## Callbacks
 
 En esta lección cubriremos:
 
