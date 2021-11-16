@@ -27,7 +27,7 @@ html {
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF;
 }
-@font-face {
+/* @font-face {
   font-family: "Avenir Roman";
   font-style: normal;
   font-display: swap;
@@ -38,6 +38,11 @@ html {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF;
+} */
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Roman-12-c6d37b26297461a78d10f169dd5cf46d.ttf);
 }
 
 @font-face {
@@ -86,7 +91,7 @@ navbar {
 #headerTags {
   /* border: 2px dashed blue; */
   position: absolute;
-  /* padding-top: 0.3rem; */
+  padding-top: 0.3rem;
   right: 0.5rem;
 }
 
@@ -106,7 +111,7 @@ navbar {
   position: fixed;
   flex-direction: column;
   padding: 0 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 220px;
   min-height: 70vh;
   /* border: 2px dashed yellow; */
@@ -139,6 +144,7 @@ navbar {
 
 #sidebar ul {
   /* border: 2px dashed; */
+  list-style: none;
   margin-left: -1rem;
 }
 
@@ -154,6 +160,11 @@ navbar {
 
 #lesson {
   /* border: 2px dashed green; */
+  font-family: "Avenir-Roman";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
   text-align: justify;
   padding: 2rem 3rem 4rem 18rem;
   font-size: 1.1em;
