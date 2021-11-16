@@ -145,11 +145,19 @@ navbar {
 }
 
 #readingTime {
+  font-family: "Avenir-Normal";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  font-weight: bold;
-  width: 250px;
-  /* border: solid 1px; */
-  font-size: 1rem;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  width: 150px;
+  height: 41px;
+  padding: 1.1rem;
   margin-bottom: -4rem;
   margin-top: 3rem;
 }
