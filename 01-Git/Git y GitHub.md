@@ -135,10 +135,10 @@ git merge "cualquier otra rama"
 
 ### Resolución de conflictos al hacer un Merge
 
-Git nunca borra nada a menos que se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama pero creando un nuevo commit, no borrando ramas ni commits ( recuerda que puedes borrar commits con git reset / git branch -d)
+Git nunca borra nada a menos que se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama pero creando un nuevo commit, no borrando ramas ni commits ( recuerda que puedes borrar commits con `git reset` / `git branch -d`)
 
-Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged.
-Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged, solo debemos ejecutar git add para pasarlos al área de Staging y git commit para aplicar los cambios en el repositorio.
+Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como ***Unmerged***.
+Funcionan muy parecido a los archivos en estado ***Unstaged***, algo así como un estado intermedio entre ***Untracked*** y ***Unstaged***, solo debemos ejecutar `git add` para pasarlos al área de ***Staging*** y git commit para aplicar los cambios en el repositorio.
 
 ---
 

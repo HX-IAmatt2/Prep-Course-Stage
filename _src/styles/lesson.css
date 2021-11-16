@@ -165,7 +165,6 @@ navbar {
 #lesson {
   /* border: 2px dashed green; */
   font-family: "Avenir-Roman";
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -180,8 +179,7 @@ navbar {
 
 #lesson h1 {
   display: inline-block;
-  font-family: "Avenir-Normal";
-  font-style: normal;
+  font-family: "Avenir-Black";
   font-weight: 900;
   font-size: 48px;
   line-height: 66px;
@@ -196,9 +194,7 @@ navbar {
 }
 
 #lesson h2 {
-  /* font-family: "Avenir-Black"; */
-  font-family: "Avenir-Normal";
-  font-style: normal;
+  font-family: "Avenir-Black";
   font-weight: 900;
   font-size: 32px;
   line-height: 32px;
@@ -208,6 +204,11 @@ navbar {
 }
 
 #lesson h3 {
+  font-family: "Avenir-Black";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2e2e2e;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
