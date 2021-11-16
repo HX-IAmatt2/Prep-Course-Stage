@@ -141,16 +141,13 @@ navbar {
 #sidebar {
   display: flex;
   position: fixed;
-  z-index: 200;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: 1.5rem;
+  padding: 0 1rem;
+  margin-top: 3.5rem;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  border: solid 1px;
-  border-color: rgb(180, 180, 180);
+  border: solid 1px rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
   width: 220px;
   /* border: 2px dashed yellow; */
@@ -158,11 +155,13 @@ navbar {
 
 #tocTitle {
   font-weight: bold;
+  margin: 1rem 0 0 0;
   justify-content: center;
   border-bottom: 1px solid grey;
 }
 
 #tocBox {
+  /* border: 2px dashed; */
   margin-top: 1rem;
 }
 
@@ -177,6 +176,11 @@ navbar {
 
 #sidebar a:active {
   color: rgb(255, 238, 0);
+}
+
+#sidebar ul{
+  /* border: 2px dashed; */
+  margin-left: -1rem;
 }
 
 #readingTime {
