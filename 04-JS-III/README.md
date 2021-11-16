@@ -1,8 +1,8 @@
 ---
+homework: prueba
 title: JavaScript III
 eleventyNavigation:
   key: JS III
-  # parent: Introducción
   order: 9
 ---
 

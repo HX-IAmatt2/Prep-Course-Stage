@@ -27,18 +27,6 @@ html {
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF;
 }
-/* @font-face {
-  font-family: "Avenir Roman";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Roman")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Roman-12-c6d37b26297461a78d10f169dd5cf46d.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
-} */
 
 @font-face {
   font-family: "Avenir-Roman";
@@ -118,7 +106,15 @@ navbar {
 }
 
 #tocTitle {
-  font-weight: bold;
+  font-family: "Avenir-Normal";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+
   margin: 1rem 0 0 0;
   justify-content: center;
   border-bottom: 1px solid grey;
@@ -193,7 +189,13 @@ navbar {
 }
 
 #lesson h2 {
-  font-family: "Avenir-Black";
+  /* font-family: "Avenir-Black"; */
+  font-family: "Avenir-Normal";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  color: #2e2e2e;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
@@ -250,7 +252,13 @@ navbar {
 }
 
 footer {
+  font-family: "Avenir-Normal";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
   color: rgb(240, 240, 240);
+  /* height: 79px; */
 }
 
 code {
@@ -302,7 +310,7 @@ pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  background: #1e1e1e;
+  background: #2e2e2e;
 }
 
 :not(pre) > code[class*="language-"] {

@@ -2,7 +2,6 @@
 title: 'JavaScript V'
 eleventyNavigation:
   key: 'JS V'
-  # parent: Introducción
   order: 11
 ---
 
