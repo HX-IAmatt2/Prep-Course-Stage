@@ -143,7 +143,7 @@ navbar {
   position: fixed;
   flex-direction: column;
   padding: 0 1rem;
-  margin-top: 3.5rem;
+  margin-top: 1rem;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border: solid 1px rgb(180, 180, 180);
@@ -198,6 +198,10 @@ navbar {
   text-align: justify;
   padding: 2rem 3rem 4rem 18rem;
   font-size: 1.1em;
+}
+
+#lesson table {
+  display: none;
 }
 
 #lesson h1 {

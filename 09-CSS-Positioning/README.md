@@ -2,21 +2,9 @@
 title: 'CSS'
 eleventyNavigation:
   key: 'CSS'
-  # parent: Introducción
   order: 14
 ---
 
-<!-- <table width="100%" style='table-layout:fixed;'>
-  <tr>
-    <td>
-      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=09-CSS-Positioning">
-        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
-        <br>
-        Hacé click acá para dejar tu feedback sobre esta clase.
-      </a>
-    </td>
-  </tr>
-</table> -->
 # CSS Intermedio
 
 En esta lección cubriremos:
@@ -34,14 +22,14 @@ En esta lección cubriremos:
 
 Armar un layout y hacer que todo se vea limpio es lo que la mayoría de gente espera hacer cuando empiezan a aprender CSS. Posicionar elementos HTML en la página con CSS es posiblemente la habilidad más poderosa que tiene CSS, aunque también puede ser la más **frustrante**. En esta lección aprenderemos distintas formas de posicionar elementos en la página.
 
-## La propiedad ***display***
+### La propiedad ***display***
 
 Esta propiedad es una de las más importante de posicionamiento en CSS. Podemos usarla para controlar cómo se muestra el contenido en relación a los elementos alrededor de este, y cómo se comportan en la pantalla.
 
 ```css
-  div {
-    display: <valor de la propiedad>;
-  }
+div {
+  display: <valor de la propiedad>;
+}
 ```
 
 Hay dos tipos de elementos "display" ya incluidos en HTML; "block" e "inline",
@@ -57,9 +45,9 @@ Los elementos "inline" son opuestos a los "block", dado que no comenzarán en un
 Podemos controlar cómo un elemento se comporta usando la propiedad "display". Si queremos que un elemento "inline" actúe como uno "block", le definimos:
 
 ```css
-  div {
-    display: block;
-  }
+div {
+  display: block;
+}
 ```
 
 Y vice-versa.
@@ -76,14 +64,14 @@ Flex es una nueva herramienta que nos ofrece CSS3, la cual nos da la habilidad d
 
 Esta es una característica de CSS3 que nos permitirá crear sistemas de grillas dentro de un elemento.
 
-## La propiedad ***position***
+### La propiedad ***position***
 
 Esta propiedad especificará qué tipo de método de posicionamiento usará un elemento HTML. Hay 5 métodos diferentes disponibles (aquí veremos 4 de ellos).
 
 ```css
-  div {
-    position: <valor de la propiedad>;
-  }
+div {
+  position: <valor de la propiedad>;
+}
 ```
 
 #### ***static***
@@ -102,7 +90,7 @@ Definir un elemento como "fijo" hará que éste quede fijo en un lugar de la pan
 
 "absolute" es muy parecido a "fixed", excepto que el elemento quedará anclado de forma relativa al elemento _parent_ (siempre que el elemento padre tenga alguna posición definida, excepto "static").
 
-## Usar propiedades de posición para posicionar elementos
+### Propiedades de posición
 
 Ahora que hemos definido nuestros métodos de posicionamiento al estilo que queremos usar, podemos arrancar a posicionar nuestro elemento. (Nota: esto funciona para cada método de posición que no sea "static", dado que no afecta al elemento de ninguna forma).
 
@@ -111,21 +99,21 @@ Ahora que hemos definido nuestros métodos de posicionamiento al estilo que quer
 Después de haber definido nuestro método de posicionamiento, podemos usar las propiedades "top", "left", "right" y "bottom" para acomodar nuestro elemento. El valor que le des a cada uno determinará qué tan lejos del borde quedará nuestro elemento. Por ejemplo, si queremos que nuestro elemento esté en la esquina superior izquierda (con una posición fija), podemos usar lo siguiente:
 
 ```css
-  div {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
+div {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 ```
 
 Si lo quisiésemos 10 píxeles debajo del límite superior y 10 píxeles del borde derecho:
 
 ```css
-  div {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-  }
+div {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
 ```
 
 ## Introducción a Flexbox
@@ -149,11 +137,11 @@ Ahora que nuestro contenedor (elemento) es "flex", podemos imaginarlo como una g
 Ejemplo: si quisiésemos nuestros elementos centrados en el medio exacto de un "flex box", usaríamos lo siguiente:
 
 ```css
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 ```
 
 ### ***flex-direction***
@@ -183,3 +171,15 @@ Por último, cubriremos una propiedad más avanzada llamada "align-self". La mis
 ## Homework
 
 Abre una nueva ventana en el navegador y completa "homework.html"
+
+<table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=09-CSS-Positioning">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
