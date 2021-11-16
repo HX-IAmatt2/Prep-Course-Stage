@@ -20,7 +20,9 @@ eleventyNavigation:
 
 # Git y GitHub
 
-## Comandos👨🏻‍💻👩🏻‍💻
+## Comenzando a usar Git
+
+### Comandos básicos
 
 - `git init`: se utiliza para iniciar nuestro repositorio.
 - `git add ArchivoEjemplo.js`: crea el archivo pero no lo guarda de forma definitiva, lo almacena en (Staging Area).
@@ -32,7 +34,7 @@ eleventyNavigation:
 - `git push`: sirve para enviar cambios al repositorio remoto.
 - `git pull`: sirve para recibir cambios de repositorio remoto a local.
 
-## Ciclos de vida o estados de los archivos en Git 💛
+### Ciclos de vida o estados de los archivos en Git
 
 Cuando trabajamos con Git nuestros archivos pueden vivir y moverse entre 4 diferentes estados (cuando trabajamos remoto pueden ser más estados, pero lo estudiaremos más adelante)
 
@@ -46,7 +48,7 @@ Cuando trabajamos con Git nuestros archivos pueden vivir y moverse entre 4 difer
 
 Recuerda que hay un caso muy raro donde los archivos tienen dos estados al mismo tiempo: Staged y Untracked. Esto pasa cuando guardas los cambios de un archivo en el área de Staging (con el comando git commit), pero antes de hacer commit para guardar los cambios en el repositorio haces nuevos cambios que todavía no han sido guardados en el área de Staging (en realidad, todo sigue funcionando igual pero es un poco divertido).
 
-## Comandos para mover archivos entre los estados de Git 🏃🏻‍♀️
+### Comandos para mover archivos entre los estados de Git
 
 - `git status`: nos permite ver el estado de todos nuestros archivos y carpetas.
 
@@ -61,7 +63,7 @@ Recuerda que hay un caso muy raro donde los archivos tienen dos estados al mismo
 - `git rm --cached`: Mueve los archivos que le indiquemos al estado Untracked.
 - `git rm --force`: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
-## Qué es un Branch y cómo funciona un Merge? 🤔
+## Qué es un Branch y cómo funciona un Merge?
 
 Checkout es para cambiar de rama. Sólo la crea con el modificador -b.
 Unir dos Ramas lo conocemos como Merge.
@@ -73,7 +75,7 @@ Estándar de equipos de desarrollo..
      (para unirse al Máster cuando estén definitivamente listas).
 - Rama ***Hotfix***: issues o errores se solucionan aquí para unirse al Master tan pronto sea posible.
 
-## Crea un repositorio de Git y haz tu primer commit ✨
+## Crea un repositorio de Git y haz tu primer commit
 
 Le indicaremos a Git que queremos crear un nuevo repositorio para utilizar un sistema
 de control de versiones.
@@ -91,13 +93,13 @@ git config --global user.email "tu@email.com"
 
 Existen muchas otras configuraciones de Git que puedes encontrar en el comando git config --list (o solo git config para ver una explicación más detallada)
 
-## Analizar cambios en los archivos de tu proyecto con Git 📈📉📊
+## Analizar cambios en los archivos de tu proyecto con Git
 
 - `git log`: muestra la identificación de los commits.
 - `git show`: nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser mas detallados.
 - `git diff`: nos muestra la diferencia entre una version y otra, no necesariamente todos los cambios desde la creación. (Gif diff commitA commitB).
 
-## Volver en el tiempo en nuestro repositorio utilizando reset y checkout 🏃🏻‍♀️⏱
+## Volver en el tiempo en nuestro repositorio utilizando reset y checkout
 
 - `git checkout + Id del commit`: podemos volver a cualquier versión anterior de un archivo específico o incluso
   de nuestro proyecto entero. Esta es también es la forma de movernos entre ramas.
@@ -110,7 +112,7 @@ Existen muchas otras configuraciones de Git que puedes encontrar en el comando g
 
 - `git checkout master 'archivo.txt'`: volvemos a la versión madre.
 
-## Introducción a las ramas o branches de Git 🌳🌱
+## Introducción a las ramas o branches de Git
 
 Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 
@@ -123,7 +125,7 @@ git checkout "nombre de la rama" // cambiarse de rama
 
   **NOTA**: Hacer commit antes de cambiar de ramas para no perder los datos.
 
-## Fusión de ramas con Git Merge 🐱‍🏍
+### Fusión de ramas con Git Merge
 
 El comando git merge nos permite crear un nuevo commit con la combinación de dos ramas, la rama donde nos encontramos cuando ejecutamos el comando y la rama que le pasamos después del comando.
 
@@ -131,7 +133,7 @@ El comando git merge nos permite crear un nuevo commit con la combinación de do
 git merge "cualquier otra rama"
 ```
 
-## Resolución de conflictos al hacer un Merge 📃
+### Resolución de conflictos al hacer un Merge
 
 Git nunca borra nada a menos que se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama pero creando un nuevo commit, no borrando ramas ni commits ( recuerda que puedes borrar commits con git reset / git branch -d)
 
@@ -140,7 +142,7 @@ Funcionan muy parecido a los archivos en estado Unstaged, algo así como un esta
 
 ---
 
-## ✨Uso de GitHub ✨
+## Uso de GitHub
 
 Github es una plataforma que nos permite guardar repositorios de git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de consola de mandos).
 
@@ -177,7 +179,7 @@ git pull origin master--allow-unrelated-histories
 git push origin master
 ```
 
-### Manejo de ramas en GitHub 🌳🌱
+### Manejo de ramas en GitHub
 
 Puedes trabajar con ramas que nunca enviamos a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo importante es que aprendas a manejarlas para trabajar profesionalmente.
 
@@ -205,7 +207,7 @@ Existen varias formas de solucionar esto para poder aceptar contribuciones. Una 
 
 Solo debemos entrar a la configuración de colaboradores de nuestro proyecto (Repositorio > Settings > Collaborators) y añadir el email o username de los nuevos colaboradores.
 
-#### Flujo de trabajo profesional con ***pull requests*** 📈👩🏻‍🎓🙆🏻‍♂️🙆🏻‍♀️
+#### Flujo de trabajo profesional con ***pull requests***
 
 En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un code review y luego de su aprobación se unen códigos con los llamados merge request.
 
@@ -215,11 +217,11 @@ Para realizar pruebas enviamos el código a servidores que normalmente los llama
 
 No todos los archivos que agregas a un proyecto deberían ir a un repositorio, por ejemplo cuando tienes un archivo donde están tus contraseñas que comúnmente tienen la extensión ***.env*** o cuando te estas conectando a una base de datos, son archivos que nadie debe ver.
 
-#### Reconstruir commits en Git con ***amend*** 🙇🏻‍♀️🙇🏻‍♂️🛠
+#### Reconstruir commits en Git con ***amend***
 
 A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos `git commit --amend`, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agrega al commit anterior.
 
-#### Git ***reset*** y ***reflog***: úsese en caso de emergencia ❌🛑🚫
+#### Git ***reset*** y ***reflog***: úsese en caso de emergencia
 
 ¿Qué pasa cuando todo se rompe y no sabemos qué está pasando?
 
@@ -230,7 +232,7 @@ Con git reset hashDelHEAD nos devolvemos al estado en que el proyecto funcionaba
 
 Git reset es una mala práctica, no deberías usarlo en ningún momento; debe ser nuestro último recurso.
 
-#### Buscar en archivos y commits de Git con ***grep*** y ***log*** 🕵🏻‍♂️
+#### Buscar en archivos y commits de Git con ***grep*** y ***log***
 
 A medida que nuestro proyecto se hace grande vamos a querer buscar ciertas cosas.
 
