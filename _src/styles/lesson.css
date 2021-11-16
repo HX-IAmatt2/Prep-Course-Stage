@@ -142,7 +142,6 @@ navbar {
   display: flex;
   position: fixed;
   flex-direction: column;
-  justify-content: space-between;
   padding: 0 1rem;
   margin-top: 3.5rem;
   border-top-right-radius: 8px;
@@ -150,6 +149,7 @@ navbar {
   border: solid 1px rgb(180, 180, 180);
   background-color: rgb(235, 235, 235);
   width: 220px;
+  min-height: 70vh;
   /* border: 2px dashed yellow; */
 }
 
