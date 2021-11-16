@@ -1,12 +1,12 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const readingTime = require("eleventy-plugin-reading-time");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const toBootstrapNav = require('eleventy-navigation-bootstrap')
 const pluginTOC = require("eleventy-plugin-toc");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItHighlightJS = require("markdown-it-highlightjs");
 const readerBar = require("henry-reader-bar");
-
-const toBootstrapNav = require('eleventy-navigation-bootstrap')
 
 const mdOptions = {
   html: true,
@@ -31,6 +31,7 @@ module.exports = function (eleventyConfig) {
       .use(markdownItHighlightJS)
   );
 
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(readerBar);
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -45,7 +46,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_src/fonts");
 
   eleventyConfig.addNunjucksFilter('bootstrapNav', toBootstrapNav)
-
 
   return {
     dir: {
