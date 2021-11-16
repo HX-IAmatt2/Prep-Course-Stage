@@ -19,7 +19,7 @@ eleventyNavigation:
 
 # Javascript V
 
-## Clases y prototype
+Clases y prototype
 
 <iframe src="https://player.vimeo.com/video/425235994" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 

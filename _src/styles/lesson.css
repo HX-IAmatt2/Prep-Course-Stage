@@ -101,9 +101,8 @@ navbar #lessonTitle {
   display: flex;
   position: fixed;
   flex-direction: column;
-  padding: 0 1rem;
-  margin-top: 1rem;
-  width: 220px;
+  margin-top: 45px;
+  width: 242px;
   min-height: 70vh;
   /* border: 2px dashed yellow; */
 }
@@ -130,8 +129,8 @@ navbar #lessonTitle {
   color: #000000;
   display: flex;
   align-items: center;
-  /* border: 2px dashed; */
   margin-top: 1rem;
+  /* border: 2px dashed; */
 }
 
 #sidebar a {
@@ -151,6 +150,13 @@ navbar #lessonTitle {
   /* border: 2px dashed; */
   list-style: none;
   margin-left: -1rem;
+}
+
+#sidebar li li {
+  font-family: "Avenir-Roman";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 #readingTime {
@@ -186,7 +192,6 @@ navbar #lessonTitle {
 #lesson h1 {
   display: inline-block;
   font-family: "Avenir-Black";
-  font-weight: 900;
   font-size: 48px;
   line-height: 66px;
   color: #2e2e2e;
@@ -197,6 +202,12 @@ navbar #lessonTitle {
 
   height: 64px;
   margin: 1rem 0 3rem 0;
+}
+
+#lesson h1 + p {
+  margin: -2.1rem 0 4rem 0;
+  font-family: "Avenir-Black";
+  font-size: 32px
 }
 
 #lesson h2 {
