@@ -16,26 +16,18 @@ html {
 }
 
 @font-face {
-  font-family: "Avenir Medium";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local("Avenir Medium")
-    url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Medium-09-7d635ea94b4460e86cd678e9e754a643.ttf)
-    format("truetype");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF;
+  font-family: "Avenir-Book";
+  src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Book-01-995b34ab56b423abffe48e64bf8b8df1.ttf);
+}
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Medium-09-7d635ea94b4460e86cd678e9e754a643.ttf);
 }
 
 @font-face {
   font-family: "Avenir-Roman";
   src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Roman-12-c6d37b26297461a78d10f169dd5cf46d.ttf);
-}
-
-@font-face {
-  font-family: "Avenir-Normal";
-  src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Heavy-05-f080b6894f8375c59a197caa24aac91c.ttf);
 }
 
 @font-face {
@@ -84,7 +76,7 @@ navbar {
 }
 
 #headerTags a {
-  font-family: Avenir-Normal;
+  font-family: Avenir-Book;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -106,7 +98,7 @@ navbar {
 }
 
 #tocTitle {
-  font-family: "Avenir-Normal";
+  font-family: "Avenir-Book";
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
@@ -121,6 +113,13 @@ navbar {
 }
 
 #tocBox {
+  font-family: "Avenir-Book";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  display: flex;
+  align-items: center;
   /* border: 2px dashed; */
   margin-top: 1rem;
 }
@@ -145,7 +144,7 @@ navbar {
 }
 
 #readingTime {
-  font-family: "Avenir-Normal";
+  font-family: "Avenir-Book";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -165,7 +164,6 @@ navbar {
 #lesson {
   /* border: 2px dashed green; */
   font-family: "Avenir-Roman";
-  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   text-align: justify;
@@ -214,6 +212,11 @@ navbar {
 }
 
 #lesson h4 {
+  font-family: "Avenir-Black";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2e2e2e;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -260,7 +263,7 @@ navbar {
 }
 
 footer {
-  font-family: "Avenir-Normal";
+  font-family: "Avenir-Book";
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
