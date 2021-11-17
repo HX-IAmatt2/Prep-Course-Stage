@@ -1,10 +1,5 @@
 ---
 title: 'JavaScript IV: Objetos'
-homework: 'prueba de url'
-birds:
-  - robin
-  - finch
-  - sparrow
 eleventyNavigation:
   key: 'JS IV'
   order: 10

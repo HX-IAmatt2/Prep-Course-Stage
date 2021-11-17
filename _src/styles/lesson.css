@@ -112,6 +112,7 @@ navbar #lessonTitle {
 
 #sidebar {
   /* border: 2px dashed blue; */
+  margin-top: -3rem;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -134,7 +135,7 @@ navbar #lessonTitle {
 #tocBox {
   font-family: "Avenir-Heavy";
   font-size: 16px;
-  line-height: 22px;
+  line-height: 28px;
   color: #000000;
   display: flex;
   /* align-items: center; */
@@ -165,7 +166,7 @@ navbar #lessonTitle {
   font-family: "Avenir-Roman";
   font-weight: normal;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 28px;
 }
 
 #readingTime {
@@ -288,15 +289,24 @@ navbar #lessonTitle {
 }
 
 #feedbackBox {
-  /* border: 2px dashed; */
-  display: flex;
-  margin-bottom: 3rem;
-  height: 200px;
-  justify-content: space-around;
-  align-content: space-evenly;
+  position: fixed !important;
+  z-index: 1500;
+  background: #ffff01;
+  padding: 8px 16px;
+  /* width: 352px; */
+  height: 40px;
+  border-radius: 8px;
+  /* margin-bottom: 3rem; */
+  left: 15px;
+  bottom: 18px;
 }
 
 #feedbackBox a {
+  font-family: "Avenir-Black";
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
   display: flex;
   justify-content: center;
 }

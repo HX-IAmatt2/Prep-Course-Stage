@@ -22,9 +22,17 @@
         </div>
       </navbar>
 
+              <div id="feedbackBox">
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
+            {# <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/> #}
+              Dejanos tu feedback!👍
+          </a>
+          </div>
+
+
       <div id='main' class="container-fluid">
         <div id='header' >
-          {# Navigation #}    
+          {# Navigation #}
           {{ collections.all | eleventyNavigation | bootstrapNav({
             listChildItemClass: "dropdown-menu shadow", 
             activeKey: eleventyNavigation.key,
@@ -44,6 +52,9 @@
               {# Table of contents #}
               {{ content | toc | safe }}
             </div>
+            <div>
+              {{ homework }}
+            </div>
           </div>
 
           <div id='lesson'>
@@ -58,14 +69,6 @@
             </div>
           </div>
         </div>
-
-        <div class="row" id="feedbackBox">
-                Qué te pareció la clase?
-              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{title}}' target="_blank">
-            <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
-          </a>
-              Dejanos tu feedback!
-          </div>
 
       </div>
 

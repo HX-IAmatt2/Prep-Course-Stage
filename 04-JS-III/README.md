@@ -1,12 +1,12 @@
 ---
-homework: prueba
 title: JavaScript III
+feedbackID: 04-JS-III
 eleventyNavigation:
   key: JS III
   order: 9
 ---
 
-<!-- <table width="100%" style='table-layout:fixed;'>
+<table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=04-JS-III">
@@ -16,7 +16,7 @@ eleventyNavigation:
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 
 # JavaScript III
 

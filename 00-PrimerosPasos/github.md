@@ -2,7 +2,6 @@
 title: GitHub
 eleventyNavigation:
   key: GitHub
-  # parent: Primeros Pasos
   order: 4
 ---
 
