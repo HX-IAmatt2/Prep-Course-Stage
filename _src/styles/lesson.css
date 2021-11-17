@@ -215,7 +215,7 @@ navbar #lessonTitle {
 }
 
 #lesson h1 + h4 {
-  margin: -4.1rem 0 5rem 0;
+  margin: 0rem 0 5rem 0;
   font-family: "Avenir-Black";
   font-size: 32px;
 }
