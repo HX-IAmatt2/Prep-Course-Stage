@@ -23,12 +23,20 @@
       </navbar>
 
       <div id='main' class="container-fluid">
-        <div id='headerTags' class="row">
+        <div id='header' >
           {# Navigation #}
-          {{ collections.all | eleventyNavigation | bootstrapNav({
-              listClass: "nav nav-tabs justify-content-center", 
+          {# {{ collections.all | eleventyNavigation | bootstrapNav({
+              listClass: "nav nav-tabs justify-content-right", 
               activeKey: eleventyNavigation.key
-            }) | safe }}
+            }) | safe }} #}
+         
+          {{ collections.all | eleventyNavigation | bootstrapNav({
+            listChildItemClass: "dropdown-menu shadow", 
+            activeKey: eleventyNavigation.key,
+            listItemClass: "link",
+            activeListItemClass: "activeLink"
+          }) | safe }}
+
         </div>
 
         <div class="row">
@@ -56,23 +64,23 @@
           </div>
         </div>
 
-          <div class="row" id="feedbackBox">
+        <div class="row" id="feedbackBox">
                 Qué te pareció la clase?
               <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{title}}' target="_blank">
-              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
-            </a>
+            <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+          </a>
               Dejanos tu feedback!
           </div>
 
       </div>
 
       <div id="footer">
-          <p>Hecho con 💛 por alumnos de Henry</p>
+        <p>Hecho con 💛 por alumnos de Henry</p>
       </div>
 
       {% readerBar "3px",
       "black",
       "yellow" %}
-      
+
     </body>
   </html>

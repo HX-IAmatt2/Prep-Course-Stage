@@ -17,7 +17,7 @@ html {
 
 @font-face {
   font-family: "OCR-A";
-  src: url('/_src/fonts/ocr-aregular.ttf');
+  src: url("/_src/fonts/ocr-aregular.ttf");
 }
 
 @font-face {
@@ -52,6 +52,9 @@ html {
 
 body {
   /* border: 2px dashed; */
+  /* font-family: "Avenir-Roman";
+  font-size: 16px;
+  line-height: 22px; */
   color: rgba(0, 0, 0, 0.87);
   background-color: #fafafa;
 }
@@ -79,17 +82,27 @@ navbar #lessonTitle {
   margin-top: 53px;
 }
 
-#headerTags {
+#header {
   /* border: 2px dashed blue; */
-  position: absolute;
+  display: flex;
+  justify-items: end;
+  justify-content: flex-end;
   padding-top: 0.3rem;
-  right: 1rem;
 }
 
-#headerTags a {
+#header .activeLink {
+  color: black;
+  border-bottom: 3px solid black;
+  border-radius: 0;
+  text-decoration: none;
   font-family: "Avenir-Medium";
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#header a {
+  font-family: "Avenir-Medium";
   font-size: 16px;
   line-height: 22px;
   display: flex;
@@ -101,10 +114,7 @@ navbar #lessonTitle {
   display: flex;
   position: fixed;
   flex-direction: column;
-  margin-top: 45px;
   width: 242px;
-  min-height: 70vh;
-  /* border: 2px dashed yellow; */
 }
 
 #tocTitle {
@@ -116,7 +126,6 @@ navbar #lessonTitle {
   display: flex;
   align-items: center;
   color: #000000;
-
   margin: 1rem 0 0 0;
   justify-content: center;
   border-bottom: 1px solid grey;
@@ -181,7 +190,7 @@ navbar #lessonTitle {
   font-size: 16px;
   line-height: 22px;
   text-align: justify;
-  padding: 2rem 3rem 4rem 18rem;
+  padding: 0 2rem 4rem 18rem;
   font-size: 1.1em;
 }
 
@@ -201,13 +210,13 @@ navbar #lessonTitle {
   border-bottom-color: #ffff01;
 
   height: 64px;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 5rem 0;
 }
 
 #lesson h1 + h4 {
-  margin: -2.1rem 0 4rem 0;
+  margin: -4.1rem 0 5rem 0;
   font-family: "Avenir-Black";
-  font-size: 32px
+  font-size: 32px;
 }
 
 #lesson h2 {
@@ -256,8 +265,8 @@ navbar #lessonTitle {
   align-self: center;
   display: flex;
   justify-self: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -265,6 +274,12 @@ navbar #lessonTitle {
 
 #lesson ul {
   list-style: square;
+}
+
+#lesson li {
+  font-family: "Avenir-Heavy";
+  font-size: 16px;
+  line-height: 22px;
 }
 
 #lesson a {
@@ -300,7 +315,7 @@ navbar #lessonTitle {
 }
 
 #footer p {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 code {
@@ -308,7 +323,7 @@ code {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
-  color: #FF0099;
+  color: #ff0099;
 }
 
 /* Bloques de codigo */
@@ -353,7 +368,7 @@ code[class*="language-"] *::selection {
 
 pre[class*="language-"] {
   padding: 1em;
-  margin: 0.5em 0;
+  margin-bottom: 4rem;
   overflow: auto;
   background: #2e2e2e;
 }
