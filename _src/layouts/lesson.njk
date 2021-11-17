@@ -24,12 +24,7 @@
 
       <div id='main' class="container-fluid">
         <div id='header' >
-          {# Navigation #}
-          {# {{ collections.all | eleventyNavigation | bootstrapNav({
-              listClass: "nav nav-tabs justify-content-right", 
-              activeKey: eleventyNavigation.key
-            }) | safe }} #}
-         
+          {# Navigation #}    
           {{ collections.all | eleventyNavigation | bootstrapNav({
             listChildItemClass: "dropdown-menu shadow", 
             activeKey: eleventyNavigation.key,
@@ -42,10 +37,10 @@
         <div class="row">
 
           <div id='sidebar'>
-            <div id="tocTitle" class="row">
+            <div id="tocTitle">
             Contenido de la clase
             </div>
-            <div id="tocBox" class="row">
+            <div id="tocBox">
               {# Table of contents #}
               {{ content | toc | safe }}
             </div>
