@@ -298,7 +298,7 @@ navbar #lessonTitle {
   border-radius: 8px;
   /* margin-bottom: 3rem; */
   left: 15px;
-  bottom: 18px;
+  bottom: 6px;
 }
 
 #feedbackBox a {
@@ -317,9 +317,9 @@ navbar #lessonTitle {
   align-items: center;
   justify-content: center;
   background-color: black;
-  height: 79px;
+  height: 51px;
   font-family: "Avenir-Black";
-  font-size: 24px;
+  font-size: 18px;
   line-height: 33px;
   color: rgb(240, 240, 240);
 }
