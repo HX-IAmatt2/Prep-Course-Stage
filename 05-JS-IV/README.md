@@ -1,8 +1,12 @@
 ---
 title: 'JavaScript IV: Objetos'
+homework: 'prueba de url'
+birds:
+  - robin
+  - finch
+  - sparrow
 eleventyNavigation:
   key: 'JS IV'
-  # parent: Introducción
   order: 10
 ---
 

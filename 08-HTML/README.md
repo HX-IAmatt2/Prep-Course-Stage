@@ -1,11 +1,11 @@
 ---
-title: HTML
+title: 'Fundamentos de HTML/CSS'
 eleventyNavigation:
   key: HTML
   order: 13
 ---
 
-# Fundamentos HTML/CSS
+# Fundamentos de HTML/CSS
 
 En esta clase veremos:
 

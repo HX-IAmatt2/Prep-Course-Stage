@@ -145,7 +145,7 @@ for (let i = 0; i < nombresEstudiantes.length; i++) {
 // 'Samuel'
 ```
 
-### Recursos adicionales
+## Recursos adicionales
 
 * [MDN: Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [MDN: for Loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
