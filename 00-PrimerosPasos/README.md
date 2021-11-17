@@ -1,8 +1,8 @@
 ---
 title: Primeros Pasos
+feedbackID: 00-PrimerosPasos
 eleventyNavigation:
   key: Primeros Pasos
-  # parent: Introducción
   order: 1
 ---
 
