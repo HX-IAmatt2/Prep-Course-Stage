@@ -293,12 +293,10 @@ navbar #lessonTitle {
   z-index: 1500;
   background: #ffff01;
   padding: 8px 16px;
-  /* width: 352px; */
   height: 40px;
   border-radius: 8px;
-  /* margin-bottom: 3rem; */
   left: 10px;
-  bottom: 5px;
+  bottom: 6px;
 }
 
 #feedbackBox a {
