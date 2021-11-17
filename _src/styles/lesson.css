@@ -297,8 +297,8 @@ navbar #lessonTitle {
   height: 40px;
   border-radius: 8px;
   /* margin-bottom: 3rem; */
-  left: 15px;
-  bottom: 6px;
+  left: 10px;
+  bottom: 5px;
 }
 
 #feedbackBox a {
