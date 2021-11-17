@@ -46,6 +46,7 @@ Acá vas a encontrar todo lo que necesitas para arrancar el Curso de Preparació
 ## Editores de Texto
 
 Para poder escribir código que pueda ser interpretado por un lenguaje de programación, necesitamos utilizar un editor de texto.
+
 Hay varios, puedes probarlos y optar por el que te sientas más a gusto.
 
 A continuación veremos una lista de los más populares:
