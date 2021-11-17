@@ -6,19 +6,7 @@ eleventyNavigation:
   order: 10
 ---
 
-<!-- <table width="100%" style='table-layout:fixed;'>
-  <tr>
-    <td>
-      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=05-JS-IV">
-        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
-        <br>
-        Hacé click acá para dejar tu feedback sobre esta clase.
-      </a>
-    </td>
-  </tr>
-</table> -->
-
-# Javascript IV 
+# JavaScript IV 
 
 #### Objetos
 
@@ -166,9 +154,9 @@ usuario.decirHola(); // 'juan.perez manda saludos!'
 
 Nota: la palabra clave `this` a veces puede ser uno de los temas más difíciles en Javascript. Lo estamos usando muy básicamente aquí, pero el tema se vuelve mucho más complejo muy pronto.
 
-#### `this` y el Execution Context
+### ***This*** y el Execution Context
 
-* ##### Contexto global inicial
+* #### Contexto global inicial
 
 Este es el caso cuando ejecutamos código en el contexto global (afuera de cualquier función). En este caso `this` hace referencia al objeto `global`, en el caso del browser hace referencia a `window`.
 
@@ -183,7 +171,7 @@ Este es el caso cuando ejecutamos código en el contexto global (afuera de cualq
 < 37
 ```
 
-* ##### En el contexto de una función
+* #### En el contexto de una función
 
 Cuando estamos dentro de una función, el valor de `this` va a depender de _cómo sea invocada la función_.
 
@@ -203,7 +191,7 @@ En este ejemplo la función es invocada por el objeto global por lo tanto this h
 
 > Si usamos el modo `strict` de Javascript, el ejemplo de arriba va a devolver `undefined`, ya que no le deja al interprete _asumir_ que `this` es el objeto global.
 
-* ##### Como método de un objeto
+* #### Como método de un objeto
 
 Cuando usamos el _keyword_ `this` dentro de una función que es un método de un objeto, `this` toma hace referencia al objeto sobre el cual se llamó el método:
 
@@ -298,3 +286,15 @@ En esta lección aprendimos qué son los Objetos y las muchas formas que existen
 ## Homework
 
 Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/05-JS-IV/homework)
+
+<!-- <table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=05-JS-IV">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table> -->

@@ -126,7 +126,7 @@ console.log(nombresEstudiantes);  // ['Martin', 'Antonio', 'Sara', 'Samuel']
 
 ### Notas sobre las matrices
 
-Debido a que Javascript no es un lenguaje fuertemente tipado, las matrices tampoco necesitan ser tipadas. Las matrices en Javascript pueden contener múltiples tipos de datos diferentes en la misma matriz
+Debido a que Javascript no es un lenguaje fuertemente tipado, las matrices tampoco necesitan ser tipadas. Las matrices en Javascript pueden contener múltiples tipos de datos diferentes en la misma matriz.
 
 ## Utilizando bucles ***for*** en arrays
 
