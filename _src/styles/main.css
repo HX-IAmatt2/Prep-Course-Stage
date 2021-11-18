@@ -1,0 +1,336 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 80px;
+}
+
+body {
+  /* border: 2px dashed; */
+  margin: auto;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fafafa;
+}
+
+#navbarExtended {
+  /* border: 2px dashed red; */
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  height: 68px;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 4px 4px  rgba(0,0,0,.2);
+}
+
+#navbarContained {
+  border: 2px dashed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: absolute; */
+  /* top: 0; */
+  width: 100%;
+  max-width: 1500px;
+  font-family: "Avenir-Roman";
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 0.8rem 0 0.8rem;
+  /* height: 68px; */
+  z-index: 1000;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+#navbarContained #lessonTitle {
+  font-family: "Avenir-Heavy";
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+#main {
+  border: 2px dashed red;
+  max-width: 1500px;
+  margin-top: 68px;
+}
+
+#header {
+  /* border: 2px dashed blue; */
+  display: flex;
+  justify-items: end;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+
+#header .activeLink {
+  color: black;
+  border-bottom: 3px solid black;
+  border-radius: 0;
+  text-decoration: none;
+  font-family: "Avenir-Medium";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#header a {
+  font-family: "Avenir-Medium";
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#sidebar {
+  /* border: 2px dashed blue; */
+  margin-top: -44px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 242px;
+}
+
+#tocTitle {
+  font-family: "Avenir-Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  color: #000000;
+  margin: 1rem 0 0 0;
+  justify-content: flex-start;
+  border-bottom: 1px solid black;
+}
+
+#tocBox {
+  font-family: "Avenir-Heavy";
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  display: flex;
+  /* align-items: center; */
+  margin-top: 1rem;
+  /* border: 2px dashed; */
+}
+
+#sidebar a {
+  color: black;
+  text-decoration: none;
+}
+
+#sidebar a:hover {
+  color: rgb(88, 80, 80);
+}
+
+#sidebar a:active {
+  color: rgb(255, 238, 0);
+}
+
+#sidebar ul {
+  /* border: 2px dashed; */
+  list-style: none;
+  margin-left: -1.5rem;
+}
+
+#sidebar li li {
+  font-family: "Avenir-Roman";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+#readingTime {
+  font-family: "Avenir-Book";
+  font-size: 14px;
+  line-height: 119.6%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  width: 160px;
+  height: 41px;
+  padding: 1.1rem;
+  margin-bottom: -4rem;
+  margin-top: 3rem;
+}
+
+#lesson {
+  /* border: 2px dashed green; */
+  font-family: "Avenir-Roman";
+  font-size: 16px;
+  line-height: 18px;
+  text-align: justify;
+  padding: 0 2rem 4rem 18rem;
+  font-size: 1.1em;
+}
+
+#lesson .feedback {
+  display: none;
+}
+
+#lesson img[alt~="HenryLogo"] {
+  display: none;
+}
+
+#lesson h1 {
+  display: inline-block;
+  font-family: "Avenir-Black";
+  font-size: 48px;
+  line-height: 66px;
+  color: #2e2e2e;
+
+  border-bottom-style: solid;
+  border-bottom-width: 25px;
+  border-bottom-color: #ffff01;
+
+  height: 64px;
+  margin: 1rem 0 3rem 0;
+}
+
+#lesson h1 + h4 {
+  margin: -2rem 0 3rem 0;
+  font-family: "Avenir-Black";
+  font-size: 32px;
+}
+
+#lesson h1 + h2 {
+  margin-top: 0;
+}
+
+#lesson h2 {
+  font-family: "Avenir-Black";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  color: #2e2e2e;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+#lesson h3 {
+  font-family: "Avenir-Black";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2e2e2e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#lesson h4 {
+  font-family: "Avenir-Black";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  color: #2e2e2e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#lesson img {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#lesson iframe {
+  display: block;
+  margin: auto;
+  align-self: center;
+  display: flex;
+  justify-self: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#lesson ul {
+  list-style: square;
+}
+
+#lesson li {
+  font-family: "Avenir-Heavy";
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#lesson a {
+  font-family: "Avenir-Black";
+  font-size: 16px;
+}
+
+#feedbackBox {
+  /* display: inline-block; */
+  position: fixed;
+  z-index: 1500;
+  background: #ffff01;
+  padding: 8px 16px;
+  height: 40px;
+  border-radius: 8px;
+  left: 10px;
+  bottom: 6px;
+  /* left: 400px; */
+}
+
+#feedbackBox a {
+  font-family: "Avenir-Black";
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+#footerExtended {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 51px;
+  width: 100%;
+}
+
+#footerContained {
+  border: 2px dashed;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 51px;
+  font-family: "Avenir-Black";
+  font-size: 18px;
+  line-height: 33px;
+  color: rgb(240, 240, 240);
+  width: 100%;
+  max-width: 1500px;
+}
+
+#footerContained p {
+  margin-bottom: 0;
+}
+
+
+
