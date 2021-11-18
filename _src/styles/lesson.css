@@ -12,7 +12,7 @@ html {
 :target:before {
   content: "";
   display: block;
-  height: 75px;
+  height: 80px;
 }
 
 @font-face {
