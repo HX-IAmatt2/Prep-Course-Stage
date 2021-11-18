@@ -87,7 +87,7 @@ navbar #lessonTitle {
   display: flex;
   justify-items: end;
   justify-content: flex-end;
-  padding-top: 0.3rem;
+  padding-top: 5px;
 }
 
 #header .activeLink {
@@ -112,7 +112,7 @@ navbar #lessonTitle {
 
 #sidebar {
   /* border: 2px dashed blue; */
-  margin-top: -3rem;
+  margin-top: -44px;
   display: flex;
   position: fixed;
   flex-direction: column;
