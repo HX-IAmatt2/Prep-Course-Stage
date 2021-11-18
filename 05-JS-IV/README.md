@@ -1,9 +1,24 @@
 ---
 title: 'JavaScript IV: Objetos'
+feedbackID: 05-JS-IV
 eleventyNavigation:
   key: 'JS IV'
   order: 10
 ---
+
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=05-JS-IV">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
 
 # JavaScript IV 
 
@@ -286,7 +301,7 @@ En esta lección aprendimos qué son los Objetos y las muchas formas que existen
 
 Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/05-JS-IV/homework)
 
-<!-- <table width="100%" style='table-layout:fixed;'>
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=05-JS-IV">
@@ -296,4 +311,4 @@ Completa la tarea descrita en el archivo [README](https://github.com/atralice/Cu
       </a>
     </td>
   </tr>
-</table> -->
+</table>

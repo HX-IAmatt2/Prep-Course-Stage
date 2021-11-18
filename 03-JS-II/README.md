@@ -1,12 +1,14 @@
 ---
 title: JavaScript II
+feedbackID: 03-JS-II
 eleventyNavigation:
   key: JS II
-#   parent: Introducción
   order: 8
 ---
 
-<!-- <table width="100%" style='table-layout:fixed;'>
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=03-JS-II">
@@ -16,7 +18,7 @@ eleventyNavigation:
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 
 # JavaScript II 
 

@@ -6,7 +6,9 @@ eleventyNavigation:
   order: 1
 ---
 
-<!-- <table width="100%" style='table-layout:fixed;'>
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=00-PrimerosPasos">
@@ -16,7 +18,7 @@ eleventyNavigation:
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 
 # Primeros Pasos
 
@@ -234,3 +236,15 @@ Otra forma de abrir la consola es haciendo click derecho sobre el escritorio y e
 Una vez instalado Git van a poder visualizar la consola: ingresamos el comando `git --version` para chequear que está instalado. Si ven la consola así, ya están listos para comenzar a trabajar!
 
 ![installGit](/_src/assets/00-PrimerosPasos/5.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=00-PrimerosPasos">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>

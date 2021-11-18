@@ -1,9 +1,24 @@
 ---
 title: 'CSS'
+feedbackID: 09-CSS-Positioning
 eleventyNavigation:
   key: 'CSS'
   order: 14
 ---
+
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=09-CSS-Positioning">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
 
 # CSS Intermedio
 
@@ -172,7 +187,7 @@ Por último, cubriremos una propiedad más avanzada llamada "align-self". La mis
 
 Abre una nueva ventana en el navegador y completa "homework.html"
 
-<table width="100%" style='table-layout:fixed;'>
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=09-CSS-Positioning">

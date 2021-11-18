@@ -1,12 +1,14 @@
 ---
 title: JavaScript I
+feedbackID: 02-JS-I
 eleventyNavigation:
   key: JS I
-  # parent: Introducción
   order: 7
 ---
 
-<!-- <table width="100%" style='table-layout:fixed;'>
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=02-JS-I">
@@ -16,7 +18,7 @@ eleventyNavigation:
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 
 # JavaScript I
 
@@ -348,3 +350,15 @@ _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para 
 ## Homework
 
 Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/02-JS-I/homework)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=02-JS-I">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>

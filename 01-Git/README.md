@@ -1,12 +1,14 @@
 ---
 title: Git
+feedbackID: 01-Git
 eleventyNavigation:
   key: Git
   order: 2
 ---
 
-<!-- 
-<table width="100%" style='table-layout:fixed;'>
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=01-Git">
@@ -16,7 +18,7 @@ eleventyNavigation:
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 
 # Uso de Git
 

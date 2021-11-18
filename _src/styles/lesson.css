@@ -16,11 +16,6 @@ html {
 }
 
 @font-face {
-  font-family: "OCR-A";
-  src: url("/_src/fonts/ocr-aregular.ttf");
-}
-
-@font-face {
   font-family: "Avenir-Book";
   src: url(https://henry-social-resources.s3-sa-east-1.amazonaws.com/fonts/Avenir/Avenir-Book-01-995b34ab56b423abffe48e64bf8b8df1.ttf);
 }
@@ -195,7 +190,11 @@ navbar #lessonTitle {
   font-size: 1.1em;
 }
 
-#lesson table {
+#lesson .feedback {
+  display: none;
+}
+
+#lesson img[alt~="HenryLogo"] {
   display: none;
 }
 

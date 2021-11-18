@@ -1,11 +1,14 @@
 ---
 title: "JavaScript VI: Callbacks"
+feedbackID: 07-JS-VI
 eleventyNavigation:
   key: "JS VI"
   order: 12
 ---
 
-<!-- <table width="100%" style='table-layout:fixed;'>
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=07-JS-VI">
@@ -15,7 +18,8 @@ eleventyNavigation:
       </a>
     </td>
   </tr>
-</table> -->
+</table>
+
 # JavaScript VI
 
 #### Callbacks
@@ -138,3 +142,15 @@ console.log(triple); // [ 6, 9, 12, 15 ]
 ## Homework
 
 Completa la tarea descrita en el archivo [README](https://github.com/atralice/Curso.Prep.Henry/tree/master/07-JS-VI/homework)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=07-JS-VI">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>

@@ -1,12 +1,14 @@
 ---
 title: Git y GitHub
+feedbackID: 01-Git
 eleventyNavigation:
   key: Git y GitHub
   order: 6
 ---
 
-<!-- <img  src='https://github.com/Douglas-san-anton/Curso.Prep.Henry/raw/master/logo.png' height='70px'>
-<table width="100%" style='table-layout:fixed;'>
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=01-Git">
@@ -16,7 +18,7 @@ eleventyNavigation:
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 
 # Git y GitHub
 

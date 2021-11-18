@@ -1,9 +1,24 @@
 ---
 title: 'Fundamentos de HTML/CSS'
+feedbackID: 08-HTML
 eleventyNavigation:
   key: HTML
   order: 13
 ---
+
+![HenryLogo](/_src/assets/logo.png)
+
+<table class="feedback" width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=08-HTML">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
 
 # Fundamentos de HTML/CSS
 
@@ -432,7 +447,7 @@ Ahora que tenemos nuestra hoja de estilo externa vinculada a nuestro archivo HTM
 * [Codecademy: Learn CSS](https://www.codecademy.com/learn/learn-css)
 * [w3schools: The Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
 
-<!-- <table width="100%" style='table-layout:fixed;'>
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=08-HTML">
@@ -442,4 +457,4 @@ Ahora que tenemos nuestra hoja de estilo externa vinculada a nuestro archivo HTM
       </a>
     </td>
   </tr>
-</table> -->
+</table>

@@ -5,6 +5,9 @@ eleventyNavigation:
   key: Intro
   order: 0
 ---
+
+![HenryLogo](/_src/assets/logo.png)
+
 # Introducción
 
 <!-- # Modulo 0 - Prep
