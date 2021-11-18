@@ -21,22 +21,23 @@
 
   <body>
     <div class="reader-bar-start">
-      <navbar class="navbar fixed-top navbar-light bg-black">
-        <div class="container-fluid">
-          <img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
-          <div>
-            <span id="lessonTitle">{{ title }}</span> | <span>Prep Course</span>
-          </div>
-        </div>
-      </navbar>
 
-              <div id="feedbackBox">
-              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
-            {# <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/> #}
+      <div id="navbarExtended">
+        <div id="navbarContained">
+            <div>
+              <img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
+            </div>
+            <div>
+              <span id="lessonTitle">{{ title }}</span> | <span>Prep Course</span>
+            </div>
+          </div>
+      </div>
+
+      <div id="feedbackBox">
+          <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
               Dejanos tu feedback!👍
           </a>
-          </div>
-
+        </div>
 
       <div id='main' class="container-fluid">
         <div id='header' >
@@ -47,7 +48,6 @@
             listItemClass: "link",
             activeListItemClass: "activeLink"
           }) | safe }}
-
         </div>
 
         <div class="row">
