@@ -12,7 +12,7 @@ html {
 :target:before {
   content: "";
   display: block;
-  height: 80px;
+  height: 85px;
 }
 
 body {
@@ -20,8 +20,16 @@ body {
   margin: auto;
   color: rgba(0, 0, 0, 0.87);
   background-color: #fafafa;
-  display:flex;
+  display: flex;
   justify-content: center;
+}
+
+#main {
+  /* border: 2px dashed red; */
+  max-width: 1250px;
+  margin-top: 68px;
+  display: flex;
+  flex-direction: column;
 }
 
 #navbarContainer {
@@ -46,7 +54,7 @@ body {
   /* position: absolute; */
   /* top: 0; */
   width: 100%;
-  max-width: 1500px;
+  max-width: 1250px;
   font-family: "Avenir-Roman";
   font-size: 16px;
   line-height: 22px;
@@ -64,11 +72,6 @@ body {
   color: #ffffff;
 }
 
-#main {
-  /* border: 2px dashed red; */
-  max-width: 1500px;
-  margin-top: 68px;
-}
 
 #header {
   /* border: 2px dashed blue; */
@@ -100,11 +103,8 @@ body {
 
 #sidebar {
   /* border: 2px dashed blue; */
-  margin-top: -44px;
   margin-left:12px;
-  display: flex;
   position: fixed;
-  flex-direction: column;
   width: 242px;
 }
 
@@ -307,7 +307,7 @@ div.footerContained {
   font-size: 18px;
   line-height: 33px;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1250px;
 }
 
 div.footerContained p {
