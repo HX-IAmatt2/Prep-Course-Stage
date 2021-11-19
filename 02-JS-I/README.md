@@ -50,25 +50,25 @@ Para crear una variable en JavaScript utilizamos la palabra clave `var`, seguida
 
 Existen tres formas de declarar una variable:
 
-```javascript
-var nombre = 'Juan'; // Vamos a usar principalemente esta forma
-let apellido = 'Perez';
-const comidafavorita = 'Pizza';
-```
-
 #### var
 
-`var` es la forma declarar una variable en ES5 (ES5 es la versión de JS, hoy en día existe ES6 que es la nueva versión, pero que todavía no es la más usada). Esta es una _palabra clave_ genérica para "variable".
+Es la forma declarar una variable en ES5 (ES5 es la versión de JS, hoy en día existe ES6 que es la nueva versión, pero que todavía no es la más usada). Esta es una _palabra clave_ genérica para "variable".
 
 Las dos formas siguentes, si bien son válidas, vamos a utilizarlas más adelante en la carrera, cuando tengamos más claros otros conceptos:
 
 #### let
 
-`let` es una nueva palabra clave de ES6, esto asignará una variable muy similar a `var`, pero con un comportamiento un poco diferente. Lo más notable es que difiere al crear un "nivel de _scope_" (hablaremos sobre esto más adelante).
+Es una nueva palabra clave de ES6, esto asignará una variable muy similar a `var`, pero con un comportamiento un poco diferente. Lo más notable es que difiere al crear un "nivel de _scope_" (hablaremos sobre esto más adelante).
 
 #### const
 
-`const` también es nuevo en ES6. Un `const` es una variable que no se podrá cambiar. Esto es la abreviatura de "constante".
+También es nuevo en ES6. Un `const` es una variable que no se podrá cambiar. Esto es la abreviatura de "constante".
+
+```javascript
+var nombre = 'Juan'; // Vamos a usar principalemente esta forma
+let apellido = 'Perez';
+const comidafavorita = 'Pizza';
+```
 
 #### console.log
 
