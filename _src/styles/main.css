@@ -26,7 +26,7 @@ body {
 
 #main {
   /* border: 2px dashed red; */
-  max-width: 1250px;
+  max-width: 1500px;
   margin-top: 68px;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ body {
   /* position: absolute; */
   /* top: 0; */
   width: 100%;
-  max-width: 1250px;
+  max-width: 1500px;
   font-family: "Avenir-Roman";
   font-size: 16px;
   line-height: 22px;
@@ -307,7 +307,7 @@ div.footerContained {
   font-size: 18px;
   line-height: 33px;
   width: 100%;
-  max-width: 1250px;
+  max-width: 1500px;
 }
 
 div.footerContained p {
