@@ -104,6 +104,7 @@ body {
 #sidebar {
   /* border: 2px dashed blue; */
   margin-left:12px;
+  margin-top: 60px;
   position: fixed;
   width: 242px;
 }
