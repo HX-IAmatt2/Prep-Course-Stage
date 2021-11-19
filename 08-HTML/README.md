@@ -59,7 +59,7 @@ Algunos tags html, por su naturaleza, no necesitan tener nada *adentro*. Por lo 
 <img src="http://imagen.com/img.jpg" />
 ```
 
-#### Atributos
+### Atributos
 
 En su mayoría de los atributos de un elemento son pares *nombre-valor*, separados por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, después del nombre del elemento. El valor puede estar rodeado por comillas dobles o simples. Los atributos de los tags nos sirven para cambiar su comportamiento o *configurarlos*.
 
@@ -69,21 +69,21 @@ Por ejemplo, el tag `<img>` sirve para mostrar una imagen. Este tag recibe el at
 <img src="http://imagen.com/img.jpg" />
 ```
 
-#### Tags
+### Tags
 
-##### ***\<html>***
+#### ***\<html>***
 
 El tag `<html>` va a contener a todos los demás tags dentro suyo. Este tag básicamente sirve para avisarle al browser que el contenido debe ser interpretado como `html`.
 
-##### ***\<head>***
+#### ***\<head>***
 
 Este tag sirve para contener tags que contengan información sobre el documento, pero es información que no queremos que se renderee. Comunmente contiene el *titulo* de la página y *links* a recursos externos que pueda usar la página (javascript o css).
 
-##### ***\<title>***
+#### ***\<title>***
 
 Es el título de la página, se mostrará en el tab del browser o en la parte superior (pero no en la página).
 
-##### ***\<body>***
+#### ***\<body>***
 
 En este tag estára encerrado todo lo que querramos que se vea en la pantalla.
 
@@ -103,7 +103,7 @@ Como ven, para mayor fácilidad en la lectura y la estructuración del documento
 
 (Todos los tags que presentaremos más abajo van siempre adentro de un tag `<body>`)
 
-##### ***\<p>***
+#### ***\<p>***
 
 Es el tag para los párrafos. Mostrará el texto contenido dentro en una nueva línea.
 
@@ -111,15 +111,15 @@ Es el tag para los párrafos. Mostrará el texto contenido dentro en una nueva l
 <p>Soy un párrafo</p>
 ```
 
-##### ***\<span>***
+#### ***\<span>***
 
 El elemento span es un contenedor de texto genérico. No inserta una nueva linea, como lo hace el elemento p. Sirve básicamente para darle estilo al texto.
 
-##### ***\<div>***
+#### ***\<div>***
 
 El elemento div es un *contenedor* genérico. Es usado principalmente para dar estilo, imaginen que es una caja (cuyo tamaño y color podes modificar *a piacere*), y que dentro podés poner otras cajas iguales.
 
-##### ***\<a>***
+#### ***\<a>***
 
 El tag a (del inglés *anchor*), nos permite crear **links** a otros documentos y páginas. Este tag recibe el *atributo* `href` que indica a dónde apunta el link.
 
@@ -127,7 +127,7 @@ El tag a (del inglés *anchor*), nos permite crear **links** a otros documentos 
 <a href="http://www.soyhenry.com">Esto es un link!</a>
 ```
 
-##### ***\<h1> ... \<h6>***
+#### ***\<h1> ... \<h6>***
 
 Son los tags de encabezado o títulos, están pensandos del 1 al 6, para indicar la importancia del contenido y su jerarquía.
 
@@ -137,7 +137,7 @@ Son los tags de encabezado o títulos, están pensandos del 1 al 6, para indicar
 <h6>El título menos importante.</h6>
 ```
 
-##### ***\<img>***
+#### ***\<img>***
 
 Este tag nos permite mostrar imágenes en la pantalla. Necesita el atributo `src` que indica la *URL* de donde sacar la imagen a mostrar.
 
@@ -145,11 +145,11 @@ Este tag nos permite mostrar imágenes en la pantalla. Necesita el atributo `src
 <img src="http://www.soyhenry.com/imageurl.jpg" />
 ```
 
-##### ***\<ul>***
+#### ***\<ul>***
 
 Este tag representa una lista desordenada (del inglés "unordered list"). Este tag está diseñado para contener otros tags de tipo item. También existe el tag `<ol>` que viene de "ordered list".
 
-##### ***\<li>***
+#### ***\<li>***
 
 Son los tags que contienen los items de la lista ('list item').
 
@@ -199,7 +199,7 @@ Hay varias formas de lograr esto (más adelante veremos en detalle como funciona
 * usando el tag `<style/>`: Se utiliza este tag en el `<head>` del documento HTML, con esto logramos agrupar todas las reglas que luego queremos que se apliquen a los elementos HTML.
 * Usar el tag `<link/>`: Este método nos permite definir las reglas CSS en un documento separado e *importarlo* a nuestra página (la ventaja que tiene es que podemos importar el mismo CSS a varias páginas).
 
-#### Atributo style
+### Atributo style
 
 Todos los *tags* HTML pueden recibir el atributo `style`. Este atributo indica las reglas CSS (que veremos más abajo), que se aplicaran **sólo** al elemento que las tiene.
 

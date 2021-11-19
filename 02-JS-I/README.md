@@ -50,17 +50,17 @@ Para crear una variable en JavaScript utilizamos la palabra clave `var`, seguida
 
 Existen tres formas de declarar una variable:
 
-#### var
+### var
 
 Es la forma declarar una variable en ES5 (ES5 es la versión de JS, hoy en día existe ES6 que es la nueva versión, pero que todavía no es la más usada). Esta es una _palabra clave_ genérica para "variable".
 
 Las dos formas siguentes, si bien son válidas, vamos a utilizarlas más adelante en la carrera, cuando tengamos más claros otros conceptos:
 
-#### let
+### let
 
 Es una nueva palabra clave de ES6, esto asignará una variable muy similar a `var`, pero con un comportamiento un poco diferente. Lo más notable es que difiere al crear un "nivel de _scope_" (hablaremos sobre esto más adelante).
 
-#### const
+### const
 
 También es nuevo en ES6. Un `const` es una variable que no se podrá cambiar. Esto es la abreviatura de "constante".
 
@@ -88,7 +88,7 @@ Los tipos de datos aceptados varían de lenguaje en lenguaje.
 
 Los tipos de datos más básicos en Javascript son ***Strings***, ***Numbers***, and ***Booleans***.
 
-#### Strings
+### Strings
 
 Las "strings" son bloques de texto, siempre se definirán entre comillas, ya sea simple o doble. Cualquier texto entre comillas es una cadena o string.
 
@@ -96,7 +96,7 @@ Las "strings" son bloques de texto, siempre se definirán entre comillas, ya sea
 var nombrePerro = 'firulais';
 ```
 
-#### Numbers
+### Numbers
 
 Los números son solo eso, números. Los números NO se envuelven en comillas. Pueden ser negativos también. Javascript tiene una limitación en el tamaño de un número (+/- 9007199254740991), pero muy raramente aparecerá esa limitación en nuestro uso diario.
 
@@ -105,7 +105,7 @@ var positivo = 27;
 var negativo = -40;
 ```
 
-#### Boolean
+### Boolean
 
 Los booleanos provienen de la [lógica de Boole](https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole). Es un concepto que alimenta el código binario y el núcleo de las computadoras. Es posible que haya visto código binario en el pasado (0001 0110…), esto es lógica booleana. Esencialmente significa que tiene dos opciones, activar o desactivar, 0 o 1, verdadero o falso. En Javascript usamos booleanos para significar verdadero o falso. Esto puede parecer simple al principio, pero puede complicarse más adelante.
 
@@ -164,7 +164,7 @@ Qué veriamos en el console.log? Para eso tenemos que revisar la tabla por la as
 
 Los operadores matemáticos trabajan en JavaScript tal como lo harían en su calculadora.
 
-### + - * / =
+#### + - * / =
 
 ```javascript
 1 + 1 = 2
@@ -173,7 +173,7 @@ Los operadores matemáticos trabajan en JavaScript tal como lo harían en su cal
 2 / 2 = 1
 ```
 
-### %
+#### %
 
 Algo que quizás no haya visto antes es el Módulo (`%`), este operador matemático dividirá los dos números y devolverá el resto.
 
@@ -186,8 +186,7 @@ Algo que quizás no haya visto antes es el Módulo (`%`), este operador matemát
 ## Objetos Globales y métodos
 
 Javascript tiene una serie de objetos integrados para que los usemos. Ya hemos visto, y hemos estado usando, el objeto de consola y su método `log`. Otro de estos objetos es `Math`. Éste tiene varios métodos, al igual que `console` tiene `log`. Para agregar a esto, algunos de nuestros tipos de datos también tienen métodos incorporados.
-
-### Math.pow
+#### Math.pow
 
 Podemos usar el método `pow` en `Math` para devolver un número elevado a un exponente. Tomará dos números.
 
@@ -197,7 +196,7 @@ Math.pow(3,2) = 9;
 Math.pow(3,3) = 27;
 ```
 
-### Math.round, Math.floor, Math.ceil
+#### Math.round, Math.floor, Math.ceil
 
 `Math` también tiene métodos que redondearán los números para nosotros. `.round` redondeará un número al número entero más cercano. `.floor` siempre redondeará un número al número entero más cercano hacia abajo. `.ceil` siempre se redondeará al número entero más cercano hacia arriba.
 
@@ -208,7 +207,7 @@ Math.floor(6.999) = 6;
 Math.ceil(6.0001) = 7;
 ```
 
-### .length
+#### .length
 
 El tipo de datos "string" tiene un método incorporado llamado `.length`. Cualquier cadena que llamemos a esto devolverá la cantidad de caracteres en esa cadena.
 

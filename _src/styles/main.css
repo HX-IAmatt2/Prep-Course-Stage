@@ -72,7 +72,6 @@ body {
   color: #ffffff;
 }
 
-
 #header {
   /* border: 2px dashed blue; */
   display: flex;
@@ -103,10 +102,13 @@ body {
 
 #sidebar {
   /* border: 2px dashed blue; */
-  margin-left:12px;
-  margin-top: 60px;
   position: fixed;
   width: 242px;
+  margin-left: 12px;
+  padding-top: 60px;
+  /* padding-bottom: 60px; */
+  /* top: 50px; */
+  /* bottom: 50px; */
 }
 
 #tocTitle {
@@ -123,12 +125,13 @@ body {
 }
 
 #tocBox {
+  display: flex;
+  max-height: calc(100vh - 240px);
+  overflow-y: auto;
   font-family: "Avenir-Heavy";
   font-size: 16px;
   line-height: 28px;
   color: #000000;
-  display: flex;
-  /* align-items: center; */
   margin-top: 1rem;
   /* border: 2px dashed; */
 }
