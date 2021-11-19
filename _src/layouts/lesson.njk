@@ -24,7 +24,7 @@
   <body>
     <div class="reader-bar-start">
 
-      <div id="navbarExtended">
+      <div id="navbarContainer">
         <div id="navbarContained">
           <div>
             <img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
@@ -41,7 +41,7 @@
           </a>
         </div> #}
 
-      <div id='main' class="container-fluid">
+      <div id='main'>
         <div id='header' >
           {# Navigation #}
           {{ collections.all | eleventyNavigation | bootstrapNav({
@@ -52,47 +52,41 @@
           }) | safe }}
         </div>
 
-        <div class="row">
-
-          <div id='sidebar'>
-            <div id="tocTitle">
+        <div id='sidebar'>
+          <div id="tocTitle">
             Contenido de la clase
             </div>
-            <div id="tocBox">
-              {# Table of contents #}
-              {{ content | toc | safe }}
-            </div>
-            <div>
-              {{ homework }}
+          <div id="tocBox">
+            {# Table of contents #}
+            {{ content | toc | safe }}
+          </div>
+          <div>
+            {{ homework }}
+          </div>
+        </div>
+
+        <div id='lesson'>
+          <div style="display:flex; justify-content: right">
+            <div id="readingTime">
+                    Tiempo de lectura {{ content | readingTime }}
             </div>
           </div>
-
-          <div id='lesson'>
-            <div style="display:flex; justify-content: right">
-              <div id="readingTime">
-                    Tiempo de lectura {{ content | readingTime }}
-              </div>
-            </div>
-            <div>
-              {# Lesson (markdown content) #}
-              {{ content | safe }}
-            </div>
+          <div>
+            {# Lesson (markdown content) #}
+            {{ content | safe }}
           </div>
         </div>
 
       </div>
 
-      <div id="footerExtended">
-        <div id="footerContained">
-
-          <div id="feedbackBox">
+      <div class="footerContainer">
+        <div class="footerContained">
+          <div class="feedback">
             <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
               Dejanos tu feedback!👍
             </a>
           </div>
-
           <p>Hecho con 💛 por alumnos de Henry</p>
-
         </div>
       </div>
 

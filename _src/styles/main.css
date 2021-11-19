@@ -20,9 +20,11 @@ body {
   margin: auto;
   color: rgba(0, 0, 0, 0.87);
   background-color: #fafafa;
+  display:flex;
+  justify-content: center;
 }
 
-#navbarExtended {
+#navbarContainer {
   /* border: 2px dashed red; */
   display: flex;
   justify-content: center;
@@ -30,10 +32,10 @@ body {
   height: 68px;
   width: 100%;
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   z-index: 999;
-  box-shadow: 0 4px 4px  rgba(0,0,0,.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 #navbarContained {
@@ -99,6 +101,7 @@ body {
 #sidebar {
   /* border: 2px dashed blue; */
   margin-top: -44px;
+  margin-left:12px;
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -282,55 +285,53 @@ body {
   font-size: 16px;
 }
 
-#feedbackBox {
-  /* display: inline-block; */
+div.footerContainer {
+  /* border: 2px dashed blue; */
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+
+div.footerContained {
+  /* border: 2px dashed red; */
+  display: flex;
+  justify-content: center;
+  color: rgb(240, 240, 240);
+  position: absolute;
+  font-family: "Avenir-Black";
+  font-size: 18px;
+  line-height: 33px;
+  width: 100%;
+  max-width: 1500px;
+}
+
+div.footerContained p {
+  margin-bottom: 0;
+}
+
+div.feedback {
   position: fixed;
-  z-index: 1500;
   background: #ffff01;
   padding: 8px 16px;
   height: 40px;
   border-radius: 8px;
-  left: 10px;
-  bottom: 6px;
-  /* left: 400px; */
+  bottom: 5px;
+  left: 5px;
+  /* margin-left: -81vw; */
+  /* display: flex; */
+  /* justify-content: left; */
 }
 
-#feedbackBox a {
+div.feedback a {
   font-family: "Avenir-Black";
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
   color: #000000;
   display: flex;
-  justify-content: center;
 }
-
-#footerExtended {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  height: 51px;
-  width: 100%;
-}
-
-#footerContained {
-  /* border: 2px dashed red; */
-  display: flex;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 51px;
-  font-family: "Avenir-Black";
-  font-size: 18px;
-  line-height: 33px;
-  color: rgb(240, 240, 240);
-  width: 100%;
-  max-width: 1500px;
-}
-
-#footerContained p {
-  margin-bottom: 0;
-}
-
-
-
