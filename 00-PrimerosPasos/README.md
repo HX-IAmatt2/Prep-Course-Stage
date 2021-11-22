@@ -1,6 +1,7 @@
 ---
 title: Primeros Pasos
 feedbackID: 00-PrimerosPasos
+permalink: /PrimerosPasos/
 eleventyNavigation:
   key: Primeros Pasos
   order: 1

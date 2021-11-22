@@ -1,6 +1,7 @@
 ---
 title: Git
 feedbackID: 01-Git
+permalink: /Git/
 eleventyNavigation:
   key: Git
   order: 2
