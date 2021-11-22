@@ -1,7 +1,6 @@
 ---
 title: Primeros Pasos
 feedbackID: 00-PrimerosPasos
-# permalink: "Prep-Course-Stage/00-PrimerosPasos/index.html"
 eleventyNavigation:
   key: Primeros Pasos
   order: 1
