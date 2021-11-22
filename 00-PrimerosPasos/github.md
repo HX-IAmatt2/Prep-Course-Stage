@@ -1,6 +1,7 @@
 ---
 title: GitHub
 feedbackID: 00-PrimerosPasos
+permalink: /GitHub/
 eleventyNavigation:
   key: GitHub
   order: 4

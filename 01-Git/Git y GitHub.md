@@ -1,6 +1,7 @@
 ---
 title: Git y GitHub
 feedbackID: 01-Git
+permalink: /Git_y_GitHub/
 eleventyNavigation:
   key: Git y GitHub
   order: 6
