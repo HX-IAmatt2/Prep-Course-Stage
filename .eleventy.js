@@ -51,7 +51,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       includes: "/_src/layouts",
       data: "/_src/data",
-      output: "docs",
+      output: "_dist",
     },
   };
 };
