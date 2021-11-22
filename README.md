@@ -1,6 +1,6 @@
 ---
 title: Introducción
-permalink: "/index.html"
+permalink: "Prep-Course-Stage/Intro/index.html"
 eleventyNavigation:
   key: Intro
   order: 0
