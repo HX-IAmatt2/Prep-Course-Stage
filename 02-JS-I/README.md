@@ -1,7 +1,7 @@
 ---
 title: JavaScript I
 feedbackID: 02-JS-I
-permalink: JavaScript_I
+permalink: /JavaScript_I/
 eleventyNavigation:
   key: JS I
   order: 7
