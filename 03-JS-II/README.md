@@ -1,6 +1,7 @@
 ---
 title: JavaScript II
 feedbackID: 03-JS-II
+permalink: /JavaScript_II/
 eleventyNavigation:
   key: JS II
   order: 8

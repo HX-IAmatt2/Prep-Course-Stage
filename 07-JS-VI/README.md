@@ -1,6 +1,7 @@
 ---
 title: "JavaScript VI: Callbacks"
 feedbackID: 07-JS-VI
+permalink: /JavaScript_VI/
 eleventyNavigation:
   key: "JS VI"
   order: 12

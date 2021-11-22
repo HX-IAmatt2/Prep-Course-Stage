@@ -1,6 +1,7 @@
 ---
 title: 'Fundamentos de HTML/CSS'
 feedbackID: 08-HTML
+permalink: /HTML/
 eleventyNavigation:
   key: HTML
   order: 13

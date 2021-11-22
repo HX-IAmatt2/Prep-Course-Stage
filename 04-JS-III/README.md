@@ -1,6 +1,7 @@
 ---
 title: JavaScript III
 feedbackID: 04-JS-III
+permalink: /JavaScript_III/
 eleventyNavigation:
   key: JS III
   order: 9

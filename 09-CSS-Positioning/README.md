@@ -1,6 +1,7 @@
 ---
 title: 'CSS'
 feedbackID: 09-CSS-Positioning
+permalink: /CSS/
 eleventyNavigation:
   key: 'CSS'
   order: 14

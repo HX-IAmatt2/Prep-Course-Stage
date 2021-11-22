@@ -1,6 +1,7 @@
 ---
 title: 'JavaScript V: Clases y prototype'
 feedbackID: 06-JS-V
+permalink: /JavaScript_V/
 eleventyNavigation:
   key: 'JS V'
   order: 11

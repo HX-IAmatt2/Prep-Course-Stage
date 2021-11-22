@@ -1,6 +1,7 @@
 ---
 title: 'JavaScript IV: Objetos'
 feedbackID: 05-JS-IV
+permalink: /JavaScript_IV/
 eleventyNavigation:
   key: 'JS IV'
   order: 10
