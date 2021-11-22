@@ -95,7 +95,7 @@ git config --global user.email "tu@email.com"
 
 Existen muchas otras configuraciones de Git que puedes encontrar en el comando git config --list (o solo git config para ver una explicación más detallada)
 
-## Analizar cambios en los archivos de tu proyecto con Git
+## Analizar cambios en los archivos de tu proyecto
 
 - `git log`: muestra la identificación de los commits.
 - `git show`: nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser mas detallados.
@@ -114,7 +114,7 @@ Existen muchas otras configuraciones de Git que puedes encontrar en el comando g
 
 - `git checkout master 'archivo.txt'`: volvemos a la versión madre.
 
-## Introducción a las ramas o branches de Git
+## Introducción a las ramas o branches
 
 Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 
