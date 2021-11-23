@@ -370,10 +370,8 @@ div.feedback a {
 #logoHenry {
   display: flex;
   padding-left: 12px;
-  /* padding-top: 12px; */
   justify-content: space-between;
   margin-right: 60px;
-  /* align-items: center; */
 }
 
 .headerResponsive a {
@@ -383,8 +381,6 @@ div.feedback a {
   padding: 10px;
   background: #000000;
   width: 100%;
-  /* font-variant: small-caps; */
-  /* text-shadow: 1px 1px black; */
 }
 
 .headerResponsive input[type="checkbox"],
@@ -401,7 +397,6 @@ div.feedback a {
 .headerResponsive ul {
   list-style-type: none;
   padding: 0;
-  /* width: 100vw; */
 }
 
 .headerResponsive li {
