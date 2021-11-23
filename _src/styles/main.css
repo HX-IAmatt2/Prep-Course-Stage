@@ -405,9 +405,10 @@ div.feedback a {
 #logoHenry {
   display: flex;
   padding-left: 12px;
-  padding-top: 12px;
+  /* padding-top: 12px; */
   justify-content: space-between;
   margin-right: 60px;
+  /* align-items: center; */
 }
 
 .headerResponsive a {
@@ -531,5 +532,9 @@ div.feedback a {
 
   .headerResponsive {
     display: block;
+  }
+
+  #logoHenry {
+  padding-top: 12px;
   }
 }
