@@ -27,6 +27,7 @@ body {
 #main {
   /* border: 2px dashed red; */
   max-width: 1500px;
+  /* width: 100vw; */
   margin-top: 68px;
   display: flex;
   flex-direction: column;
@@ -59,7 +60,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   padding: 0 0.8rem 0 0.8rem;
-  /* height: 68px; */
   z-index: 1000;
   color: #ffffff;
   background-color: #000000;
@@ -72,15 +72,16 @@ body {
   color: #ffffff;
 }
 
-#header {
+.topnav {
   /* border: 2px dashed blue; */
   display: flex;
   justify-items: end;
   justify-content: flex-end;
   padding-top: 5px;
+  /* overflow: hidden; */
 }
 
-#header .activeLink {
+.topnav .activeLink {
   color: black;
   border-bottom: 3px solid black;
   border-radius: 0;
@@ -91,7 +92,7 @@ body {
   line-height: 22px;
 }
 
-#header a {
+.topnav a {
   font-family: "Avenir-Medium";
   font-size: 16px;
   line-height: 22px;
@@ -100,18 +101,27 @@ body {
   color: black;
 }
 
+.topnav a:hover {
+  color: grey;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* #iconContainer .icon {
+  display: none;
+} */
+
 #sidebar {
   /* border: 2px dashed blue; */
   position: fixed;
-  width: 242px;
+  width: 230px;
   margin-left: 12px;
   padding-top: 60px;
-  /* padding-bottom: 60px; */
-  /* top: 50px; */
-  /* bottom: 50px; */
 }
 
-#tocTitle {
+#sidebar #tocTitle {
   font-family: "Avenir-Black";
   font-style: normal;
   font-weight: 900;
@@ -124,7 +134,7 @@ body {
   border-bottom: 1px solid black;
 }
 
-#tocBox {
+#sidebar #tocBox {
   display: flex;
   max-height: calc(100vh - 240px);
   overflow-y: auto;
@@ -184,8 +194,9 @@ body {
   font-size: 16px;
   line-height: 18px;
   text-align: justify;
-  padding: 0 2rem 4rem 18rem;
+  padding: 0 2rem 4rem 300px;
   font-size: 1.1em;
+  width: 100%;
 }
 
 #lesson .feedback {
@@ -212,9 +223,10 @@ body {
 }
 
 #lesson h1 + h4 {
-  margin: -2rem 0 3rem 0;
+  margin: -40px 0 3rem 0;
   font-family: "Avenir-Black";
   font-size: 32px;
+  line-height: 32px;
 }
 
 #lesson h1 + h2 {
@@ -226,6 +238,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 32px;
+  text-align: left;
   color: #2e2e2e;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -236,6 +249,7 @@ body {
   font-weight: 900;
   font-size: 24px;
   line-height: 24px;
+  text-align: left;
   color: #2e2e2e;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -246,12 +260,14 @@ body {
   font-weight: 900;
   font-size: 18px;
   line-height: 18px;
+  text-align: left;
   color: #2e2e2e;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 #lesson img {
+  max-width: 90vw;
   display: block;
   margin: auto;
   margin-top: 3rem;
@@ -262,6 +278,7 @@ body {
 }
 
 #lesson iframe {
+  max-width: 90vw;
   display: block;
   margin: auto;
   align-self: center;
@@ -299,6 +316,7 @@ div.footerContainer {
   align-items: center;
   height: 50px;
   width: 100%;
+  z-index: 20;
 }
 
 div.footerContained {
@@ -312,6 +330,7 @@ div.footerContained {
   line-height: 33px;
   width: 100%;
   max-width: 1500px;
+  z-index: 20;
 }
 
 div.footerContained p {
@@ -326,6 +345,7 @@ div.feedback {
   border-radius: 8px;
   bottom: 5px;
   left: 5px;
+  z-index: 1200;
   /* margin-left: -81vw; */
   /* display: flex; */
   /* justify-content: left; */
@@ -338,4 +358,55 @@ div.feedback a {
   text-decoration: none;
   color: #000000;
   display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav ul {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+
+  .topnav {
+    justify-content: flex-start;
+  }
+
+  #navbarContained #logoHenry {
+    display: none;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  #navbarContainer {
+    height: 40px;
+  }
+
+  #main {
+    margin-top: 20px;
+  }
+
+  #lesson {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    width: 100vw;
+  }
+
+  #readingTime {
+    margin-top: 25px !important;
+    margin-bottom: 0px !important;
+  }
+
+  #readerBar2 {
+    display: none;
+  }
+
+  div.feedback {
+    z-index: 10 ;
+  }
+
 }

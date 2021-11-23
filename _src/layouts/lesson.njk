@@ -1,11 +1,3 @@
-{# ---js
-{
-  today: function() {
-    return (new Date()).toLocaleString();
-  }
-}
---- #}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +18,7 @@
 
       <div id="navbarContainer">
         <div id="navbarContained">
-          <div>
+          <div id="logoHenry">
             <img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
           </div>
           <div>
@@ -35,58 +27,61 @@
         </div>
       </div>
 
-      <div id='main'>
-        <div id='header' >
-          {# Navigation #}
-          {{ collections.all | eleventyNavigation | bootstrapNav({
+        <div id='main'>
+          <div class="topnav" id='myTopnav' >
+            {# Navigation #}
+            {{ collections.all | eleventyNavigation | bootstrapNav({
             listChildItemClass: "dropdown-menu shadow", 
             activeKey: eleventyNavigation.key,
             listItemClass: "link",
             activeListItemClass: "activeLink"
           }) | safe }}
-        </div>
+          </div>
 
-        <div id='sidebar'>
-          <div id="tocTitle">
+          <div id='sidebar'>
+            <div id="tocTitle">
             Contenido de la clase
             </div>
-          <div id="tocBox">
-            {# Table of contents #}
-            {{ content | toc | safe }}
-          </div>
-          <div>
-            {{ homework }}
-          </div>
-        </div>
-
-        <div id='lesson'>
-          <div style="display:flex; justify-content: right">
-            <div id="readingTime">
-                    Tiempo de lectura {{ content | readingTime }}
+            <div id="tocBox">
+              {# Table of contents #}
+              {{ content | toc | safe }}
+            </div>
+            <div>
+              {{ homework }}
             </div>
           </div>
-          <div>
-            {# Lesson (markdown content) #}
-            {{ content | safe }}
+
+          <div id='lesson'>
+            <div style="display:flex; justify-content: right">
+              <div id="readingTime">
+                    Tiempo de lectura {{ content | readingTime }}
+              </div>
+            </div>
+            <div>
+              {# Lesson (markdown content) #}
+              {{ content | safe }}
+            </div>
           </div>
+
         </div>
 
-      </div>
-
-      <div class="footerContainer">
-        <div class="footerContained">
-          <div class="feedback">
-            <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
+            <div class="feedback">
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
               Dejanos tu feedback!👍
             </a>
+            </div>
+
+        <div class="footerContainer">
+          <div class="footerContained">
+            <p>Hecho con 💛 por alumnos de Henry</p>
           </div>
-          <p>Hecho con 💛 por alumnos de Henry</p>
         </div>
-      </div>
 
-      {% readerBar "3px",
-      "black",
-      "yellow" %}
+        <div id="readerBar2">
+        {% readerBar "3px",
+        "black",
+        "yellow" %}
+        </div>
 
-    </body>
-  </html>
+      </body>
+    </html>
