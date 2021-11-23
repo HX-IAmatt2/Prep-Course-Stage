@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript IV: Objetos'
+title: 'JavaScript IV'
 feedbackID: 05-JS-IV
 permalink: /JavaScript_IV/
 eleventyNavigation:

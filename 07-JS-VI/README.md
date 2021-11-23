@@ -1,5 +1,5 @@
 ---
-title: "JavaScript VI: Callbacks"
+title: "JavaScript VI"
 feedbackID: 07-JS-VI
 permalink: /JavaScript_VI/
 eleventyNavigation:

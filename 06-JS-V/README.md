@@ -1,5 +1,5 @@
 ---
-title: 'JavaScript V: Clases y prototype'
+title: 'JavaScript V'
 feedbackID: 06-JS-V
 permalink: /JavaScript_V/
 eleventyNavigation:
