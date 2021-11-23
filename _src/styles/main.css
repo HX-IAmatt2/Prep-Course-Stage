@@ -413,8 +413,12 @@ div.feedback a {
   }
 
   #readingTime {
+    /* display: flex; */
     margin-top: 25px !important;
     margin-bottom: 0px !important;
+    /* margin-right: 0px !important;
+    justify-content: right;
+    right: 0; */
   }
 
   #readerBar2 {
@@ -425,7 +429,4 @@ div.feedback a {
     z-index: 10;
   }
 
-  #readingTime {
-    right: 0
-  }
 }
