@@ -360,7 +360,7 @@ div.feedback a {
   display: flex;
 }
 
-#navbarResponsive {
+#headerResponsive {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -389,7 +389,7 @@ div.feedback a {
     display: none;
   }
 
-  #navbarResponsive {
+  #headerResponsive {
     display: flex;
   }
 
@@ -409,6 +409,7 @@ div.feedback a {
     padding-left: 8px !important;
     padding-right: 8px !important;
     width: 100vw;
+    /* text-align: left; */
   }
 
   #readingTime {
@@ -422,5 +423,9 @@ div.feedback a {
 
   div.feedback {
     z-index: 10;
+  }
+
+  #readingTime {
+    right: 0
   }
 }
