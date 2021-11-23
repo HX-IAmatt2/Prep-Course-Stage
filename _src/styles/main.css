@@ -78,7 +78,7 @@ body {
   justify-items: end;
   justify-content: flex-end;
   padding-top: 5px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .topnav .activeLink {
@@ -334,9 +334,6 @@ div.feedback {
   bottom: 5px;
   left: 5px;
   z-index: 1200;
-  /* margin-left: -81vw; */
-  /* display: flex; */
-  /* justify-content: left; */
 }
 
 div.feedback a {
@@ -347,26 +344,6 @@ div.feedback a {
   color: #000000;
   display: flex;
 }
-
-/* #headerResponsive {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 40px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 12px;
-  position: fixed;
-  z-index: 999;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  display: none;
-  font-family: "Avenir-Roman";
-  font-size: 16px;
-  line-height: 22px;
-} */
 
 .headerResponsive {
   position: fixed;
@@ -476,13 +453,12 @@ div.feedback a {
   font-size: 32px;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1000px) {
+  
   #sidebar {
     display: none;
   }
-}
 
-@media screen and (max-width: 800px) {
   .topnav ul {
     display: none;
   }
