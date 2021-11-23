@@ -360,22 +360,37 @@ div.feedback a {
   display: flex;
 }
 
+#navbarResponsive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  font-family: "Avenir-Roman";
+  font-size: 16px;
+  line-height: 22px;
+}
+
 @media screen and (max-width: 600px) {
   .topnav ul {
     display: none;
   }
 
-  .topnav a.icon {
-    float: left;
-    display: block;
-  }
-
-  .topnav {
-    justify-content: flex-start;
-  }
-
-  #navbarContained #logoHenry {
+  #navbarContainer {
     display: none;
+  }
+
+  #navbarResponsive {
+    display: flex;
   }
 
   #sidebar {
@@ -406,7 +421,6 @@ div.feedback a {
   }
 
   div.feedback {
-    z-index: 10 ;
+    z-index: 10;
   }
-
 }

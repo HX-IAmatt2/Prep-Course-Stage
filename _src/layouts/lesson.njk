@@ -27,61 +27,70 @@
         </div>
       </div>
 
-        <div id='main'>
-          <div class="topnav" id='myTopnav' >
-            {# Navigation #}
-            {{ collections.all | eleventyNavigation | bootstrapNav({
+      <div id="navbarResponsive">
+        <div id="logoHenry">
+          <img src="{{ '/_src/assets/logo-white.png' | url }}" alt='logo Henry' height=27px class="d-inline-block align-text-top">
+        </div>
+        <div>
+          <span id="lessonTitle">{{ title }}</span>
+        </div>
+      </div>
+
+      <div id='main'>
+        <div class="topnav" id='myTopnav' >
+          {# Navigation #}
+          {{ collections.all | eleventyNavigation | bootstrapNav({
             listChildItemClass: "dropdown-menu shadow", 
             activeKey: eleventyNavigation.key,
             listItemClass: "link",
             activeListItemClass: "activeLink"
           }) | safe }}
-          </div>
+        </div>
 
-          <div id='sidebar'>
-            <div id="tocTitle">
+        <div id='sidebar'>
+          <div id="tocTitle">
             Contenido de la clase
             </div>
-            <div id="tocBox">
-              {# Table of contents #}
-              {{ content | toc | safe }}
-            </div>
-            <div>
-              {{ homework }}
-            </div>
+          <div id="tocBox">
+            {# Table of contents #}
+            {{ content | toc | safe }}
           </div>
-
-          <div id='lesson'>
-            <div style="display:flex; justify-content: right">
-              <div id="readingTime">
-                    Tiempo de lectura {{ content | readingTime }}
-              </div>
-            </div>
-            <div>
-              {# Lesson (markdown content) #}
-              {{ content | safe }}
-            </div>
+          <div>
+            {{ homework }}
           </div>
-
         </div>
 
-            <div class="feedback">
-              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
+        <div id='lesson'>
+          <div style="display:flex; justify-content: right">
+            <div id="readingTime">
+                    Tiempo de lectura {{ content | readingTime }}
+            </div>
+          </div>
+          <div>
+            {# Lesson (markdown content) #}
+            {{ content | safe }}
+          </div>
+        </div>
+
+      </div>
+
+      <div class="feedback">
+        <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase={{feedbackID}}' target="_blank">
               Dejanos tu feedback!👍
             </a>
-            </div>
+      </div>
 
-        <div class="footerContainer">
-          <div class="footerContained">
-            <p>Hecho con 💛 por alumnos de Henry</p>
-          </div>
+      <div class="footerContainer">
+        <div class="footerContained">
+          <p>Hecho con 💛 por alumnos de Henry</p>
         </div>
+      </div>
 
-        <div id="readerBar2">
+      <div id="readerBar2">
         {% readerBar "3px",
         "black",
         "yellow" %}
-        </div>
+      </div>
 
-      </body>
-    </html>
+    </body>
+  </html>
