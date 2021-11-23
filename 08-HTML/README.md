@@ -21,7 +21,9 @@ eleventyNavigation:
   </tr>
 </table>
 
-# Fundamentos de HTML/CSS
+# HTML/CSS
+
+#### Fundamentos
 
 En esta clase veremos:
 
