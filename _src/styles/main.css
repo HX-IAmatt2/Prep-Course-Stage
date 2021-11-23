@@ -267,7 +267,9 @@ body {
 }
 
 #lesson img {
-  max-width: 90vw;
+  /* max-width: 90vw; */
+  width: 100%;
+  height: auto;
   display: block;
   margin: auto;
   margin-top: 3rem;
@@ -278,7 +280,9 @@ body {
 }
 
 #lesson iframe {
-  max-width: 90vw;
+  /* max-width: 90vw; */
+  width: 100%;
+  height: auto;
   display: block;
   margin: auto;
   align-self: center;
@@ -488,6 +492,12 @@ div.feedback a {
   font-size: 32px;
 }
 
+@media screen and (max-width: 990px) {
+  #sidebar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .topnav ul {
     display: none;
@@ -498,17 +508,13 @@ div.feedback a {
     height: 40px;
   }
 
-  #sidebar {
-    display: none;
-  }
-
   #main {
     margin-top: 30px;
   }
 
   #lesson {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    padding-left: 8px;
+    padding-right: 8px;
     width: 100vw;
     /* text-align: left; */
   }
