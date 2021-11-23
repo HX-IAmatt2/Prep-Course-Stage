@@ -480,12 +480,8 @@ div.feedback a {
   }
 
   #readingTime {
-    /* display: flex; */
-    margin-top: 25px !important;
-    margin-bottom: 0px !important;
-    /* margin-right: 0px !important;
-    justify-content: right;
-    right: 0; */
+    margin-top: 25px;
+    margin-bottom: -20px;
   }
 
   #readerBarDiv {
