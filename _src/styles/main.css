@@ -33,7 +33,7 @@ body {
   flex-direction: column;
 }
 
-#navbarContainer {
+#headerContainer {
   /* border: 2px dashed red; */
   display: flex;
   justify-content: center;
@@ -360,7 +360,7 @@ div.feedback a {
   display: flex;
 }
 
-#headerResponsive {
+/* #headerResponsive {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -378,27 +378,127 @@ div.feedback a {
   font-family: "Avenir-Roman";
   font-size: 16px;
   line-height: 22px;
+} */
+
+.headerResponsive {
+  position: fixed;
+  display: none;
+  width: 100%;
+  color: white;
+  align-items: center;
+  /* justify-content: space-between; */
+  background: #000000;
+  min-height: 48px;
+  height: 40px;
+  z-index: 999;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 600px) {
+.dropdownDiv {
+  /* right: 0; */
+  /* display: flex; */
+  align-items: center;
+  align-self: center;
+  margin: auto;
+}
+
+#logoHenry {
+  display: flex;
+  padding-left: 12px;
+  padding-top: 12px;
+  justify-content: space-between;
+  margin-right: 60px;
+}
+
+.headerResponsive a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background: #000000;
+  width: 100%;
+  /* font-variant: small-caps; */
+  /* text-shadow: 1px 1px black; */
+}
+
+.headerResponsive input[type="checkbox"],
+.headerResponsive .fa-bars,
+.headerResponsive .fa-times {
+  position: absolute;
+  box-sizing: border-box;
+  right: 3px;
+  top: 7px;
+  width: 48px;
+  height: 48px;
+}
+
+.headerResponsive ul {
+  list-style-type: none;
+  padding: 0;
+  /* width: 100vw; */
+}
+
+.headerResponsive li {
+  border-bottom: 1px solid gray;
+}
+
+.headerResponsive a {
+  text-align: center;
+}
+
+.headerResponsive .fa-bars,
+.headerResponsive .fa-times {
+  font-size: 32px;
+  pointer-events: none;
+  text-align: center;
+}
+
+.headerResponsive input[type="checkbox"] {
+    /* border: 1px solid green; */
+  opacity: 0;
+  /* position: fixed; */
+  /* z-index: 1200; */
+}
+
+.headerResponsive nav {
+  display: none;
+}
+
+.headerResponsive input:checked ~ nav {
+  display: block;
+}
+
+.headerResponsive input:checked ~ .fa-bars {
+  display: none;
+}
+
+.headerResponsive input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
+.barsDiv {
+  /* border: 1px solid red; */
+  color: white;
+  display: flex;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  z-index: 100;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 800px) {
   .topnav ul {
     display: none;
   }
 
-  #navbarContainer {
+  #headerContainer {
     display: none;
-  }
-
-  #headerResponsive {
-    display: flex;
+    height: 40px;
   }
 
   #sidebar {
     display: none;
-  }
-
-  #navbarContainer {
-    height: 40px;
   }
 
   #main {
@@ -421,7 +521,7 @@ div.feedback a {
     right: 0; */
   }
 
-  #readerBar2 {
+  #readerBarDiv {
     display: none;
   }
 
@@ -429,4 +529,7 @@ div.feedback a {
     z-index: 10;
   }
 
+  .headerResponsive {
+    display: block;
+  }
 }
