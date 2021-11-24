@@ -25,7 +25,9 @@ eleventyNavigation:
 
 #### Clases y prototype
 
-<iframe src="https://player.vimeo.com/video/425235994" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class="container">
+  <iframe src="https://player.vimeo.com/video/425235994" allow="autoplay; fullscreen"></iframe>
+</div>
 
 ## Clases
 

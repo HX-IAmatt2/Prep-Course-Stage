@@ -32,7 +32,9 @@ En esta lección cubriremos:
 * Introducción a Flexbox.
 * Recursos adicionales.
 
-<iframe src="https://player.vimeo.com/video/425169846" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class="container">
+  <iframe src="https://player.vimeo.com/video/425169846" allow="autoplay; fullscreen"></iframe>
+</div>
 
 ## Introducción al posicionamiento
 

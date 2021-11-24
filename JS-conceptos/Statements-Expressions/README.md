@@ -13,8 +13,9 @@
 
 # Expresiones vs Statements
 
-<iframe src="https://player.vimeo.com/video/480856050" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-
+<div class="container">
+<iframe src="https://player.vimeo.com/video/480856050" allow="autoplay; fullscreen"></iframe>
+</div>
 
 Podemos decir que todo el código que escribimos en JS o "hace algo" o "retorna algo" (o una combinación de los dos). En la terminología de lenguajes de programación esta diferencia está clasificada en la definición de **expressions** (expresiones) y **statements** (sentencias).
 

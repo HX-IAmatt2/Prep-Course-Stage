@@ -30,7 +30,9 @@ En esta lección cubriremos:
 * Introducción a los arrays
 * Bucles ***for*** con arrays
 
-<iframe src="https://player.vimeo.com/video/424916422" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class="container">
+<iframe src="https://player.vimeo.com/video/424916422" allow="autoplay; fullscreen"></iframe>
+</div>
 
 ## Introducción a los arrays (matrices/arreglos)
 
