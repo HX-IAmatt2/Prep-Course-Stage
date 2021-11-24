@@ -280,9 +280,8 @@ body {
 }
 
 #lesson iframe {
-  /* max-width: 90vw; */
   width: 90%;
-  /* height: 600px; */
+  height: auto;
   display: block;
   margin: auto;
   margin-top: 3rem;
