@@ -475,6 +475,10 @@ div.feedback a {
     /* text-align: left; */
   }
 
+  #lesson ul {
+    padding-left:15px
+  }
+
   #readingTime {
     margin-top: 25px;
     margin-bottom: -20px;
