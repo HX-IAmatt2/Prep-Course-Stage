@@ -281,7 +281,7 @@ body {
 
 #lesson iframe {
   /* max-width: 90vw; */
-  width: 800px;
+  width: 90%;
   /* height: 600px; */
   display: block;
   margin: auto;
