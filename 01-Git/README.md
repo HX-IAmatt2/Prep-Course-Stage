@@ -23,7 +23,10 @@ eleventyNavigation:
 
 # Uso de Git
 
-<iframe src="https://player.vimeo.com/video/423898676" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class="container">
+  <iframe src="https://player.vimeo.com/video/423898676" allow="autoplay; fullscreen">
+  </iframe>
+</div>
 
 ## Version Control System
 
@@ -31,7 +34,7 @@ eleventyNavigation:
 
 Si eres diseñador gráfico o web, y quieres mantener cada versión de una imagen o diseño (algo que sin duda quieres), un sistema de control de versiones (Version Control System o VCS en inglés) es una elección muy sabia. Te permite revertir archivos a un estado anterior, revertir el proyecto entero a un estado anterior, comparar cambios a lo largo del tiempo, ver quién modificó por última vez algo que puede estar causando un problema, quién introdujo un error y cuándo, y mucho más. Usar un VCS también significa generalmente que si rompes o pierdes archivos, puedes recuperarlos fácilmente.
 
- Hay varios tipos de sistemas de versionado, estos pueden ser:
+Hay varios tipos de sistemas de versionado, estos pueden ser:
 
 ### Locales
 
@@ -44,27 +47,27 @@ Como se pueden imaginar, este sistema funciona _bien_ para trabajar solos, pero 
 
 ![Centralizado](/_src/assets/01-Git/centralizado.png)
 
-Para solventar este problema, se desarrollaron los sistemas de control de versiones centralizados (_Centralized Version Control Systems_ o __CVCSs__ en inglés). Estos sistemas, como __CVS__, __Subversion__, y __Perforce__, tienen un único servidor que contiene todos los archivos versionados, y varios clientes descargan los archivos desde ese lugar central. Durante muchos años éste ha sido el estándar para el control de versiones.
+Para solventar este problema, se desarrollaron los sistemas de control de versiones centralizados (_Centralized Version Control Systems_ o **CVCSs** en inglés). Estos sistemas, como **CVS**, **Subversion**, y **Perforce**, tienen un único servidor que contiene todos los archivos versionados, y varios clientes descargan los archivos desde ese lugar central. Durante muchos años éste ha sido el estándar para el control de versiones.
 
-Este sistema ofrece varias ventajas, como por ejemplo: Todo el mundo puede saber en qué están trabajando los demás colaboradores y los administradores tienen control sobre qué archivos pueden ver/modificar cada colaborador. Pero tambien presenta un _problema importante_:  que hay un __punto único de fallo__. ¿Si éste server se cae? Nadie puede seguir trabajando ni trackeando sus cambios. ¿O si se rompe y no hay backups? Se pierde absolutamente _todo_ el trabajo realizado.
+Este sistema ofrece varias ventajas, como por ejemplo: Todo el mundo puede saber en qué están trabajando los demás colaboradores y los administradores tienen control sobre qué archivos pueden ver/modificar cada colaborador. Pero tambien presenta un _problema importante_: que hay un **punto único de fallo**. ¿Si éste server se cae? Nadie puede seguir trabajando ni trackeando sus cambios. ¿O si se rompe y no hay backups? Se pierde absolutamente _todo_ el trabajo realizado.
 
 ### Distribuido
 
 ![Distribuido](/_src/assets/01-Git/distribuido.png)
 
-Es aquí donde entran los sistemas de control de versiones distribuidos (_Distributed Version Control Systems_ o __DVCSs__ en inglés). En un DVCS (como __Git__, __Mercurial__, __Bazaar__ o __Darcs__), los clientes no sólo descargan la última instantánea de los archivos: replican completamente el repositorio. Así, si un servidor muere, y estos sistemas estaban colaborando a través de él, cualquiera de los repositorios de los clientes puede copiarse en el servidor para restaurarlo.
+Es aquí donde entran los sistemas de control de versiones distribuidos (_Distributed Version Control Systems_ o **DVCSs** en inglés). En un DVCS (como **Git**, **Mercurial**, **Bazaar** o **Darcs**), los clientes no sólo descargan la última instantánea de los archivos: replican completamente el repositorio. Así, si un servidor muere, y estos sistemas estaban colaborando a través de él, cualquiera de los repositorios de los clientes puede copiarse en el servidor para restaurarlo.
 
 ## Historia de Git
 
-Como muchas de las grandes cosas en esta vida, __Git__ comenzó con un poco de destrucción creativa y encendida polémica. El núcleo de Linux es un proyecto de software de código abierto con un alcance bastante grande. Durante la mayor parte del mantenimiento del núcleo de Linux (1991-2002), los cambios en el software se pasaron en forma de parches y archivos. En 2002, el proyecto del núcleo de Linux empezó a usar un DVCS propietario llamado __BitKeeper__.
+Como muchas de las grandes cosas en esta vida, **Git** comenzó con un poco de destrucción creativa y encendida polémica. El núcleo de Linux es un proyecto de software de código abierto con un alcance bastante grande. Durante la mayor parte del mantenimiento del núcleo de Linux (1991-2002), los cambios en el software se pasaron en forma de parches y archivos. En 2002, el proyecto del núcleo de Linux empezó a usar un DVCS propietario llamado **BitKeeper**.
 
 En 2005, la relación entre la comunidad que desarrollaba el núcleo de Linux y la compañía que desarrollaba BitKeeper se vino abajo, y la herramienta dejó de ser ofrecida gratuitamente. Esto impulsó a la comunidad de desarrollo de Linux (y en particular a Linus Torvalds, el creador de Linux) a desarrollar su propia herramienta basada en algunas de las lecciones que aprendieron durante el uso de BitKeeper. Algunos de los objetivos del nuevo sistema:
 
-* Velocidad
-* Diseño sencillo
-* Fuerte apoyo al desarrollo no lineal (miles de ramas paralelas)
-* Completamente distribuido
-* Capaz de manejar grandes proyectos (como el núcleo de Linux) de manera eficiente (velocidad y tamaño de los datos)
+- Velocidad
+- Diseño sencillo
+- Fuerte apoyo al desarrollo no lineal (miles de ramas paralelas)
+- Completamente distribuido
+- Capaz de manejar grandes proyectos (como el núcleo de Linux) de manera eficiente (velocidad y tamaño de los datos)
 
 Desde su nacimiento en 2005, Git ha evolucionado y madurado para ser fácil de usar y aún conservar estas cualidades iniciales. Es tremendamente rápido, muy eficiente a gran escala, y tiene un increíble sistema de ramificación (branching) para desarrollo no lineal.
 
@@ -78,7 +81,7 @@ La mayoría de las operaciones en Git sólo necesitan archivos y recursos locale
 
 ## Integridad
 
-Todo en Git es verificado mediante una suma de comprobación (__checksum__ en inglés) antes de ser almacenado, y es identificado a partir de ese momento mediante dicha suma. __Esto significa que es imposible cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa.__
+Todo en Git es verificado mediante una suma de comprobación (**checksum** en inglés) antes de ser almacenado, y es identificado a partir de ese momento mediante dicha suma. **Esto significa que es imposible cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa.**
 
 El mecanismo que usa Git para generar esta suma de comprobación se conoce como hash SHA-1. Se trata de una cadena de 40 caracteres hexadecimales (0-9 y a-f), y se calcula en base a los contenidos del archivo o estructura de directorios. Un hash SHA-1 tiene esta pinta:
 
@@ -94,21 +97,21 @@ Vamos a distinguir dos directorios, primero el _directorio de git_: que es donde
 
 Git tiene tres estados principales en los que se pueden encontrar tus archivos:
 
-* __committed__: significa que los datos están almacenados de manera segura en tu base de datos local.
-* __modified__: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos.
-* __staged__: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.
+- **committed**: significa que los datos están almacenados de manera segura en tu base de datos local.
+- **modified**: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos.
+- **staged**: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.
 
 ![Estados](/_src/assets/01-Git/estados.png)
 
-Hay un archivo simple, generalmente contenido en tu directorio de Git, llamado que almacena información acerca de lo que va a ir en tu próxima confirmación, al contenido de este archivo. O al archivo mismo se lo conoce como __staging area__.
+Hay un archivo simple, generalmente contenido en tu directorio de Git, llamado que almacena información acerca de lo que va a ir en tu próxima confirmación, al contenido de este archivo. O al archivo mismo se lo conoce como **staging area**.
 
 Sabiendo esto, el flujo de trabajo básico en Git sería algo así:
 
-* Modificas una serie de archivos en tu _directorio de trabajo_.
-* _Stageas_ los archivos, añadiendolos a tu __staging area__ o área de preparación.
-* Commiteas o Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en tu directorio de Git.
+- Modificas una serie de archivos en tu _directorio de trabajo_.
+- _Stageas_ los archivos, añadiendolos a tu **staging area** o área de preparación.
+- Commiteas o Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y almacena esas instantáneas de manera permanente en tu directorio de Git.
 
-> Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (__committed__). Si ha sufrido cambios desde que se obtuvo del repositorio, y ha sido añadida al área de preparación, está preparada (__staged__). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado (no se incluyó en el área de preparación), está modificada (__modified__).
+> Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (**committed**). Si ha sufrido cambios desde que se obtuvo del repositorio, y ha sido añadida al área de preparación, está preparada (**staged**). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado (no se incluyó en el área de preparación), está modificada (**modified**).
 
 ### Github.com
 
@@ -116,7 +119,7 @@ Sabiendo esto, el flujo de trabajo básico en Git sería algo así:
 
 ## Lectura recomendada
 
-* [Git: sitio oficial](https://git-scm.com/)
-* [Github: tutorial oficial](https://try.github.io/levels/1/challenges/1)
-* [Git: tutorial oficial](https://git-scm.com/docs/gittutorial)
-* [Terminal turorial](https://www.davidbaumgold.com/tutorials/command-line/)
+- [Git: sitio oficial](https://git-scm.com/)
+- [Github: tutorial oficial](https://try.github.io/levels/1/challenges/1)
+- [Git: tutorial oficial](https://git-scm.com/docs/gittutorial)
+- [Terminal turorial](https://www.davidbaumgold.com/tutorials/command-line/)
