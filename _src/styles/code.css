@@ -50,7 +50,8 @@ code[class*="language-"] *::selection {
 
 pre[class*="language-"] {
   padding: 1em;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   overflow: auto;
   background: #2e2e2e;
 }
