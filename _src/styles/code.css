@@ -16,7 +16,7 @@ code[class*="language-"] {
   font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono",
     "Courier New", monospace;
   margin: auto;
-  max-width: 940px;
+  /* max-width: 940px; */
   direction: ltr;
   text-align: left;
   white-space: pre;
