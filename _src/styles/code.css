@@ -1,12 +1,9 @@
 code {
   font-family: Monospace;
-  /* font-weight: bold; */
   font-size: 15px;
   line-height: 24px;
   background-color: rgb(231, 231, 231);
   padding: 2px 7px;
-  /* color: #ff0099; */
-  /* color: black; */
 }
 
 pre[class*="language-"],
@@ -21,7 +18,6 @@ code[class*="language-"] {
   font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono",
     "Courier New", monospace;
   margin: auto;
-  /* max-width: 940px; */
   width: auto;
   direction: ltr;
   text-align: left;
