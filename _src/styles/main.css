@@ -266,7 +266,7 @@ body {
   margin-bottom: 1rem;
 }
 
-#lesson img, #lesson iframe {
+#lesson img {
   /* max-width: 90vw; */
   width: 95%;
   height: auto;
@@ -282,7 +282,7 @@ body {
 #lesson iframe {
   /* max-width: 90vw; */
   width: 800px;
-  height: 600px;
+  /* height: 600px; */
   display: block;
   margin: auto;
   margin-top: 3rem;
