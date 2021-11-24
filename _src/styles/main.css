@@ -471,7 +471,7 @@ div.feedback a {
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
+#lesson iframe {
   position: absolute;
   top: 0;
   left: 0;
