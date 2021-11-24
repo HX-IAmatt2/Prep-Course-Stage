@@ -427,7 +427,7 @@ div.feedback a {
 }
 
 .headerResponsive input[type="checkbox"] {
-    /* border: 1px solid green; */
+  /* border: 1px solid green; */
   opacity: 0;
   /* position: fixed; */
   /* z-index: 1200; */
@@ -466,8 +466,8 @@ div.feedback a {
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-  rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-  rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
@@ -481,10 +481,7 @@ div.feedback a {
   height: 100%;
 }
 
-
-
 @media screen and (max-width: 1000px) {
-  
   #sidebar {
     display: none;
   }
@@ -511,7 +508,7 @@ div.feedback a {
   }
 
   #lesson ul {
-    padding-left:15px
+    padding-left: 15px;
   }
 
   #readingTime {
@@ -532,10 +529,24 @@ div.feedback a {
   }
 
   #logoHenry {
-  padding-top: 12px;
+    padding-top: 12px;
   }
 
   /* #lesson iframe {
     width: 99%;
   } */
+}
+
+@media screen and (max-width: 361px) {
+  #lesson h1 {
+    font-size: 32px;
+  }
+
+  #lesson h1 + h4 {
+    font-size: 24px;
+  }
+
+  #lesson h2 {
+    font-size: 24px;
+  }
 }
