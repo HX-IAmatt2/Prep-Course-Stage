@@ -471,6 +471,7 @@ div.feedback a {
     padding-left: 8px;
     padding-right: 8px;
     width: 100vw;
+    line-height: 22px;
     /* text-align: left; */
   }
 
