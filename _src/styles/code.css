@@ -17,6 +17,7 @@ code[class*="language-"] {
     "Courier New", monospace;
   margin: auto;
   /* max-width: 940px; */
+  width: auto;
   direction: ltr;
   text-align: left;
   white-space: pre;
