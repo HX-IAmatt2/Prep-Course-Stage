@@ -24,53 +24,14 @@ body {
   justify-content: center;
 }
 
-#main {
+main {
   /* border: 2px dashed red; */
   max-width: 1500px;
-  /* width: 100vw; */
   margin-top: 68px;
   display: flex;
   flex-direction: column;
 }
 
-#headerContainer {
-  /* border: 2px dashed red; */
-  display: flex;
-  justify-content: center;
-  background-color: #000000;
-  height: 68px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-#headerContained {
-  /* border: 2px dashed red; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* position: absolute; */
-  /* top: 0; */
-  width: 100%;
-  max-width: 1500px;
-  font-family: "Avenir-Roman";
-  font-size: 16px;
-  line-height: 22px;
-  padding: 0 0.8rem 0 0.8rem;
-  z-index: 1000;
-  color: #ffffff;
-  background-color: #000000;
-}
-
-#headerContained #lessonTitle {
-  font-family: "Avenir-Heavy";
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
 
 .topnav {
   /* border: 2px dashed blue; */
@@ -109,24 +70,7 @@ body {
   display: none;
 }
 
-#readingTime {
-  font-family: "Avenir-Book";
-  font-size: 14px;
-  line-height: 119.6%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  width: 160px;
-  height: 41px;
-  padding: 1.1rem;
-  margin-bottom: -4rem;
-  margin-top: 3rem;
-}
-
-
-div.feedback {
+.feedback {
   position: fixed;
   background: #ffff01;
   padding: 8px 16px;
@@ -137,113 +81,13 @@ div.feedback {
   z-index: 1200;
 }
 
-div.feedback a {
+.feedback a {
   font-family: "Avenir-Black";
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
   color: #000000;
   display: flex;
-}
-
-.headerResponsive {
-  position: fixed;
-  display: none;
-  width: 100%;
-  color: white;
-  align-items: center;
-  /* justify-content: space-between; */
-  background: #000000;
-  min-height: 48px;
-  height: 40px;
-  z-index: 999;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-.dropdownDiv {
-  /* right: 0; */
-  /* display: flex; */
-  align-items: center;
-  align-self: center;
-  margin: auto;
-}
-
-#logoHenry {
-  display: flex;
-  padding-left: 12px;
-  justify-content: space-between;
-  margin-right: 60px;
-}
-
-.headerResponsive a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  background: #000000;
-  width: 100%;
-}
-
-.headerResponsive input[type="checkbox"],
-.headerResponsive .fa-bars,
-.headerResponsive .fa-times {
-  position: absolute;
-  box-sizing: border-box;
-  right: 3px;
-  top: 7px;
-  width: 48px;
-  height: 48px;
-}
-
-.headerResponsive ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.headerResponsive li {
-  border-bottom: 1px solid gray;
-}
-
-.headerResponsive a {
-  text-align: center;
-}
-
-.headerResponsive .fa-bars,
-.headerResponsive .fa-times {
-  font-size: 32px;
-  pointer-events: none;
-  text-align: center;
-}
-
-.headerResponsive input[type="checkbox"] {
-  opacity: 0;
-}
-
-.headerResponsive nav {
-  display: none;
-}
-
-.headerResponsive input:checked ~ nav {
-  display: block;
-}
-
-.headerResponsive input:checked ~ .fa-bars {
-  display: none;
-}
-
-.headerResponsive input:not(:checked) ~ .fa-times {
-  display: none;
-}
-
-.barsDiv {
-  /* border: 1px solid red; */
-  color: white;
-  display: flex;
-  position: fixed;
-  top: 5px;
-  right: 5px;
-  z-index: 100;
-  font-size: 32px;
 }
 
 

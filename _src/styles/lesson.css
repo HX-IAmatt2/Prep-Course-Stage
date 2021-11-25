@@ -1,4 +1,4 @@
-#lesson {
+.lesson {
   /* border: 2px dashed green; */
   font-family: "Avenir-Roman";
   font-size: 16px;
@@ -10,15 +10,31 @@
   max-width: 98vw;
 }
 
-#lesson .feedback {
+.lesson .readingTime {
+  font-family: "Avenir-Book";
+  font-size: 14px;
+  line-height: 119.6%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  width: 160px;
+  height: 41px;
+  padding: 1.1rem;
+  margin-bottom: -4rem;
+  margin-top: 3rem;
+}
+
+.lesson .feedback {
   display: none;
 }
 
-#lesson img[alt~="HenryLogo"] {
+.lesson img[alt~="HenryLogo"] {
   display: none;
 }
 
-#lesson h1 {
+.lesson h1 {
   display: inline-block;
   font-family: "Avenir-Black";
   font-size: 48px;
@@ -33,18 +49,18 @@
   margin: 10px 0 3rem 0;
 }
 
-#lesson h1 + h4 {
+.lesson h1 + h4 {
   margin: -40px 0 3rem 0;
   font-family: "Avenir-Black";
   font-size: 32px;
   line-height: 32px;
 }
 
-#lesson h1 + h2 {
+.lesson h1 + h2 {
   margin-top: 0;
 }
 
-#lesson h2 {
+.lesson h2 {
   font-family: "Avenir-Black";
   font-weight: 900;
   font-size: 32px;
@@ -55,7 +71,7 @@
   margin-bottom: 1rem;
 }
 
-#lesson h3 {
+.lesson h3 {
   font-family: "Avenir-Black";
   font-weight: 900;
   font-size: 24px;
@@ -66,7 +82,7 @@
   margin-bottom: 1rem;
 }
 
-#lesson h4 {
+.lesson h4 {
   font-family: "Avenir-Black";
   font-weight: 900;
   font-size: 18px;
@@ -77,7 +93,7 @@
   margin-bottom: 1rem;
 }
 
-#lesson img {
+.lesson img {
   width: auto;
   max-width: 900px;
   height: auto;
@@ -90,22 +106,22 @@
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-#lesson ul {
+.lesson ul {
   list-style: square;
 }
 
-#lesson li {
+.lesson li {
   font-family: "Avenir-Heavy";
   font-size: 16px;
   line-height: 22px;
 }
 
-#lesson a {
+.lesson a {
   font-family: "Avenir-Black";
   font-size: 16px;
 }
 
-#lesson .iframeContainer {
+.lesson .iframeContainer {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -118,7 +134,7 @@
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
-#lesson iframe {
+.lesson iframe {
   position: absolute;
   top: 0;
   left: 0;
