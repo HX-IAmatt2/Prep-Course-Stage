@@ -57,6 +57,6 @@ y así.
 
 Si querés saber más sobre la carrera, mirá este video:
 
-<div class="container">
+<div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/426051769" allow="autoplay; fullscreen"></iframe>
 </div>

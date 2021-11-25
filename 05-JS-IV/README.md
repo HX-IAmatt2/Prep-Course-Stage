@@ -33,7 +33,7 @@ En esta lección cubriremos:
 * Palabra clave ***this***
 * Objetos en Javascript
 
-<div class="container">
+<div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/424936732" allow="autoplay; fullscreen"></iframe>
 </div>
 

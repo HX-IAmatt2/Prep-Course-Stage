@@ -31,7 +31,7 @@ En esta lección cubriremos:
 - Más métodos de Arrays
 - Introducción a la programación funcional
 
-<div class="container">
+<div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/425254623" allow="autoplay; fullscreen"></iframe>
 </div>
 

@@ -23,7 +23,7 @@ eleventyNavigation:
 
 # Uso de Git
 
-<div class="container">
+<div class="iframeContainer">
   <iframe src="https://player.vimeo.com/video/423898676" allow="autoplay; fullscreen">
   </iframe>
 </div>

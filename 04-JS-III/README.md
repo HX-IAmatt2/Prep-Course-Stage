@@ -30,7 +30,7 @@ En esta lección cubriremos:
 * Introducción a los arrays
 * Bucles ***for*** con arrays
 
-<div class="container">
+<div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/424916422" allow="autoplay; fullscreen"></iframe>
 </div>
 

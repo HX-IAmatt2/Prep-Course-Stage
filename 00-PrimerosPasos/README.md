@@ -34,7 +34,7 @@ eleventyNavigation:
 
 ## Instructivo de Primeros Pasos
 
-<div class="container">
+<div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/638636752" title="Instructivo de Primeros Pasos" allow="autoplay; fullscreen"></iframe>
 </div>
 
@@ -42,7 +42,7 @@ eleventyNavigation:
 
 ## Cómo usar SLACK
 
-<div class="container">
+<div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/548902078" title="Cómo usar SLACK" allow="autoplay; fullscreen; picture-in-picture"></iframe>
 </div>
 

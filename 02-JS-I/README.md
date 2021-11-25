@@ -35,7 +35,7 @@ En esta lección cubriremos:
 * Control de flujo y operadores de comparación
 * Introducción a Node y NPM
 
-<div class="container">
+<div class="iframeContainer">
 <iframe src="https://player.vimeo.com/video/423852829" allow="autoplay; fullscreen"></iframe>
 </div>
 
