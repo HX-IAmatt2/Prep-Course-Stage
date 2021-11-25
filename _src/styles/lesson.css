@@ -78,7 +78,7 @@
 }
 
 #lesson img {
-  width: 95%;
+  width: auto;
   max-width: 900px;
   height: auto;
   display: block;
