@@ -268,8 +268,8 @@ body {
 }
 
 #lesson img {
-  max-width: 700px;
   width: 95%;
+  max-width: 900px;
   height: auto;
   display: block;
   margin: auto;
