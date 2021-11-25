@@ -220,7 +220,7 @@ body {
   border-bottom-color: #ffff01;
 
   height: 64px;
-  margin: 1rem 0 3rem 0;
+  margin: 10px 0 3rem 0;
 }
 
 #lesson h1 + h4 {
@@ -507,7 +507,7 @@ div.feedback a {
     padding-right: 8px;
     width: 100vw;
     line-height: 22px;
-    /* text-align: left; */
+    text-align: left;
   }
 
   #lesson ul {
