@@ -27,7 +27,7 @@ body {
 #main {
   /* border: 2px dashed red; */
   max-width: 1500px;
-  width: 100vw;
+  /* width: 100vw; */
   margin-top: 68px;
   display: flex;
   flex-direction: column;
