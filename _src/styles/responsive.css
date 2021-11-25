@@ -25,6 +25,10 @@
     text-align: left;
   }
 
+  #lesson img {
+    max-width: 95vw;
+  }
+
   #lesson ul {
     padding-left: 15px;
   }
