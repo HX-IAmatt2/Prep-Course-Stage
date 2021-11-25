@@ -1,0 +1,65 @@
+@media screen and (max-width: 1000px) {
+  #sidebar {
+    display: none;
+  }
+
+  .topnav ul {
+    display: none;
+  }
+
+  #headerContainer {
+    display: none;
+    height: 40px;
+  }
+
+  #main {
+    margin-top: 30px;
+  }
+
+  #lesson {
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100vw;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  #lesson ul {
+    padding-left: 15px;
+  }
+
+  #readingTime {
+    margin-top: 25px;
+    margin-bottom: -20px;
+  }
+
+  #readerBarDiv {
+    display: none;
+  }
+
+  div.feedback {
+    z-index: 10;
+  }
+
+  .headerResponsive {
+    display: block;
+  }
+
+  #logoHenry {
+    padding-top: 12px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  #lesson h1 {
+    font-size: 32px;
+  }
+
+  #lesson h1 + h4 {
+    font-size: 24px;
+  }
+
+  #lesson h2 {
+    font-size: 24px;
+  }
+}
