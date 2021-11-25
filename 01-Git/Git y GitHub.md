@@ -143,8 +143,6 @@ Git nunca borra nada a menos que se lo indiquemos. Cuando usamos los comandos gi
 Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como ***Unmerged***.
 Funcionan muy parecido a los archivos en estado ***Unstaged***, algo así como un estado intermedio entre ***Untracked*** y ***Unstaged***, solo debemos ejecutar `git add` para pasarlos al área de ***Staging*** y git commit para aplicar los cambios en el repositorio.
 
----
-
 ## Uso de GitHub
 
 Github es una plataforma que nos permite guardar repositorios de git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de consola de mandos).

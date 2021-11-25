@@ -40,8 +40,6 @@ eleventyNavigation:
 
 > **Importante**: Github cambió el método de autenticación, ahora es por PAT (Personal Access Token), para crearlo pueden seguir este [link](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). Pueden elegir expiration infinita para hacerlo una sóla vez.
 
----
-
 ## Cómo usar SLACK
 
 <div class="container">
@@ -49,8 +47,6 @@ eleventyNavigation:
 </div>
 
 > Gracias [Nico Constantin (FT#12)](https://github.com/NicoConstantin) por el video y la explicación!
-
----
 
 ## Editores de Texto
 
@@ -161,8 +157,6 @@ Para descargarlo, nos dirigimos al sitio oficial, en la sección Dowload y desca
 
 Una vez finalizada la descarga, procedemos a ejecutar el instalador.
 
----
-
 ## Instalando Node.JS
 
 Para instalar Node js en nuestra computadora, nos dirigimos al sitio oficial:
@@ -187,8 +181,6 @@ Y si seguimos los pasos anteriores, la consola o terminal, nos devolverá la ver
 ```shell
 v12.18.3
 ```
-
----
 
 ## Git
 
