@@ -1,4 +1,5 @@
 @media screen and (max-width: 1000px) {
+  
   #sidebar {
     display: none;
   }
@@ -19,7 +20,7 @@
   #lesson {
     padding-left: 8px;
     padding-right: 8px;
-    width: 100vw;
+    /* width: 100vw; */
     max-width: 100vw;
     line-height: 22px;
     text-align: left;
