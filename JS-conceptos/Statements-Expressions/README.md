@@ -1,3 +1,12 @@
+---
+title: Expresiones vs Statements
+feedbackID: conceptos-Expressions-vs-Statements
+permalink: /Conceptos/
+eleventyNavigation:
+  key: Conceptos
+  order: 1
+---
+
 <img  src='../../logo.png' height='70px'>
 <table width="100%" style='table-layout:fixed;'>
   <tr>
@@ -20,8 +29,9 @@
 Podemos decir que todo el código que escribimos en JS o "hace algo" o "retorna algo" (o una combinación de los dos). En la terminología de lenguajes de programación esta diferencia está clasificada en la definición de **expressions** (expresiones) y **statements** (sentencias).
 
 Podriamos definir conceptualmente a ambas como:
-  - Una **expression** siempre se convierte (retorna) un valor.
-  - Un **statement** realiza una acción.
+
+- Una **expression** siempre se convierte (retorna) un valor.
+- Un **statement** realiza una acción.
 
 Cuando escribimos código, todo el tiempo mezclamos expresiones y statements para conseguir el resultado final. Por lo tanto, al principio es un poco díficil ver la diferencia entre las dos, pero vamos a intentar ejemplificar lo anterior:
 
@@ -36,7 +46,6 @@ Math.pow(2, 3) + 4;
 Cuando *pegamos* una expression en la consola de Firefox o de Chrome, vamos a poder ver el resultado al que resuelve:
 
 ![Expresion](./expresion.png)
-
 
 ```js
 // hace algo
@@ -57,6 +66,7 @@ Nos podemos dar cuenta que algo es un statement, porque si lo *pegamos* en la co
 > Una regla fácil para distinguir entre una *expression* y un *statement* en JS es la siguiente:
   Si podemos ponerlo dentro de un `console.log`, es una *expression*, si no, es un *statement*.
   Por ejemplo:
+
   ```js
     // expresiones!
     console.log(1 + 1);
@@ -70,7 +80,6 @@ Nos podemos dar cuenta que algo es un statement, porque si lo *pegamos* en la co
   ```
 
 > El **operador ternario**, es una expresión o un statement? ej: (numero > 10 ? 'mayor' : 'menor');
-
 
 ## Expressions
 
@@ -148,7 +157,7 @@ Los *Statements* son instrucciones que le damos al intérprete de JS para que **
 
 Podemos clasificar a los Statements en las siguientes categorías:
 
-### Declaration Statements:
+### Declaration Statements
 
 Este tipo de statements indican al intérprete que declare variables o funciones, se utiliza el keyword `function` y `var`. Por ejemplo:
 
@@ -196,7 +205,7 @@ Cómo vemos en el ejemplo de arriba, el intérprete *hace algo*: declara la func
 
 > Nótese que un function expression puede no tener nombre. Estas son las llamadas **funciones anónimas**.
 
-### Conditional Statements:
+### Conditional Statements
 
 Estos statements sirven para controlar el flujo de ejecución de código según si se cumple o no una condición. Por ejemplo:
 
@@ -247,5 +256,3 @@ throw new Error('hubo un error, se termina la ejecución');
 JS tiene la particularidad qué en donde sea que el intérprete espera un *statement*, nosotros podemos pasarle una *expresión*. Esto da lugar a los llamados *expression statements*.
 
 > **Esto no funciona en sentido inverso, donde se espera una expresión *NO* podemos pasar una statement**.
-
-
