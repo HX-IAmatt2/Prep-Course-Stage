@@ -46,7 +46,7 @@ Math.pow(2, 3) + 4;
 `1 + 1` intuitivamente se convierte o resuelve a `2`! eso es una expresión. Es cualquier cosa que escribamos y esperamos que se convierta en otro valor.
 Cuando *pegamos* una expression en la consola de Firefox o de Chrome, vamos a poder ver el resultado al que resuelve:
 
-![Expresion](./expresion.png)
+![Expresion](/_src/assets/conceptos/expresion.png)
 
 ```js
 // hace algo
@@ -62,7 +62,7 @@ Fijensé que acá es importante discriminar lo que está *adentro* de los bloque
 
 Nos podemos dar cuenta que algo es un statement, porque si lo *pegamos* en la consola del intérprete -por ejemplo, en la consola del Firefox o Chrome- vamos a ver que no produce ningún resultado:
 
-![statement](./statement.png)
+![statement](/_src/assets/conceptos/statement.png)
 
 > Una regla fácil para distinguir entre una *expression* y un *statement* en JS es la siguiente:
   Si podemos ponerlo dentro de un `console.log`, es una *expression*, si no, es un *statement*.
